@@ -1,0 +1,16 @@
+body{
+    background-color: #0D0D0D;
+    align-items: center;
+}
+
+h2, h3, h4 {
+    color: #DC036D;
+}
+
+li, p {
+    color: #F2F2F2;
+}
+
+a{
+    color: #474099;
+}
