@@ -78,22 +78,21 @@ transform: translate(-50%, -50%);
 100% { transform: translate(-50%, -50%) rotate(360deg)}
 } 
 
-/*Header*/
+/*----HEADER-----*/
 
 
 header{
     z-index: 3;
     background-color:  rgba(220, 3, 109, 1);
-    padding: 0.3rem;
+    padding:1rem;
+    margin:0 10px 0 10 px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 header .logo img{
-    width: 7rem;
-    height: 1.5rem;
-    
+    width:7rem; 
 }
 
 header .logo img:hover{
@@ -104,7 +103,92 @@ header .btn img:hover{
     filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.30));
     transform: scale(1.1);
 }
- 
+
+ /*--------FOOTER------------*/
+
+footer{
+    width: 100%;
+    margin-top: 4rem;
+    background-color:#DC036D;
+    color: #F2F2F2;
+    }
+
+.container-footer{
+    font-size: 12px;
+    margin: 2rem 1rem 0rem 3rem;
+    display: flex;
+    flex-direction: column;
+    }
+
+.container-footer section{
+    margin-top: 1rem;
+}
+
+.container-footer h4{
+    padding-bottom: 0.5rem;
+}
+
+.logo-footer img{ 
+  margin: 0 0 20px 5px; 
+  width: 10rem;
+  height: 2.5rem;  
+}
+
+.redes ul {
+display: flex;
+}
+
+ #li-redes{
+    margin: 7px 0 0 20px
+}
+
+#redsoc{
+    margin: 0px 0 15px 30px;
+}
+#carrito{
+    width:40px;
+}
+#perfil{
+    margin: 0 12px 0px 0;
+    width: 3rem;
+}
+
+.redes li img{
+    padding-top: 10px;
+margin-left: 8px;
+width: 24px;
+}
+
+.redess{
+    display: flex;
+    flex-direction: column; 
+     letter-spacing: -1px; 
+line-height: normal;
+justify-content:center;
+}
+
+.info-app {
+    padding-right: 30%;
+    visibility: visible;
+}
+
+.info-web{
+    position: absolute;
+    visibility:hidden;
+}
+
+.ayuda li:hover, .idiomas li:hover{
+
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.copyright{
+padding: 4rem 0rem 1rem ;
+margin: 0 auto;
+font-size: 10px;
+}
+
 /*Menú hamburguesa*/
 
 #menuToggle{
@@ -275,11 +359,65 @@ transform: none;
 .index{
     background-color: #0D0D0D;
 }
+/*-----HEADER----*/
+header{
+    padding: 16px;
+}
+
+header .logo img{
+    width: 9rem;
+    height: 2.5rem;
+}
+
+ /*--------FOOTER----------*/
+
+ .container-footer{
+    font-size: 16px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+    
+.container-footer section{
+    margin-right: 2rem;
+}
+
+.logo-footer img{
+width: 10rem;
+}
+
+
+.ayuda, .idiomas{
+    width: 22%;
+}
+
+.redes { 
+width: 15%;
+}
+
+.redes ul {
+    margin-top: 1rem;
+}
+
+
+.info-web { 
+    width: 30%;
+    position: relative;
+    visibility: visible;
+}
+
+.info-app{
+position: absolute;
+visibility: hidden;
+}
+
+
+.copyright{
+font-size: var(--font-size-s);
+}
+
 
 
 @media only screen and (min-width: 768px) {
-
-
     /*--------HEADER----------*/  
     header{
         padding: 16px;
@@ -319,9 +457,49 @@ transform: none;
         margin: -52px 0px 0px -301px;
     }
 
-    /*--------SROLL BAR----------*/
-
-    .carrousel-juegos::-webkit-scrollbar {
-        height: 0.65rem;
+    /* -------FOOTER--------- */
+    
+   
+    .container-footer{
+        font-size: 16px;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
+        
+    .container-footer section{
+        margin-right: 2rem;
+    }
+   
+    .logo-footer img{
+    width: 10rem;
+    }
+   
 
+    .ayuda, .idiomas{
+        width: 22%;
+    }
+    
+    .redes { 
+    width: 15%;
+    }
+    
+    .redes ul {
+        margin-top: 1rem;
+    }
+    
+    
+    .info-web { 
+        width: 30%;
+        position: relative;
+        visibility: visible;
+    }
+    
+    .info-app{
+    position: absolute;
+    visibility: hidden;
+    }
+    
+    
+    .copyright{
+    font-size: var(--font-size-s);
+    }
