@@ -537,6 +537,10 @@ font-size: var(--font-size-s);
     margin-bottom: 20px;
 }
 
+.mensaje-usuario-creado{
+    color: #DC036D;
+}
+
 .ya-tienes-una-cuenta{
     width: 100%;
     height: 100%;
