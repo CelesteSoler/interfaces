@@ -75,31 +75,33 @@
     <a class="boton-volver" href="index.html">VOLVER AL HOME</a>
     
     <div class="contenedor-registro">
-        <div class="contenedor-texto-registro">
+        <div class="contenedor-texto-registro" id="titulo">
             <p class="texto-registro">Inicia sesión en tu cuenta</p>
         </div>
 
-        <form class="contenedor-form" action="">
+        <form class="contenedor-form" action="" id="js-login">
             <div>
                 <label class="campo-registro-label" for="nombre">Nombre de usuario<span class="asterisco">*</span></label>
                 <input class="campo-registro-texto" type="text" name="nombre" placeholder="Escriba su nombre de usuario" required>
                 <label class="campo-registro-label" for="password">Contraseña<span class="asterisco">*</span></label>
                 <input class="campo-registro-texto" type="password" name="password" placeholder="Escriba su contraseña" required>
 
-                <a class="boton-crear-cuenta" href="home-loged.html">Iniciar sesión</a>
+                <button class="boton-crear-cuenta">Iniciar sesión</button>
             </div>
         </form>
 
-        <div class="linea-decorativa">---------------------- o ----------------------</div>
+        <div class="linea-decorativa" id="linea">---------------------- o ----------------------</div>
 
-        <a href="home-loged.html" class="boton-google">
+        <a href="home-loged.html" class="boton-google" id="google">
             <p>Inicia sesión con Google</p>
         </a>
 
-        <a href="home-loged.html" class="boton-google">
+        <a href="home-loged.html" class="boton-google" id="facebook">
             <p>Inicia sesión con Facebook</p>
         </a>
 
+        <div id="spinner" class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        <p class="mensaje-usuario-creado" id="js-iniciando-sesion"></p>
     </div>
     
     <!-- HASTA ACÁ LA PÁGINA DE LOGIN, DE ACÁ PARA ABAJO EL FOOTER-->
@@ -168,5 +170,6 @@
    
 
     <script src="./js/loading.js"></script>
+    <script src="js/login.js"></script>
 </body>
 </html>

@@ -550,6 +550,10 @@ font-size: var(--font-size-s);
     margin-bottom: 20px;
 }
 
+.boton-crear-cuenta:hover{
+    background: #900047;
+}
+
 .mensaje-usuario-creado{
     color: #0D0D0D;
     font-size: 36px;
