@@ -80,31 +80,25 @@
         </div>
 
         <form class="contenedor-form" action="">
-            <label class="campo-registro-label" for="nombre">Nombre de usuario</label>
-            <input class="campo-registro-texto" type="text" name="nombre" placeholder="Escriba su nombre de usuario" required>
-            <label class="campo-registro-label" for="password">Contraseña</label>
-            <input class="campo-registro-texto" type="password" name="password">
+            <div>
+                <label class="campo-registro-label" for="nombre">Nombre de usuario<span class="asterisco">*</span></label>
+                <input class="campo-registro-texto" type="text" name="nombre" placeholder="Escriba su nombre de usuario" required>
+                <label class="campo-registro-label" for="password">Contraseña<span class="asterisco">*</span></label>
+                <input class="campo-registro-texto" type="password" name="password" placeholder="Escriba su contraseña" required>
 
-            <a href="home-loged.html"><button class="boton-crear-cuenta">Iniciar sesión</button></a>
+                <a class="boton-crear-cuenta" href="home-loged.html">Iniciar sesión</a>
+            </div>
         </form>
 
         <div class="linea-decorativa">---------------------- o ----------------------</div>
 
-        <div class="boton-google">
-            <!-- <div class="">
-                <p>LOGO</p>
-            </div> -->
-            <div style="width: 157px; height: 25px; left: 90px; top: 3px; position: absolute; text-align: center; color: #3F3F3F; font-size: 16px; font-family: Quicksand; font-weight: 700; word-wrap: break-word">Inicia sesión con Google</div>
-        </div>
+        <a href="home-loged.html" class="boton-google">
+            <p>Inicia sesión con Google</p>
+        </a>
 
-        <div style="width: 336.36px; height: 35.32px; left: 109px; top: 172px; position: absolute">
-            <div style="width: 336.36px; height: 35.32px; left: 0px; top: 0px; position: absolute; background: #D9D9D9"></div>
-            <div style="width: 27px; height: 26px; left: 26px; top: 4.32px; position: absolute">
-                <div style="width: 26.56px; height: 25.07px; left: 0.30px; top: 0.73px; position: absolute; background: #1877F2"></div>
-                <div style="width: 11.36px; height: 20.30px; left: 8.14px; top: 5.65px; position: absolute; background: white"></div>
-            </div>
-            <div style="width: 174px; height: 22px; left: 82px; top: 6.32px; position: absolute; text-align: center; color: #3F3F3F; font-size: 16px; font-family: Quicksand; font-weight: 700; word-wrap: break-word">Inicia sesión con Facebook</div>
-        </div>
+        <a href="home-loged.html" class="boton-google">
+            <p>Inicia sesión con Facebook</p>
+        </a>
 
     </div>
     

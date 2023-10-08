@@ -452,7 +452,7 @@ font-size: var(--font-size-s);
     /* position: absolute; */
     text-align: center;
     padding: 10px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .texto-registro{
@@ -488,7 +488,7 @@ font-size: var(--font-size-s);
     /* top: 8.70px; */
     /* position: absolute; */
     margin-bottom: 3px;
-    color: #909090;
+    color: #0D0D0D;
     font-size: 20px;
     font-family: Quicksand;
     font-weight: 400;
@@ -501,7 +501,7 @@ font-size: var(--font-size-s);
     /* left: 19px; */
     top: 344px;
     /* position: absolute; */
-
+    color: #0D0D0D;
     /* width: 450px;
     height: 40px; */
     /* left: 0px; */
@@ -511,6 +511,11 @@ font-size: var(--font-size-s);
     border-radius: 15px;
     margin-bottom: 15px;
     padding-left: 10px;
+    border:1px solid transparent;
+}
+
+.campo-registro-texto:focus{
+    border-color: #DC036D;
 }
 
 .contenedor-captcha{
@@ -605,10 +610,22 @@ font-size: var(--font-size-s);
 }
 
 .boton-google{
-    width: 336px; height: 34.86px; left: 109px; top: 116px; position: absolute;
-    width: 336px; height: 34.86px; left: 0px; top: 0px; position: absolute; background: #D9D9D9;
-    width: 26.67px; height: 24.90px; left: 26px; top: 5px; position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 34px;
+    background: #D9D9D9;
+    
+    margin-top: 20px;
+    width: 100%;
+    max-width: 250px;
+}
 
+.boton-google p{
+    text-align: center;
+    color: #3F3F3F;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 @media only screen and (min-width: 768px) {
