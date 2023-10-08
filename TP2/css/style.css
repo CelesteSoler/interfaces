@@ -473,6 +473,9 @@ font-size: var(--font-size-s);
     margin-bottom: 5px;
 }
 
+.asterisco{
+    color: #B8005A;
+}
 .campo-registro-label{
     /* width: 190px; */
     /* height: 19.28px; */
@@ -559,6 +562,33 @@ font-size: var(--font-size-s);
     word-wrap: break-word;
     
     text-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*--------LOGIN----------*/ 
+
+.contenedor-login{
+    width: 554px;
+    height: 436px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: #F2F2F2;
+    border-radius: 25px;
+    border: 1px black solid;
+}
+
+.contenedor-login-texto{
+    /* width: 458px; */
+    /* height: 51px; */
+    /* left: 48px; */
+    /* top: 34px; */
+    /* position: absolute; */
+    text-align: center;
+    color: #0D0D0D;
+    font-size: 36px;
+    font-family: Quicksand;
+    font-weight: 600;
+    word-wrap: break-word;
 }
 
 @media only screen and (min-width: 768px) {
