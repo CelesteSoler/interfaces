@@ -65,8 +65,8 @@
         </div>
 
         <div>
-            <button class="btn" id="carrito"><img src="img/Carrito.svg" alt="carrito"></a></button>
-            <button class="btn" id="perfil"><img src="img/Perfil.svg" alt="carrito"></a></button>
+            <a class="btn" id="carrito"><img src="img/Carrito.svg" alt="carrito"></a>
+            <a class="btn" id="perfil"><img src="img/Perfil.svg" alt="carrito"></a>
         </div>
     </header>
 
@@ -75,7 +75,7 @@
     <a class="boton-volver" href="index.html">VOLVER AL HOME</a>
 
     <div class=contenedor-registro>
-        <div class="contenedor-texto-registro">
+        <div class="contenedor-texto-registro" id="contenedor-titulo">
             <p class="texto-registro">Crea tu cuenta en PlayFun</p>
             <p class="texto-registro texto-registro-azul">¡Es gratis!</p>
         </div>
@@ -115,13 +115,16 @@
                 </div>
 
                 <!--crear cuenta boton-->
-                <a class="boton-crear-cuenta" href="home-loged.html">Crear cuenta</a>
-                <p class="mensaje-usuario-creado" id="js-mensaje-usuario"></p>
+                
+                <button class="boton-crear-cuenta">Crear cuenta</button>
             </div>
         </form>
 
+        <div id="spinner" class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        <p class="mensaje-usuario-creado" id="js-mensaje-usuario"></p>
+
         <!-- ya tienes una cuenta -->
-        <a class="ya-tienes-una-cuenta" href="login.html">¿Ya tienes una cuenta? <br> ¡Inicia sesión aquí!</a>
+        <a class="ya-tienes-una-cuenta" href="login.html" id="ya-tienes">¿Ya tienes una cuenta? <br> ¡Inicia sesión aquí!</a>
     </div>
     
     <!-- HASTA ACÁ LA PÁGINA DE REGISTRO, DE ACÁ PARA ABAJO EL FOOTER-->
@@ -191,5 +194,6 @@
 
     <script src="./js/loading.js"></script>
     <script src="js/register.js"></script>
+    <script src="js/confetti-button.js"></script>
 </body>
 </html>
