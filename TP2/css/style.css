@@ -737,6 +737,9 @@ font-size: var(--font-size-s);
 
 /*-----------4 en linea---------*/
 
+.index-juego{
+    background-color: #0D0D0D;
+} 
 
 .juego-4-en-linea{
     background-color: #0D0D0D;
@@ -762,7 +765,7 @@ font-size: var(--font-size-s);
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-right:110px;
+    padding-right: 130px;
 }
 
 .juego{
@@ -904,9 +907,7 @@ border-radius: 50px;
 
 }
 /*----GALERIA JUEGO------*/
-.index-juego{
-    background-color: #0D0D0D;
-}
+
 
 .container-juego{
     margin: 0rem 1.5rem 0rem 1.5rem;
