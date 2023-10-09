@@ -912,7 +912,7 @@ border-radius: 50px;
     margin: 0rem 1.5rem 0rem 1.5rem;
 }
 
-.carrousel{
+.carrousel-juegos{
     margin-top: 2.5rem;
     cursor: url(https://img.icons8.com/fluency/48/1A1A1A/hand-cursor.png), auto;
 }
@@ -1025,7 +1025,6 @@ border-radius: 50px;
     transition-delay: 0.2s;
 }
 
-
 .card .card-img-top{ 
     position: absolute;
     border-radius: 5px;
@@ -1063,7 +1062,6 @@ border-radius: 50px;
     flex-direction: row;
     justify-content: space-between;
     padding: auto;
-
 }
 
 .card .card-img-top-cuadrado{ 
@@ -1148,8 +1146,6 @@ border-radius: 50px;
 .comentarios h3{
     padding-bottom: 1em;
  }
-
- 
     
 .detalle-juegopirate h2 {
      padding-top: 14px;
