@@ -80,7 +80,6 @@ transform: translate(-50%, -50%);
 
 /*----HEADER LOGUEADO-----*/
 
-
 header{
     z-index: 3;
     background-color:  rgba(220, 3, 109, 1);
@@ -92,7 +91,7 @@ header{
 }
 
 header .logo img{
-    width:7rem; 
+    width: 4rem; 
 }
 
 header .logo img:hover{
@@ -1629,7 +1628,7 @@ transform: rotateY(180deg);
 
 /*--------------------*/  
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1440px) {
 
 
     /*--------HEADER----------*/  
@@ -1714,127 +1713,7 @@ transform: rotateY(180deg);
     .copyright{
     font-size: var(--font-size-s);
     }
-
-
-    /*-----------HOME--------------*/
-    
-    .portada-home{
-    height: 35rem;
-    }
-    
-    .portada-img > .btn-scroll-down {
-    top: 33rem;
-    width: 60px;
-    height: 60px;
-    }
-    
-    .portada-img > .btn-scroll-down:before {
-    width: 42px;
-    height: 42px;
-    }
-    
-    .btn-ver{ 
-    width: 8rem;
-    height: 3rem;
-    top: 12rem;
-    }
-    
-    .btn-ver > a{
-    font-size: 2rem;
-    line-height: 2rem;
-    }
-    
-    
-    .portada-home .novedades-titular{
-    left: 8rem;
-    top: 9rem;
-    font-size: 2.5em;
-    }
-    
-    .portada-home .novedades-titular2{
-    top: 5rem;
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-    }
-    
-    .container{
-    margin: 2rem 4rem 0rem 4rem;
-    }
-    
-    
-    .carrousel{
-    margin-top: 3.5rem;
-    }
-    
-    .carrousel > h1{
-    font-size: 32px;
-    line-height: 50px;
-    }
-    
-
-    .carrousel-juegos{
-    margin: 0.5rem 0rem;
-    padding: 1rem 0rem 1rem 1rem;
-    
-    }
-    
-    .card{
-    padding: 9px;
-    margin-right: 1rem;
-    
-    }
-
-    .card::before, .card::after{
-    height: 9px;
-    }
-    
-    .card-container::before, .card-container::after{
-    width:9px;
-    }
-
-    
-    .card .card-img-top{ 
-    width: 21rem;
-    height: 13rem;
-    }
-    
-    .card-body{
-    width: 21rem;
-    height: 50px;
-    }
-    
-    .card .card-img-top-cuadrado{ 
-    width: 16rem;
-    height: 13rem;
-    }
-    
-    .card-body-cuadrado{
-    width: 16rem;
-    height: 53px;
-    }
-
-    .card-body h5{
-        width: 89%;
-    }
-    
-    .card-title{
-    font-size: 20px;
-    line-height: 20px;
-    margin: 0.8rem 1rem 3rem 1rem;
-
-    }
-
-    .card-img-buy{
-        width:2rem;
-        height: 2rem;
-        margin-block: auto;
-        margin-right: 8px;
-        z-index: 10;
-    }
-
-    
-
-}
+/*---------------*/ 
 
 
 @media only screen and (min-width: 768px) {
@@ -1847,6 +1726,8 @@ transform: rotateY(180deg);
         width: 9rem;
         height: 2.5rem;
     }
+
+   
 
     /*Menú hamburguesa*/
     
