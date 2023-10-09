@@ -78,7 +78,7 @@ transform: translate(-50%, -50%);
 100% { transform: translate(-50%, -50%) rotate(360deg)}
 } 
 
-/*----HEADER-----*/
+/*----HEADER LOGUEADO-----*/
 
 
 header{
@@ -103,6 +103,22 @@ header .btn img:hover{
     filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.30));
     transform: scale(1.1);
 }
+
+header .btn .perfilLog{
+    width: 50px;
+    height: 50px;
+}
+
+header .carrito-perfil{
+    padding-right: 2rem;
+}
+header .btn .carr{
+    width: 40px;
+    height: 40px;
+    padding-right: 2rem;
+}
+
+    
 
  /*--------FOOTER------------*/
 
@@ -718,6 +734,875 @@ font-size: var(--font-size-s);
     font-size: 16px;
     font-weight: 700;
 }
+
+/*-----------4 en linea---------*/
+
+
+.juego-4-en-linea{
+    background-color: #0D0D0D;
+}
+
+.breadcrum {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.breadcrum a{
+    background: linear-gradient(currentColor, currentColor) bottom / 0 .1em no-repeat;
+	transition: 1s background-size;
+	background-position: left bottom;
+}
+
+
+.breadcrum a:hover{
+	background-size: 100% .1em;
+}
+
+.juego-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-right:110px;
+}
+
+.juego{
+    width: 45%;
+}
+
+.juego img{
+    width: 130%;
+    margin-top: 2rem;
+    z-index: -1; 
+}
+/*-------Botón Jugar----------*/
+
+.frame {
+    z-index: 1;
+    position: relative;
+    left: 50%;
+    top: -50%;
+    width: 90%; 
+}
+
+.btn-jugar  {
+    width: 200px;
+    height: 70px;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 25px;
+    background: transparent;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    /* display: inline-block; */
+        box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+        7px 7px 20px 0px rgba(0,0,0,.1),
+        4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+
+.btn-jugar  {
+    background: rgb(22,9,240);
+    background: linear-gradient(0deg,#E5599E 0%, #DC036D  100%);
+    color: #fff;
+    border: none;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: url(https://img.icons8.com/fluency/48/1A1A1A/hand-cursor.png), auto;
+}
+
+.btn-jugar > a{
+    padding-top: -100px;
+    position: relative;
+    text-align: center;
+    /* overflow: hidden; */
+    color: #F2F2F2;
+    font-size: 24px;
+    font-weight: 700;
+    /* line-height: 100px; */
+    letter-spacing: 0.03em;
+    /* text-align: left; */
+    cursor: url(https://img.icons8.com/fluency/48/1A1A1A/hand-cursor.png), auto;
+}
+
+.btn-jugar img{
+    margin: 0;
+    width: 32px;
+    height: 32px;
+    z-index: 1;
+}
+
+.btn-jugar:after {
+position: absolute;
+content: " ";
+top: 0;
+left: 0;
+z-index: -1;
+width: 100%;
+height: 100%;
+transition: all 0.3s ease;
+-webkit-transform: scale(.1);
+transform: scale(.1);
+}
+
+.btn-jugar:hover {
+color: #fff;
+border: none;
+transform: scale(1.1);
+}
+
+.btn-jugar:hover:after {
+background:#E5599E;
+background: linear-gradient(0deg, #E5599E 0%,  #E5599E 100%);
+-webkit-transform: scale(1);
+transform: scale(1);
+border-radius: 50px;
+}
+
+/*-----------------------*/
+
+.bottom-compartir{
+    width: 96%;
+    margin: -0.3rem 0rem 0rem 0rem;
+    background-color: #D9D9D9;
+    height: 50px;
+    padding: 12px 12px 0px 12px;
+    border-radius: 0 0 30px 30px ;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.bottom-compartir button{
+    background-color: transparent ;
+    border-radius: 30px;
+    padding: 12px;
+    width: 9.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0rem 1rem 1rem 1rem ;
+}
+
+
+.bottom-compartir a, .bottom-compartir span{
+    font-weight: 700;
+    font-size:large;
+    position: relative;
+    color:#DF3086;
+    letter-spacing: 0.03em;
+    display: flex;
+    margin-right: 0.5rem;
+}
+
+.bottom-compartir button:hover{
+    color:#DC036D;
+    border: 1px solid #DC036D;
+
+}
+/*----------------*/
+
+.detalle-juegopirate img {
+    width: 39px;
+    height: 39px;
+     padding-right: 1em;
+    padding-left: 3em;
+}
+.comentarios {
+    padding-top: 8rem;
+
+}
+.comentarios img{
+    width: 39px;
+    height: 39px;
+    padding-right: 1em;
+    padding-left: 3em;
+}
+
+.comentarios h3{
+    padding-bottom: 1em;
+ }
+
+ 
+    
+.detalle-juegopirate h2 {
+     padding-top: 14px;
+}
+
+.detalle-juegopirate,.comentarios {
+    padding-top: 5px;
+}
+/*-------instrucciones-----*/
+.parrafo {
+    text-align: justify;
+    padding: 0em 5em 0em 5em;
+    padding-top: 5px;
+    }
+    
+.parrafo-enlinea a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.contenedor-decripciones-juego{
+    background-color: #024852;
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+    padding: 5em;    
+    }
+
+.explorador,.pirata{
+     padding: 1em;
+}
+
+.comoGanar-controles{
+    display: flex;
+    flex-direction:column;
+}
+    
+.detalle-juegopirate,
+.instrucciones-juego,
+.controles, .comentarios, .intro,.descripcion-juego{
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    padding-top: 20px;    
+        }
+
+.instrucciones-juego p,.controles-parrafos{
+    padding: 0 0 2rem;
+ }
+  
+.descripcion-juego img{
+    width: 39px;
+    height: 39px;
+     padding-right: 1em;
+    padding-left: 3em;
+    padding-bottom: 1em;
+}
+
+.imagenes-detalle-juego {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    padding-left: 1em;
+    transition: transform .2s;
+}
+    
+.imagenes-detalle-juego img .juego,
+ iframe {
+    height: 210px;
+    padding-right: 1em;
+ }
+    
+.imagenes-detalle-juego img:hover,
+.imagenes-detalle-juego iframe:hover {
+    margin: 2px;
+    transform: scale(1.3);
+}
+    
+.instrucciones-juego img {
+    width: 39px;
+    height: 39px;
+    padding-right: 1em;
+    padding-left: 5.5em;
+}
+    
+.instrucciones-juego h3 {
+    padding-top: 5px;
+ }
+    
+.contenedor-juegoenlinea p {
+    text-align: justify;
+    padding: 1em 5em 1em 5em;     
+}
+       
+    
+.controles img {
+    width: 39px;
+    height: 39px;
+    padding-right: 1em;
+    padding-left: 5.6em;
+}
+    
+.controles h3 {
+    padding-top: 9px;
+    padding-bottom: 1em;
+}
+    
+.controles-parrafos ul {
+    padding-left: 5em;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);      
+ } 
+    
+.intro h3{
+    padding-top: 9px;
+    padding-bottom: 1em;
+ }
+    
+.intro img{
+    width: 39px;
+    height: 39px;
+    padding-right: 1em;
+    padding-left:0em;
+}
+       
+.batalla{
+    margin: 0 0 2rem 0;
+}
+
+.instrucciones{
+    width:60%;
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:2rem 0 2rem 0
+}
+
+.instrucciones h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.instrucciones .fichas{
+    width: 100%;
+}
+
+.instruccion-ficha{
+    width: 45%;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.instruccion-ficha h3{
+    text-align: center;
+}
+.pirata, .explorador {
+    margin:0 0  0 3rem;
+}
+
+.flip-box {
+background-color: transparent;
+width: 300px;
+height: 150px;
+perspective: 1000px;
+position: relative;
+top: 45%;
+left: 50%;
+text-align: center;
+transform: translate(-50%, -50%);
+margin-left: 1rem;
+}
+
+.flip-box-inner {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 1s;
+transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+transform: rotateY(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+border-radius: 10px;
+}
+
+.flip-box-front img {
+border-radius: 10px;
+}
+
+.flip-box-back {
+transform: rotateY(180deg);
+}
+  
+.instrucciones ul{
+    margin-top: 1.5rem;
+}
+
+.card-4-en-linea img{
+    width: 18rem;
+    height: 13rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    cursor: url(https://img.icons8.com/fluency/48/1A1A1A/hand-cursor.png), auto;
+}
+
+.card-4-en-linea img:hover, .card-4-en-linea iframe:hover{
+    transform: scale(1.1);
+}
+
+.card-4-en-linea iframe{
+    cursor: url(https://img.icons8.com/fluency/48/1A1A1A/hand-cursor.png), auto;
+    margin-right: 1rem;
+}
+
+
+/*----COMENTARIO INPUT-------*/
+
+.contenedorComentarioInput{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 8rem 0;
+}
+
+.comentarioInput1{
+    width: 1000px; 
+    height: 280px;
+    position:relative;
+    margin: 0 0 4rem 0;
+}
+
+.comentarioInput{
+    width: 1000px; 
+    height: 260px;
+    position:relative;
+    margin: 0 0 4rem 0;
+}
+
+.rectangle102{
+    width: 1000px; 
+    height: 380px; 
+    left: 0px; 
+    top: 31px; 
+    position: absolute; 
+    background: #024852;
+}
+
+.line6{
+    width: 880px;
+    height: 0px; 
+    left: 42px;
+    top: 99px; 
+    position: absolute;
+    background: #D9D9D9; 
+    border: 2px #06ACC3 solid;
+}
+.escribeUnaReseASobrePirateJunter{
+    left: 42px; 
+    top: 51px;
+    position: absolute;
+}
+ #parr {
+    color: #56CDDE;
+     font-size: 20px; 
+     font-family: Quicksand; 
+     font-weight: 700; 
+     letter-spacing: 1px; 
+     word-wrap: break-word;
+}
+.rectangle103{
+    width: 778px;
+    height: 150px; 
+    left: 147px; 
+    top: 122px; 
+    position: absolute; 
+    background: #F2F2F2;
+}
+
+.quPiensasDeEsteJuego{
+    left: 177px; 
+    top: 141px; 
+    position: absolute; 
+    color: #AFAFAF; 
+    font-size: 20px; 
+    font-family: Quicksand; 
+    font-weight: 500; 
+    letter-spacing: 1px; 
+    word-wrap: break-word;
+}
+
+.recomiendasEsteJuego{
+    width: 383px; 
+    height: 37px; 
+    left: 147px; 
+    top:290px; 
+    position: absolute; 
+    color: #06ACC3; 
+    font-size: 16px; 
+    font-family: Quicksand; 
+    font-weight: 700; 
+    word-wrap: break-word;
+}
+
+.btnMeGusta{
+    width: 92px; 
+    height: 63px; 
+    left: 147px; 
+    top: 320px; 
+    position: absolute; 
+    border-radius: 20px
+}
+
+.rectangle104{
+    width: 92px; 
+    height: 63px; 
+    left: 0px; 
+    top: 0px; 
+    position: absolute; 
+    background: #027888; 
+    border-radius: 20px;
+}
+
+.btnMeGusta2{
+    width: 49.68px; 
+    height: 39.71px; 
+    left: 21px; 
+    top: 9px; 
+    position: absolute;
+}
+
+.botonMeGusta{
+    width:92px; 
+    height:63px; 
+    left: 0px; 
+    top: 0px; 
+    position: absolute;  
+}
+
+.btnNoMeGusta{
+    width: 92px; 
+    height: 63px; 
+    left:270px; 
+    top: 328px; 
+    position: absolute; 
+}
+
+.avatarLogueado{
+    width:70px; 
+    height: 70px; 
+    left: 42px; 
+    top: 124px; 
+    position: absolute;
+}
+
+.perfil{
+    width: 70px; 
+    height: 70px; 
+    left: 0px; 
+    top: 0px; 
+    position: absolute; 
+    background: #F2F2F2; 
+    border-radius: 9999px;
+}
+
+.perfil2{
+    width: 63px; 
+    height: 63px; 
+    left: 3px; 
+    top: 3px; 
+    position: absolute; 
+    border-radius: 9999px;
+}
+
+.btnPublicar{
+    width: 186px; 
+    height: 63px; 
+    left:750px; 
+    top: 328px; 
+    position: absolute;  
+}
+
+.botonPublicar{
+    width: 186px; 
+    height: 63px; 
+    left: 0px; 
+    top: 0px; 
+    position: absolute;
+}
+
+
+
+/*-----CONTENEDOR COMENTARIO-------*/
+
+.contenedorComentario{
+    display: flex;
+    justify-content: center;
+}
+.rectangle111{
+    width: 778px;
+    height: 130px; 
+    left: 147px; 
+    top: 122px; 
+    position: absolute; 
+    background: #024852;
+}
+
+.line7{
+    width: 880px;
+    height: 0px; 
+    left: 42px;
+    top: 105px; 
+    position: absolute;
+    background: #D9D9D9; 
+    border: 2px #06ACC3 solid;
+}
+
+#parr2{
+    color: #027888;
+     font-size: 12px; 
+     font-family: Quicksand; 
+     font-weight: 700; 
+     letter-spacing: 1px; 
+     padding-top: 5px;
+     
+     word-wrap: break-word;
+   
+}
+.quPiensasDeEsteJuego2{
+    width:700px;
+    height: 150px;
+    left: 177px; 
+    top: 141px; 
+    position: absolute; 
+    color: #AFAFAF; 
+    font-size: 17px; 
+    font-family: Quicksand; 
+    font-weight: 500; 
+    letter-spacing: 1px; 
+    word-wrap: break-word;
+}
+
+.rectangle112{
+    width: 1000px; 
+    height: 260px; 
+    left: 0px; 
+    top: 31px; 
+    position: absolute; 
+    background: #024852;
+}
+
+  
+
+@media only screen and (min-width: 768px) {
+
+
+
+    /*--------HEADER----------*/  
+    header{
+        padding: 16px;
+    }
+
+    header .logo img{
+        width: 9rem;
+        height: 2.5rem;
+    }
+
+    /*Menú hamburguesa*/
+    
+    #menuToggle input
+    {
+    width: 40px;
+    height: 32px;
+    top: -7px;
+    left: -5px;
+    }
+
+    #menuToggle span
+    {
+    width: 33px;
+    height: 4px;
+    border-radius: 3px;
+    transform-origin: 4px 0px;
+    }
+
+
+    #menuToggle input:checked ~ span
+    {
+    background: #F2F2F2;
+    }
+
+    #menu{
+        width: 350px;
+        margin: -52px 0px 0px -301px;
+    }
+
+    /* -------FOOTER--------- */
+    
+    .container-footer{
+        width: 100;
+        font-size: 16px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+        
+    .container-footer section{
+        margin-right: 2rem;
+    }
+    
+    .logo-footer img{
+    width: 10rem;
+    }
+
+    .ayuda, .idiomas{
+        width: 22%;
+    }
+   
+  
+    
+    .redes ul {
+        margin-top: 1rem;
+    }
+    
+    
+    .info-web { 
+        width: 30%;
+        position: relative;
+        visibility: visible;
+    }
+    
+    .info-app{
+    position: absolute;
+    visibility: hidden;
+    }
+    
+    
+    .copyright{
+    font-size: var(--font-size-s);
+    }
+
+    /*--------SROLL BAR----------*/
+
+    .carrousel-juegos::-webkit-scrollbar {
+        height: 0.65rem;
+    }
+
+
+    /*-----------HOME--------------*/
+    
+    .portada-home{
+    height: 35rem;
+    }
+    
+    .portada-img > .btn-scroll-down {
+    top: 33rem;
+    width: 60px;
+    height: 60px;
+    }
+    
+    .portada-img > .btn-scroll-down:before {
+    width: 42px;
+    height: 42px;
+    }
+    
+    .btn-ver{ 
+    width: 8rem;
+    height: 3rem;
+    top: 12rem;
+    }
+    
+    .btn-ver > a{
+    font-size: 2rem;
+    line-height: 2rem;
+    }
+    
+    
+    .portada-home .novedades-titular{
+    left: 8rem;
+    top: 9rem;
+    font-size: 2.5em;
+    }
+    
+    .portada-home .novedades-titular2{
+    top: 5rem;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    }
+    
+    .container{
+    margin: 2rem 4rem 0rem 4rem;
+    }
+    
+    
+    .carrousel{
+    margin-top: 3.5rem;
+    }
+    
+    .carrousel > h1{
+    font-size: 32px;
+    line-height: 50px;
+    }
+    
+
+    .carrousel-juegos{
+    margin: 0.5rem 0rem;
+    padding: 1rem 0rem 1rem 1rem;
+    
+    }
+    
+    .card{
+    padding: 9px;
+    margin-right: 1rem;
+    
+    }
+
+    .card::before, .card::after{
+    height: 9px;
+    }
+    
+    .card-container::before, .card-container::after{
+    width:9px;
+    }
+
+    
+    .card .card-img-top{ 
+    width: 21rem;
+    height: 13rem;
+    }
+    
+    .card-body{
+    width: 21rem;
+    height: 50px;
+    }
+    
+    .card .card-img-top-cuadrado{ 
+    width: 16rem;
+    height: 13rem;
+    }
+    
+    .card-body-cuadrado{
+    width: 16rem;
+    height: 53px;
+    }
+
+    .card-body h5{
+        width: 89%;
+    }
+    
+    .card-title{
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0.8rem 1rem 3rem 1rem;
+
+    }
+
+    .card-img-buy{
+        width:2rem;
+        height: 2rem;
+        margin-block: auto;
+        margin-right: 8px;
+        z-index: 10;
+    }
+
+    
+
+}
+
 
 @media only screen and (min-width: 768px) {
     /*--------HEADER----------*/  
