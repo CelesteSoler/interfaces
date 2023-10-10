@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="https://kit.fontawesome.com/f4f63da807.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./css/style.css">
+        <title>PlayFun!</title>
+    </head>
+<body class="index">
+    <div id="contenedor-carga" class="contenedor-carga">
+        <div id="carga" class="carga">
+        </div>
+        <div class="porcentaje">
+            <p id="porcentaje-carga">0%</p>
+        </div>
+    </div>
+    <header>
+        <nav role="navigation">
+            <div id="menuToggle">
+                <div class="menu">
+                    <button class="btn"><img class="btnHamb" src="./img/iconoHambur.svg" alt="menu"></button>
+                </div>
+                <div class="menu-navbar">
+                    <ul>
+                        <li class="categorias">Categorias</li>
+                        <li><a href="#"><img src="./img/novedades.png" alt="logo">Novedades</a></li>
+                        <li><a href="#"><img src="./img/iconoTendencias.svg" alt="logo">Tendencias</a></li>
+                        <li><a href="#"><img src="img/clasicos.png" alt="logo">Acción</a></li>
+                        <li><a href="#"><img src="img/aventura.png" alt="logo">Aventuras</a></li>
+                        <li><a href="#"><img src="img/habilidad.png" alt="logo">Casuales</a></li>
+                        <li><a href="#"><img src="img/itemLucha.svg" alt="logo">Lucha</a></li>
+                        <li><a href="#"><img src="img/itemMundoAbierto.svg" alt="logo">Mundo Abierto</a></li>
+                        <li><a href="#"><img src="img/simulacion.png" alt="logo">Puzles</li></a></li>                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="logo">
+            <a href="./userLog.html"> <img src="img/Logo.svg" alt="logo"></a>
+        </div>
+        <div class="perfilCarrito">
+            <nav role="navigation">
+                <div id="menuToggleCarrito">
+                    <div>
+                        <button class="btn"><img class="btnCarrito" src="img/Carrito.svg" alt="carrito"></button>
+                    </div>
+                    <div class="menu-navbar-carrito">
+                        <div class="menuCarrito">
+                            <div class="rectangulo">
+    
+                            </div>
+                            <div class="encabezado">
+                                <div class="rectanguloEncabezado">
+                                </div>
+                                <div class="miCarrito">
+                                    <h1>Mi carrito </h1>
+                                </div>
+                                <div class="contCarrito">
+                                    <img class="imgCarrito" src="./img/menuCarrito/Carrito.svg" alt=""/>
+                                </div>
+                            </div>
+                            <div class="infoJuegoCarrito">
+                                <div>
+                                    <img class="imgJuegoCarrito" src="./img/menuCarrito/juego.svg"/>
+                                </div>
+                                <div class="nombreJuego">
+                                    Starfield    
+                                </div>
+                                <div class="precio">
+                                    ARS$11.999,00
+                                </div>
+                                <div>
+                                    <img class="papelera" src="./img/menuCarrito/papelera.svg" alt=""/>
+                                </div>
+                            </div>
+                            <div class="infoPagoCarrito">
+                                <div class="subtotal">
+                                    Subtotal
+                                </div>
+                                <div class="total">
+                                    Total
+                                </div>
+                                <div class="precioSubtotal">
+                                    ARS$11.999,00
+                                </div>
+                                <div class="precioTotal">
+                                    ARS$11.999,00
+                                </div>
+                                <div class="linea">
+                                </div>               
+                                <div class="btnComprarCarrito">
+                                    <div class="rectangle116">
+                                    </div>
+                                    <div class="comprar">
+                                        <h3>Comprar</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        
+        </nav>
+        <nav role="navigation">
+            <div id="menuTogglePerfil">
+                <div class="menu">
+                    <button class="btn" id="perfil"><img class="btnPerfil" src="img/avatarLogueado.svg" alt="carrito"></button>
+                </div>
+                <div class="menu-navbar-perfil">
+                    <div class="header-menu">
+                        <h2>¡Hola!</h2>
+                    </div>
+                    <ul>
+                        <li><a href="#"><img src="./img/novedades.png" alt="logo">Mi perfil</a></li>
+                        <li><a href="#"><img src="./img/iconoTendencias.svg" alt="logo">Editar perfil</a></li>
+                        <li><a href="#"><img src="img/clasicos.png" alt="logo">Mis carrito</a></li>
+                        <li><a href="#"><img src="img/aventura.png" alt="logo">Mis juegos</a></li>
+                        <li><a href="#"><img src="img/habilidad.png" alt="logo">Configuración</a></li>
+                        <li><a href="#"><img src="img/simulacion.png" alt="logo">Ayuda</a></li>                        
+                    </ul>
+                    <div class="btnCerrarSesion">
+                        <button><a href="login.html"><img src="./img/logoout.png" alt="logo">Cerrar sesión</a></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="fndImgGrande" >
+        <div class="estiloTituloDestacado">
+            <h2>DESTACADO DEL MES</h2>  
+        </div>
+        <div class="infoImgCentral">
+            <p>Ya disponible</p>
+            <div>
+                <button class="btn-agregarCarrito">Agregar al carrito </button>
+                <h3>$9.999</h3>
+            </div>
+        </div>
+        <div class="contenedor">
+            <div>
+                <img class="imgCarruselGrande1" src="img/imgCarruselGrande1.svg" alt="">
+            </div>
+            <div class="tituloJuego">
+                <h1>Baldur’s Gate 3</h1>
+            </div-->
+            <div class="contenedor1">
+                <div>
+                    <div class="contenedor2">
+                        <div>
+                            <img src="img/imgCarruselGrande2.svg" alt="">
+                        </div>
+                        <div>
+                            <img src="img/imgCarruselGrande3.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="contenedor2">
+                        <div>
+                            <img src="img/imgCarruselGrande4.svg" alt="">
+                        </div-->
+                        <div>
+                            <h2>Ya disponible</h2>
+                            <img class="imgLoMasVendido" src="img/LO MAS VENDIDO.svg" alt="">
+                            <h3>$9.999</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="continuarJugando">
+        <div class="titulo">
+            <h3>Continuar jugando</h3>
+        </div>
+        <div class="carrusel">
+            <button class="btnScrollIzq" id="btnScrollIzq" role="button"><i class="fa-solid fa-angle-left"></i></button>
+            <div class="containerCarrusel">
+                <div class="contCards">
+                    <div class="cardHome">
+                        <a href="./game-4inLIne.html"><img src="img/carruselContinuarJugando/1.svg" alt=""></a>
+                        <div class="capa">
+                            <button>Jugar <i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="cardHome">
+                        <a href="#"><img src="img/carruselContinuarJugando/2.svg" alt=""></a>
+                        <div class="capa">
+                            <button>Jugar <i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="cardHome">
+                        <a href="#"><img src="img/carruselContinuarJugando/3.svg" alt=""></a>
+                        <div class="capa">
+                            <button>Jugar <i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="cardHome">
+                        <a href="#"><img src="img/carruselContinuarJugando/4.svg" alt=""></a>
+                        <div class="capa">
+                            <button>Jugar <i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="cardHome">
+                        <a href="#"><img src="img/carruselContinuarJugando/5.svg" alt=""></a>
+                        <div class="capa">
+                            <button>Jugar <i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="cardHome">
+                        <a href="#"><img src="img/carruselContinuarJugando/6.svg" alt=""></a>
+                        <div class="capa">
+                            <button>Jugar <i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="cardHome">
+                        <a href="#"><img src="img/carruselContinuarJugando/7.svg" alt=""></a>
+                        <div class="capa">
+                            <button>Jugar <i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btnScrollDer" id="btnScrollDer" role="button"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+    </section>
+    <section class="carruselCategorias">
+        <div class="titulo">
+            <h3>Novedades</h3>
+        </div>
+        <div class="carrusel">
+            <button class="btnScrollIzq" id="btnScrollIzq" role="button"><i class="fa-solid fa-angle-left"></i></button>
+            <div class="containerCarrusel">
+                <div class="contCards">
+                    <div class="cardHome">
+                        <a href="#"><img src="img/carruselNovedades/1.svg" alt=""></a>
+                        <div class="capa">
+                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="cardHome">
+                        <a href="#"><img src="img/carruselNovedades/2.svg" alt=""></a>
+                        <div class="capa">
+                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="cardHome">
+                        <a href="#"><img src="img/carruselNovedades/3.svg" alt=""></a>
+                        <div class="capa">
+                            <button>Jugar <i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="cardHome">
+                        <a href="#"><img src="img/carruselNovedades/4.svg" alt=""></a>
+                        <div class="capa">
+                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="cardHome">
+                        <a href="#"><img src="img/carruselNovedades/5.svg" alt=""></a>
+                        <div class="capa">
+                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="cardHome">
+                        <a href="#"><img src="img/carruselNovedades/6.svg" alt=""></a>
+                        <div class="capa">
+                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="cardHome">
+                        <a href="#"><img src="img/carruselNovedades/7.svg" alt=""></a>
+                        <div class="capa">
+                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btnScrollDer" id="btnScrollDer" role="button"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+    </section>
+    <section class="carruselCategorias">
+        <div class="titulo">
+            <h3>Acción</h3>
+        </div>
+        <div class="carrusel">
+            <button class="btnScrollIzq" id="btnScrollIzq" role="button"><i class="fa-solid fa-angle-left"></i></button>
+            <div class="containerCarrusel">
+                <div class="contCards">
+                    <div class="card">
+                        <a href="#"><img src="img/carruselAccion/1.svg" alt=""></a>
+                        <div class="capa">
+                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="cardHome">
+                        <a href="#"><img src="img/carruselAccion/2.svg" alt=""></a>
+                        <div class="capa">
+                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="cardHome">
+                        <a href="#"><img src="img/carruselAccion/3.svg" alt=""></a>
+                        <div class="capa">
+                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="cardHome">
+                        <a href="#"><img src="img/carruselAccion/4.svg" alt=""></a>
+                        <div class="capa">
+                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="cardHome">
+                        <a href="#"><img src="img/carruselAccion/5.svg" alt=""></a>
+                        <div class="capa">
+                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="cardHome">
+                        <a href="#"><img src="img/carruselAccion/6.svg" alt=""></a>
+                        <div class="capa">
+                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="cardHome">
+                        <a href="#"><img src="img/carruselAccion/7.svg" alt=""></a>
+                        <div class="capa">
+                            <button>Jugar <i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btnScrollDer" id="btnScrollDer" role="button"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+    </section>
+    <section class="carruselCategorias">
+        <div class="titulo">
+            <h3>Aventura</h3>
+        </div>
+        <div class="carrusel">
+            <button class="btnScrollIzq" id="btnScrollIzq" role="button"><i class="fa-solid fa-angle-left"></i></button>
+            <div class="containerCarrusel">
+                <div class="contCards">
+                    <div class="cardHome">
+                        <a href="#"><img src="img/carruselAventura/1.svg" alt=""></a>
+                        <div class="capa">
+                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="cardHome">
+                        <a href="#"><img src="img/carruselAventura/2.svg" alt=""></a>
+                        <div class="capa">
+                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="cardHome">
+                        <a href="#"><img src="img/carruselAventura/3.svg" alt=""></a>
+                        <div class="capa">
+                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="cardHome">
+                        <a href="#"><img src="img/carruselAventura/4.svg" alt=""></a>
+                        <div class="capa">
+                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="cardHome">
+                        <a href="#"><img src="img/carruselAventura/5.svg" alt=""></a>
+                        <div class="capa">
+                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="cardHome">
+                        <a href="#"><img src="img/carruselAventura/6.svg" alt=""></a>
+                        <div class="capa">
+                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="cardHome">
+                        <a href="#"><img src="img/carruselAventura/7.svg" alt=""></a>
+                        <div class="capa">
+                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btnScrollDer" id="btnScrollDer" role="button"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+    </section>
+    <section class="carruselCategorias">
+        <div class="titulo">
+            <h3>Explora por categorías</h3>
+        </div>
+        <div class="carrusel">
+            <button class="btnScrollIzq" id="btnScrollIzq" role="button"><i class="fa-solid fa-angle-left"></i></button>
+            <div class="containerCarrusel">
+                <div class="contCards">
+                    <div class="cardHome">
+                        <a href="#"><img src="img/carruselCategoria/1.svg" alt=""></a>
+                    </div>
+                    <div class="cardHome">
+                        <a href="#"><img src="img/carruselCategoria/2.svg" alt=""></a>
+                    </div>
+                    <div class="cardHome">
+                        <a href="#"><img src="img/carruselCategoria/3.svg" alt=""></a>
+                    </div>
+                    <div class="cardHome">
+                        <a href="#"><img src="img/carruselCategoria/4.svg" alt=""></a>
+                    </div>
+                    <div class="cardHome">
+                        <a href="#"><img src="img/carruselCategoria/5.svg" alt=""></a>
+                    </div>
+                    <div class="cardHome">
+                        <a href="#"><img src="img/carruselCategoria/6.svg" alt=""></a>
+                    </div>
+                    <div class="cardHome">
+                        <a href="#"><img src="img/carruselCategoria/7.svg" alt=""></a>
+                    </div>
+                    <div class="cardHome">
+                        <a href="#"><img src="img/carruselCategoria/8.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <button class="btnScrollDer" id="btnScrollDer" role="button"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+    </section>
+    <footer>
+        <div class="container-footer">
+
+            <section class="info-web">
+                    <h4>¿Quienes somos?</h4>
+                    <p class="textoFooter">Play Fun! es una plataforma de juegos en línea. Fue fundada en 2013 por Raf Mertens y, desde entonces, la plataforma ha crecido hasta llegar a más de 15 millones de usuarios mensuales.
+                    Tenemos un objetivo muy sencillo: crear una plataforma de juegos .
+                    </p>
+            </section>
+
+            <section class="info-app">
+                <h4>¿Quienes somos?</h4>
+                <p class="textoFooter">Play Fun! es una plataforma de juegos en línea. Fue fundada en 2013 por Raf Mertens  y, desde entonces, la plataforma ha crecido hasta llegar a más de 15 millones de usuarios mensuales.
+                </p>
+            </section>
+
+
+            <section class="ayuda">
+                <h4>Ayuda</h4>
+                <ul>
+                    <li class="textoFooter">Términos de uso</li>
+                    <li class="textoFooter">Politicas de privacidad</li>
+                    <li  class="textoFooter" >Información para padres</li>
+                    <li  class="textoFooter">Cookies</li>
+                    <li  class="textoFooter">Concentimiento de cookies</li>
+                </ul>
+            </section>
+
+
+            <section class="idiomas">
+                <h4>Idiomas</h4>
+                <ul>
+                    <li>English</li>
+                    <li>British Englis</li>
+                    <li>Deutsch</li>
+                    <li>Français</li>
+                    <li>Italiano</li>
+                    <li>Português</li>
+                </ul>
+            </section>
+
+         
+               
+             <section class="redes">
+                <div class="logo-footer">
+                    <img src="img/Logo.png" alt="logo">
+                </div>
+                <div class="containRedes">
+                    <div class="redess">
+                        <p>Seguinos en nuestras</p>
+                    </div>
+                    <div class="redesSociales">
+                        <p> redes sociales</p>
+                    </div>
+                </div>                
+                    <ul>
+                        <li><img src="img/Share.png" alt="logo"></li>
+                        <li><img src="img/Instagram.png" alt="logo"></li>
+                        <li><img src="img/TikTok.png" alt="logo"></li>
+                        <li><img src="img/Twitter.png" alt="logo"></li>
+                        
+                    </ul>
+            </section>
+     
+             
+            <div class="copyright">
+            <h5 >Copyright 2023  Todos los derechos reservados</h5>
+            </div>
+        </div>   
+    </footer>
+
+    <script src="./js/carruseles.js"></script>
+    <script src="./js/loading.js"></script>
+    <script src="./js/menuDesplegable.js"></script>
+    <script src="./js/menuPerfil.js"></script>
+    <script src="./js/menuCarrito.js"></script>
+    
+    
+</body>
+</html>

@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <script src="https://kit.fontawesome.com/f4f63da807.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="./css/style.css">
-        <title>PlayFun!</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/f4f63da807.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Home - Registro</title>
+</head>
+
 <body class="index">
     <div id="contenedor-carga" class="contenedor-carga">
         <div id="carga" class="carga">
         </div>
+        
         <div class="porcentaje">
-            <p id="porcentaje-carga">0%</p>
+        <p id="porcentaje-carga">0%</p>
         </div>
     </div>
+
     <header>
         <nav role="navigation">
             <div id="menuToggle">
@@ -31,8 +35,8 @@
                         <li><a href="#"><img src="img/clasicos.png" alt="logo">Acción</a></li>
                         <li><a href="#"><img src="img/aventura.png" alt="logo">Aventuras</a></li>
                         <li><a href="#"><img src="img/habilidad.png" alt="logo">Casuales</a></li>
-                        <li><a href="#"><img src="img/itemLucha.svg" alt="logo">Lucha</a></li>
-                        <li><a href="#"><img src="img/itemMundoAbierto.svg" alt="logo">Mundo Abierto</a></li>
+                        <li><a href="#"><img src="img/simulacion.png" alt="logo">Lucha</a></li>
+                        <li><a href="#"><img src="img/simulacion.png" alt="logo">Mundo Abierto</a></li>
                         <li><a href="#"><img src="img/simulacion.png" alt="logo">Puzles</li></a></li>                        
                     </ul>
                 </div>
@@ -66,7 +70,7 @@
                                 <div>
                                     <img class="imgJuegoCarrito" src="./img/menuCarrito/juego.svg"/>
                                 </div>
-                                <div class="nombreJuego">
+                                <div class="juego">
                                     Starfield    
                                 </div>
                                 <div class="precio">
@@ -108,7 +112,7 @@
         <nav role="navigation">
             <div id="menuTogglePerfil">
                 <div class="menu">
-                    <button class="btn" id="perfil"><img class="btnPerfil" src="img/avatarLogueado.svg" alt="carrito"></button>
+                    <button class="btn" id="perfil"><img class="btnPerfil" src="img/avatarNoLog.png" alt="carrito"></button>
                 </div>
                 <div class="menu-navbar-perfil">
                     <div class="header-menu">
@@ -129,382 +133,129 @@
             </div>
         </nav>
     </header>
-    <section class="fndImgGrande" >
-        <div class="estiloTituloDestacado">
-            <h2>DESTACADO DEL MES</h2>  
+
+    <!-- ACA EMPIEZA LA PÁGINA DE REGISTRO, HASTA ARRIBA EL HEADER-->
+    
+    <a class="boton-volver" href="index.html">VOLVER AL HOME</a>
+
+    <div class=contenedor-registro>
+        <div class="contenedor-texto-registro" id="contenedor-titulo">
+            <p class="texto-registro">Crea tu cuenta en PlayFun</p>
+            <p class="texto-registro texto-registro-azul">¡Es gratis!</p>
         </div>
-        <div class="infoImgCentral">
-            <p>Ya disponible</p>
+
+        <!-- la X de cierre creo
+        <div style="width: 20px; height: 20px; left: 581px; top: 15px; position: absolute; background: #F2F2F2; border-radius: 5px; overflow: hidden">
+            <div style="width: 20px; height: 20px; left: 0px; top: 0px; position: absolute"></div>
+            <div style="width: 10.99px; height: 10.99px; left: 4.51px; top: 4.51px; position: absolute; background: #0D0D0D"></div>
+        </div> -->
+        
+        <form class="contenedor-form" action="" id="js-formulario">
             <div>
-                <button class="btn-agregarCarrito">Agregar al carrito </button>
-                <h3>$9.999</h3>
-            </div>
-        </div>
-        <div class="contenedor">
-            <div>
-                <img class="imgCarruselGrande1" src="img/imgCarruselGrande1.svg" alt="">
-            </div>
-            <div class="tituloJuego">
-                <h1>Baldur’s Gate 3</h1>
-            </div-->
-            <div class="contenedor1">
-                <div>
-                    <div class="contenedor2">
-                        <div>
-                            <img src="img/imgCarruselGrande2.svg" alt="">
-                        </div>
-                        <div>
-                            <img src="img/imgCarruselGrande3.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="contenedor2">
-                        <div>
-                            <img src="img/imgCarruselGrande4.svg" alt="">
-                        </div-->
-                        <div>
-                            <h2>Ya disponible</h2>
-                            <img class="imgLoMasVendido" src="img/LO MAS VENDIDO.svg" alt="">
-                            <h3>$9.999</h3>
-                        </div>
-                    </div>
+                <label class="campo-registro-label" for="nombre">Nombre<span class="asterisco">*</span></label>
+                <input class="campo-registro-texto" type="text" name="nombre" placeholder="Escriba su nombre" required>
+
+                <label class="campo-registro-label" for="apellido">Apellido<span class="asterisco">*</span></label>
+                <input class="campo-registro-texto" type="text" name="apellido" placeholder="Escriba su apellido" required>
+
+                <label class="campo-registro-label" for="usuario">Nombre de Usuario<span class="asterisco">*</span></label>
+                <input class="campo-registro-texto" type="text" name="usuario" placeholder="Escriba su nickname" required>
+
+                <label class="campo-registro-label" for="edad">Edad<span class="asterisco">*</span></label>
+                <input class="campo-registro-texto" type="text" name="edad" placeholder="Escriba su edad" required>
+
+                <label class="campo-registro-label" for="email">Email<span class="asterisco">*</span></label>
+                <input class="campo-registro-texto" type="email" name="email" placeholder="Escriba su email" required>
+
+                <label class="campo-registro-label" for="password">Contraseña<span class="asterisco">*</span></label>
+                <input class="campo-registro-texto" type="password" name="password" placeholder="Escriba su contraseña" required>
+
+                <label class="campo-registro-label" for="repitePassword">Repetir contraseña<span class="asterisco">*</span></label>
+                <input class="campo-registro-texto" type="password" name="repitePassword" placeholder="Vuelva a escribir su contraseña" required>
+
+                <!-- captcha -->
+                <div class="contenedor-captcha">
+                    <p>Captcha</p>
                 </div>
+
+                <!--crear cuenta boton-->
+                
+                <button class="boton-crear-cuenta"><a href="login.html">Crear cuenta</a></button>
             </div>
-        </div>
-    </section>
-    <section class="continuarJugando">
-        <div class="titulo">
-            <h3>Continuar jugando</h3>
-        </div>
-        <div class="carrusel">
-            <button class="btnScrollIzq" id="btnScrollIzq" role="button"><i class="fa-solid fa-angle-left"></i></button>
-            <div class="containerCarrusel">
-                <div class="contCards">
-                    <div class="cardHome">
-                        <a href="./game-4inLIne.html"><img src="img/carruselContinuarJugando/1.svg" alt=""></a>
-                        <div class="capa">
-                            <button>Jugar <i class="fa-solid fa-play"></i></button>
-                        </div>
-                    </div>
-                    <div class="cardHome">
-                        <a href="#"><img src="img/carruselContinuarJugando/2.svg" alt=""></a>
-                        <div class="capa">
-                            <button>Jugar <i class="fa-solid fa-play"></i></button>
-                        </div>
-                    </div>
-                    <div class="cardHome">
-                        <a href="#"><img src="img/carruselContinuarJugando/3.svg" alt=""></a>
-                        <div class="capa">
-                            <button>Jugar <i class="fa-solid fa-play"></i></button>
-                        </div>
-                    </div>
-                    <div class="cardHome">
-                        <a href="#"><img src="img/carruselContinuarJugando/4.svg" alt=""></a>
-                        <div class="capa">
-                            <button>Jugar <i class="fa-solid fa-play"></i></button>
-                        </div>
-                    </div>
-                    <div class="cardHome">
-                        <a href="#"><img src="img/carruselContinuarJugando/5.svg" alt=""></a>
-                        <div class="capa">
-                            <button>Jugar <i class="fa-solid fa-play"></i></button>
-                        </div>
-                    </div>
-                    <div class="cardHome">
-                        <a href="#"><img src="img/carruselContinuarJugando/6.svg" alt=""></a>
-                        <div class="capa">
-                            <button>Jugar <i class="fa-solid fa-play"></i></button>
-                        </div>
-                    </div>
-                    <div class="cardHome">
-                        <a href="#"><img src="img/carruselContinuarJugando/7.svg" alt=""></a>
-                        <div class="capa">
-                            <button>Jugar <i class="fa-solid fa-play"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="btnScrollDer" id="btnScrollDer" role="button"><i class="fa-solid fa-angle-right"></i></button>
-        </div>
-    </section>
-    <section class="carruselCategorias">
-        <div class="titulo">
-            <h3>Novedades</h3>
-        </div>
-        <div class="carrusel">
-            <button class="btnScrollIzq" id="btnScrollIzq" role="button"><i class="fa-solid fa-angle-left"></i></button>
-            <div class="containerCarrusel">
-                <div class="contCards">
-                    <div class="cardHome">
-                        <a href="#"><img src="img/carruselNovedades/1.svg" alt=""></a>
-                        <div class="capa">
-                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
-                        </div>
-                    </div>
-                    <div class="cardHome">
-                        <a href="#"><img src="img/carruselNovedades/2.svg" alt=""></a>
-                        <div class="capa">
-                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
-                        </div>
-                    </div>
-                    <div class="cardHome">
-                        <a href="#"><img src="img/carruselNovedades/3.svg" alt=""></a>
-                        <div class="capa">
-                            <button>Jugar <i class="fa-solid fa-play"></i></button>
-                        </div>
-                    </div>
-                    <div class="cardHome">
-                        <a href="#"><img src="img/carruselNovedades/4.svg" alt=""></a>
-                        <div class="capa">
-                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
-                        </div>
-                    </div>
-                    <div class="cardHome">
-                        <a href="#"><img src="img/carruselNovedades/5.svg" alt=""></a>
-                        <div class="capa">
-                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
-                        </div>
-                    </div>
-                    <div class="cardHome">
-                        <a href="#"><img src="img/carruselNovedades/6.svg" alt=""></a>
-                        <div class="capa">
-                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
-                        </div>
-                    </div>
-                    <div class="cardHome">
-                        <a href="#"><img src="img/carruselNovedades/7.svg" alt=""></a>
-                        <div class="capa">
-                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="btnScrollDer" id="btnScrollDer" role="button"><i class="fa-solid fa-angle-right"></i></button>
-        </div>
-    </section>
-    <section class="carruselCategorias">
-        <div class="titulo">
-            <h3>Acción</h3>
-        </div>
-        <div class="carrusel">
-            <button class="btnScrollIzq" id="btnScrollIzq" role="button"><i class="fa-solid fa-angle-left"></i></button>
-            <div class="containerCarrusel">
-                <div class="contCards">
-                    <div class="card">
-                        <a href="#"><img src="img/carruselAccion/1.svg" alt=""></a>
-                        <div class="capa">
-                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
-                        </div>
-                    </div>
-                    <div class="cardHome">
-                        <a href="#"><img src="img/carruselAccion/2.svg" alt=""></a>
-                        <div class="capa">
-                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
-                        </div>
-                    </div>
-                    <div class="cardHome">
-                        <a href="#"><img src="img/carruselAccion/3.svg" alt=""></a>
-                        <div class="capa">
-                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
-                        </div>
-                    </div>
-                    <div class="cardHome">
-                        <a href="#"><img src="img/carruselAccion/4.svg" alt=""></a>
-                        <div class="capa">
-                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
-                        </div>
-                    </div>
-                    <div class="cardHome">
-                        <a href="#"><img src="img/carruselAccion/5.svg" alt=""></a>
-                        <div class="capa">
-                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
-                        </div>
-                    </div>
-                    <div class="cardHome">
-                        <a href="#"><img src="img/carruselAccion/6.svg" alt=""></a>
-                        <div class="capa">
-                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
-                        </div>
-                    </div>
-                    <div class="cardHome">
-                        <a href="#"><img src="img/carruselAccion/7.svg" alt=""></a>
-                        <div class="capa">
-                            <button>Jugar <i class="fa-solid fa-play"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="btnScrollDer" id="btnScrollDer" role="button"><i class="fa-solid fa-angle-right"></i></button>
-        </div>
-    </section>
-    <section class="carruselCategorias">
-        <div class="titulo">
-            <h3>Aventura</h3>
-        </div>
-        <div class="carrusel">
-            <button class="btnScrollIzq" id="btnScrollIzq" role="button"><i class="fa-solid fa-angle-left"></i></button>
-            <div class="containerCarrusel">
-                <div class="contCards">
-                    <div class="cardHome">
-                        <a href="#"><img src="img/carruselAventura/1.svg" alt=""></a>
-                        <div class="capa">
-                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
-                        </div>
-                    </div>
-                    <div class="cardHome">
-                        <a href="#"><img src="img/carruselAventura/2.svg" alt=""></a>
-                        <div class="capa">
-                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
-                        </div>
-                    </div>
-                    <div class="cardHome">
-                        <a href="#"><img src="img/carruselAventura/3.svg" alt=""></a>
-                        <div class="capa">
-                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
-                        </div>
-                    </div>
-                    <div class="cardHome">
-                        <a href="#"><img src="img/carruselAventura/4.svg" alt=""></a>
-                        <div class="capa">
-                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
-                        </div>
-                    </div>
-                    <div class="cardHome">
-                        <a href="#"><img src="img/carruselAventura/5.svg" alt=""></a>
-                        <div class="capa">
-                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
-                        </div>
-                    </div>
-                    <div class="cardHome">
-                        <a href="#"><img src="img/carruselAventura/6.svg" alt=""></a>
-                        <div class="capa">
-                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
-                        </div>
-                    </div>
-                    <div class="cardHome">
-                        <a href="#"><img src="img/carruselAventura/7.svg" alt=""></a>
-                        <div class="capa">
-                            <button>Agregar al carrito <i class="fa-solid fa-play"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="btnScrollDer" id="btnScrollDer" role="button"><i class="fa-solid fa-angle-right"></i></button>
-        </div>
-    </section>
-    <section class="carruselCategorias">
-        <div class="titulo">
-            <h3>Explora por categorías</h3>
-        </div>
-        <div class="carrusel">
-            <button class="btnScrollIzq" id="btnScrollIzq" role="button"><i class="fa-solid fa-angle-left"></i></button>
-            <div class="containerCarrusel">
-                <div class="contCards">
-                    <div class="cardHome">
-                        <a href="#"><img src="img/carruselCategoria/1.svg" alt=""></a>
-                    </div>
-                    <div class="cardHome">
-                        <a href="#"><img src="img/carruselCategoria/2.svg" alt=""></a>
-                    </div>
-                    <div class="cardHome">
-                        <a href="#"><img src="img/carruselCategoria/3.svg" alt=""></a>
-                    </div>
-                    <div class="cardHome">
-                        <a href="#"><img src="img/carruselCategoria/4.svg" alt=""></a>
-                    </div>
-                    <div class="cardHome">
-                        <a href="#"><img src="img/carruselCategoria/5.svg" alt=""></a>
-                    </div>
-                    <div class="cardHome">
-                        <a href="#"><img src="img/carruselCategoria/6.svg" alt=""></a>
-                    </div>
-                    <div class="cardHome">
-                        <a href="#"><img src="img/carruselCategoria/7.svg" alt=""></a>
-                    </div>
-                    <div class="cardHome">
-                        <a href="#"><img src="img/carruselCategoria/8.svg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <button class="btnScrollDer" id="btnScrollDer" role="button"><i class="fa-solid fa-angle-right"></i></button>
-        </div>
-    </section>
+        </form>
+
+        <div id="spinner" class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        <p class="mensaje-usuario-creado" id="js-mensaje-usuario"></p>
+
+        <!-- ya tienes una cuenta -->
+        <a class="ya-tienes-una-cuenta" href="login.html" id="ya-tienes">¿Ya tienes una cuenta? <br> ¡Inicia sesión aquí!</a>
+    </div>
+    
+    <!-- HASTA ACÁ LA PÁGINA DE REGISTRO, DE ACÁ PARA ABAJO EL FOOTER-->
+   
     <footer>
-        <div class="container-footer">
-
-            <section class="info-web">
+        <section class="container-footer">
+            <div class="info-app">
+                <div class="about">
                     <h4>¿Quienes somos?</h4>
-                    <p class="textoFooter">Play Fun! es una plataforma de juegos en línea. Fue fundada en 2013 por Raf Mertens y, desde entonces, la plataforma ha crecido hasta llegar a más de 15 millones de usuarios mensuales.
-                    Tenemos un objetivo muy sencillo: crear una plataforma de juegos .
+                    <p >Play Fun! es una plataforma de juegos en línea. Fue fundada en 2013 por Raf Mertens  y, desde entonces, la plataforma ha crecido hasta llegar a más de 15 millones de usuarios mensuales.
                     </p>
-            </section>
-
-            <section class="info-app">
-                <h4>¿Quienes somos?</h4>
-                <p class="textoFooter">Play Fun! es una plataforma de juegos en línea. Fue fundada en 2013 por Raf Mertens  y, desde entonces, la plataforma ha crecido hasta llegar a más de 15 millones de usuarios mensuales.
-                </p>
-            </section>
-
-
-            <section class="ayuda">
-                <h4>Ayuda</h4>
-                <ul>
-                    <li class="textoFooter">Términos de uso</li>
-                    <li class="textoFooter">Politicas de privacidad</li>
-                    <li  class="textoFooter" >Información para padres</li>
-                    <li  class="textoFooter">Cookies</li>
-                    <li  class="textoFooter">Concentimiento de cookies</li>
-                </ul>
-            </section>
-
-
-            <section class="idiomas">
-                <h4>Idiomas</h4>
-                <ul>
-                    <li>English</li>
-                    <li>British Englis</li>
-                    <li>Deutsch</li>
-                    <li>Français</li>
-                    <li>Italiano</li>
-                    <li>Português</li>
-                </ul>
-            </section>
-
-         
-               
-             <section class="redes">
-                <div class="logo-footer">
-                    <img src="img/Logo.png" alt="logo">
                 </div>
-                <div class="containRedes">
-                    <div class="redess">
-                        <p>Seguinos en nuestras</p>
-                    </div>
-                    <div class="redesSociales">
-                        <p> redes sociales</p>
-                    </div>
-                </div>                
+                <div class="ayuda">
+                    <h4>Ayuda</h4>
                     <ul>
-                        <li><img src="img/Share.png" alt="logo"></li>
-                        <li><img src="img/Instagram.png" alt="logo"></li>
-                        <li><img src="img/TikTok.png" alt="logo"></li>
-                        <li><img src="img/Twitter.png" alt="logo"></li>
-                        
+                        <li>Términos de uso</li>
+                        <li>Politicas de privacidad</li>
+                        <li>Información para padres</li>
+                        <li>Cookies</li>
+                        <li>Concentimiento de cookies</li>
                     </ul>
-            </section>
-     
-             
-            <div class="copyright">
-            <h5 >Copyright 2023  Todos los derechos reservados</h5>
+                </div>
+                <div class="idiomas">
+                    <h4>Idiomas</h4>
+                    <ul>
+                        <li>English</li>
+                        <li>British Englis</li>
+                        <li>Deutsch</li>
+                        <li>Français</li>
+                        <li>Italiano</li>
+                        <li>Português</li>
+                    </ul>
+                </div>
             </div>
-        </div>   
+        </section>     
+        <section class="redes">
+            <div class="footerRedes">
+                <div class="redesTitulo">
+                    <div><h3>Seguinos en nuestras</h3></div>
+                    <div id="redsoc"><h3> redes sociales</h3></div>
+                </div> 
+                <div >
+                    <div>
+                        <ul id="li-redes">
+                            <li><img src="img/Share.png" alt="logo"></li>
+                            <li><img src="img/Instagram.png" alt="logo"></li>
+                            <li><img src="img/TikTok.png" alt="logo"></li>
+                            <li><img src="img/Twitter.png" alt="logo"></li>
+                        </ul>
+                    </div>
+                    <div class="logo-footer">
+                        <img src="img/Logo.svg" alt="logo">
+                    </div> 
+                </div>
+            </div>      
+        </section>
+        <div class="copyright">
+            <h5 >Copyright 2023  Todos los derechos reservados</h5>
+        </div>  
     </footer>
-
-    <script src="./js/carruseles.js"></script>
-    <script src="./js/loading.js"></script>
+   
+    
     <script src="./js/menuDesplegable.js"></script>
     <script src="./js/menuPerfil.js"></script>
     <script src="./js/menuCarrito.js"></script>
-    
-    
+    <script src="./js/loading.js"></script>
+    <script src=".js/register.js"></script>
+    <script src=".js/confetti-button.js"></script>
 </body>
 </html>
