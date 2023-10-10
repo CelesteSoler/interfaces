@@ -15,6 +15,6 @@ function registrarUsuario(event){
     spinner.style.display="inline-block";
     let mensajeUsuarioCreado = document.querySelector('#js-mensaje-usuario');
     mensajeUsuarioCreado.innerHTML = "Su usuario ha sido creado con éxito! Serás redirigido al home";
-    setTimeout((()=>window.location.href="index.html"), 5000)
+    setTimeout((()=>window.location.href="userLog.html"), 5000)
 
 }

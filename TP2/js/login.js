@@ -23,6 +23,6 @@ function iniciarSesion(event){
 
     let mensajeIniciandoSesion = document.querySelector('#js-iniciando-sesion');
     mensajeIniciandoSesion.innerHTML = "Has iniciado sesión con éxito! Serás redirigido al home";
-    setTimeout((()=>window.location.href="index.html"), 5000)
+    setTimeout((()=>window.location.href="userLog.html"), 5000)
 
 }
