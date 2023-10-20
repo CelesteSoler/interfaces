@@ -1,4 +1,4 @@
-const fila = document.querySelectorAll(".containerCarrusel");
+const fila = document.querySelectorAll(".contCards");
 
     const btnScrollDer = document.querySelectorAll("#btnScrollDer");
     const btnScrollIzq = document.querySelectorAll("#btnScrollIzq");
@@ -16,3 +16,6 @@ const fila = document.querySelectorAll(".containerCarrusel");
             carrusel.scrollLeft -= (carrusel.offsetWidth - 383);
         });
     }
+
+
+    

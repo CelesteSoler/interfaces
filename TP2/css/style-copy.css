@@ -419,9 +419,6 @@ header .menu-navbar-perfil li a img{
     letter-spacing: 1px
 }
 
-
-
-
 /*-------------------------Imagen principal------------------------------*/
 
 .fndImgGrande{
@@ -485,8 +482,8 @@ h2{
     flex-direction: column;
 }
 
-/*----------------------CARDS-----------------------*/
 
+/*-------------------CARDS------------------------------*/
 .cardHome{
     min-width: 40%; 
     position: relative;
@@ -525,7 +522,7 @@ h2{
     display: flex;
 }
 
-.cardHome .capa button{
+.cardHome .capa button {
     background-color: #DC036D;
     border-radius: 25px;
     font-size: 10px;
@@ -534,16 +531,6 @@ h2{
     transition: all 400ms;
     cursor: pointer;
 }
-
-.cardHome .capa a{
-    padding: 10px 25px;
-    font-size: 18px;
-    border-radius: 3px;
-    color: #D0D0D0;
-    transition: all 400ms;
-    cursor: pointer;
-}
-
 
 .cardHome .capa button:hover{
     background-color: #900047;
@@ -554,7 +541,7 @@ h2{
     visibility: visible;
 }
 
-.cardHome:hover >  a img{
+.cardHome:hover > a img{
     transform: scale(1.1);
 }
 
@@ -598,14 +585,6 @@ h2{
     cursor: pointer;
 }
 
-.cardHome1 .capa a{
-    padding: 10px 25px;
-    font-size: 18px;
-    border-radius: 3px;
-    color: #D0D0D0;
-    transition: all 400ms;
-    cursor: pointer;
-}
 
 .cardHome1 .capa a img:hover{
     background-color: #900047;
@@ -620,24 +599,7 @@ h2{
     transform: scale(1.1);
 }
 
-/*----------barra scroll---------------------------*/
-::-webkit-scrollbar {
-    height: 7px;
-    width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #DC036D;
-    border-radius: 3px;
-}
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 10px grey;
-    border-radius: 10px;
-}
-
-
-/*-----------------------CARRUSEL----------------------*/
-
+/*----------------------CARRUSEL----------------------------------*/
 .continuarJugando{
     flex-direction: column;
     border-radius: 12px;
@@ -689,6 +651,7 @@ h2{
     flex-wrap:row nowrap;
     overflow-x: scroll;
     scroll-behavior: smooth;
+    
 }
 
 .carrusel .btnScrollIzq,
@@ -797,6 +760,8 @@ h2{
         transform: skewX(0deg);
     }
 }
+
+
 /*--------------------------FOOTER---------------------------*/
 footer{
     width: 100%;
@@ -918,8 +883,22 @@ font-size: var(--font-size-s);
 }
 
 
-@media only screen and (min-width:798px){
-    /*----------Header-----------------*/
+@media only screen and (min-width:1440px){
+
+    /*-----------CONTENEDOR CARGA----------*/
+    .contenedor-carga {
+        height: 100%;
+        width: 87%;
+        z-index: 100;
+        background-color: rgb(7, 7, 7,0.9);
+        position: fixed;
+        transition: all 1s ease;
+        overflow: hidden;
+        visibility: visible;
+    }
+
+
+    /*----------HEADER-----------------*/
     header{
         z-index: 3;
         background-color: #DC036D;
@@ -1288,6 +1267,13 @@ font-size: var(--font-size-s);
     .btn-agregarCarrito:hover{
         background-color: #9E0A3C;
     }
+
+    
+    /*------------CARDS PRIMER CARRUSEL-------------*/
+    .cardHome1{
+        min-width: 20%;
+    }
+
     .continuarJugando{
         display: flex;
         flex-direction: column;
@@ -1300,18 +1286,11 @@ font-size: var(--font-size-s);
         padding-bottom: 6px;
     }
     
-    .btn-agregarCarrito{
-        font-size: 15px;
-    }
-    /*------------CARDS PRIMER CARRUSEL-------------*/
-    .cardHome1{
+    /*------------CARDS-------------*/
+    .cardHome{
         min-width: 20%;
     }
-    
-     /*------------CARDS-------------*/
-     .cardHome{
-        min-width: 20%;
-    }
+
     /*-------------CARRUSEL---------------*/
     .carrusel .btnScrollIzq,
     .carrusel .btnScrollDer,
@@ -1349,6 +1328,8 @@ font-size: var(--font-size-s);
         padding-left: 3%;
         padding-bottom: 1%;
     }
+
+   
 
     /*---------------FOOTER-----------------*/
     
@@ -2084,7 +2065,7 @@ border-radius: 50px;
     height:20px;
 }
 
-/*--------SCROLL BAR----------*/
+/*--------SROLL BAR----------*/
 
 .carrousel-juegos::-webkit-scrollbar {
     height: 0.3rem;
