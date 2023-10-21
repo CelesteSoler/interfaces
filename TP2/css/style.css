@@ -1752,856 +1752,856 @@ font-size: var(--font-size-s);
         z-index: -1; 
     }
 
-/*------------Botón Jugar--------------*/
+    /*------------Botón Jugar--------------*/
 
-.frame {
-    z-index: 1;
-    position: relative;
-    left: 50%;
-    top: -50%;
-    width: 90%; 
-}
+    .frame {
+        z-index: 1;
+        position: relative;
+        left: 50%;
+        top: -50%;
+        width: 90%; 
+    }
 
-.btn-jugar  {
-    width: 200px;
-    height: 70px;
-    color: #fff;
-    border-radius: 30px;
-    padding: 10px 25px;
-    background: transparent;
-    font-size: 24px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    /* display: inline-block; */
-        box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-        7px 7px 20px 0px rgba(0,0,0,.1),
-        4px 4px 5px 0px rgba(0,0,0,.1);
-    outline: none;
-}
+    .btn-jugar  {
+        width: 200px;
+        height: 70px;
+        color: #fff;
+        border-radius: 30px;
+        padding: 10px 25px;
+        background: transparent;
+        font-size: 24px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        /* display: inline-block; */
+            box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+            7px 7px 20px 0px rgba(0,0,0,.1),
+            4px 4px 5px 0px rgba(0,0,0,.1);
+        outline: none;
+    }
 
-.btn-jugar  {
-    background: rgb(22,9,240);
-    background: linear-gradient(0deg,#E5599E 0%, #DC036D  100%);
-    color: #fff;
-    border: none;
-    transition: all 0.3s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: url(https://img.icons8.com/fluency/48/1A1A1A/hand-cursor.png), auto;
-}
+    .btn-jugar  {
+        background: rgb(22,9,240);
+        background: linear-gradient(0deg,#E5599E 0%, #DC036D  100%);
+        color: #fff;
+        border: none;
+        transition: all 0.3s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: url(https://img.icons8.com/fluency/48/1A1A1A/hand-cursor.png), auto;
+    }
 
-.btn-jugar > a{
-    padding-top: -100px;
-    position: relative;
-    text-align: center;
-    /* overflow: hidden; */
-    color: #F2F2F2;
-    font-size: 24px;
-    font-weight: 700;
-    /* line-height: 100px; */
-    letter-spacing: 0.03em;
-    /* text-align: left; */
-    cursor: url(https://img.icons8.com/fluency/48/1A1A1A/hand-cursor.png), auto;
-}
+    .btn-jugar > a{
+        padding-top: -100px;
+        position: relative;
+        text-align: center;
+        /* overflow: hidden; */
+        color: #F2F2F2;
+        font-size: 24px;
+        font-weight: 700;
+        /* line-height: 100px; */
+        letter-spacing: 0.03em;
+        /* text-align: left; */
+        cursor: url(https://img.icons8.com/fluency/48/1A1A1A/hand-cursor.png), auto;
+    }
 
-.btn-jugar img{
-    margin: 0;
-    width: 32px;
-    height: 32px;
-    z-index: 1;
-}
+    .btn-jugar img{
+        margin: 0;
+        width: 32px;
+        height: 32px;
+        z-index: 1;
+    }
 
-.btn-jugar:after {
-position: absolute;
-content: " ";
-top: 0;
-left: 0;
-z-index: -1;
-width: 100%;
-height: 100%;
-transition: all 0.3s ease;
--webkit-transform: scale(.1);
-transform: scale(.1);
-}
-
-.btn-jugar:hover {
-color: #fff;
-border: none;
-transform: scale(1.1);
-}
-
-.btn-jugar:hover:after {
-background:#DC036D;
-background: linear-gradient(0deg, #DC036D 0%,  #DC036D 100%);
--webkit-transform: scale(1);
-transform: scale(1);
-border-radius: 50px;
-}
-
-/*---------------------------BOTON COMPARTIR------------------------*/
-
-.bottom-compartir{
-    width: 96%;
-    margin: -0.3rem 0rem 0rem 0rem;
-    background-color: #D9D9D9;
-    height: 50px;
-    padding: 12px 12px 0px 12px;
-    border-radius: 0 0 30px 30px ;
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.bottom-compartir button{
-    background-color: transparent ;
-    border-radius: 30px;
-    padding: 12px;
-    width: 9.5rem;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: 0rem 1rem 1rem 1rem ;
-}
-
-
-.bottom-compartir a, .bottom-compartir span{
-    font-weight: 700;
-    font-size:large;
-    position: relative;
-    color:#DF3086;
-    letter-spacing: 0.03em;
-    display: flex;
-    margin-right: 0.5rem;
-}
-
-.bottom-compartir button:hover{
-    color:#DC036D;
-    border: 1px solid #DC036D;
-
-}
-/*-----------------------GALERIA JUEGO----------------------------------*/
-
-
-.container-juego{
-    margin: 0rem 1.5rem 0rem 1.5rem;
-}
-
-.carrousel-juegos{
-    margin-top: 2.5rem;
-    cursor: url(https://img.icons8.com/fluency/48/1A1A1A/hand-cursor.png), auto;
-}
-
-.carrousel > h1{
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 20px;
-    letter-spacing: 0.03em;
-    color: #F2F2F2;
-    overflow-y: hidden;
-}
-
-.snap-inline{
-    scroll-snap-type: inline mandatory ;
-}
-
-.snap-inline > *{
-    scroll-snap-align: start;
-}
-
-.carrousel-juegos{
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 3fr;
-    overflow-x: auto;
-    overflow-y: hidden;
-    overscroll-behavior-inline: contain;
-    padding: 1rem 0rem 0.5rem 1rem;  
-}
-
-.card{
-    padding: 4px;
-    margin-right: 0.3rem;
-    display: inline-block;
-    position: relative;
-    background: none;
-    border: none;
-}
-
-.card:hover{
-    transform: translateY(-8px);
-    /* transform: scale(1.1); */
-}
-
-.card-container {
-    display: contents;  
-}
-
-.card::before, .card::after{
-    z-index: -3;
-    content:"";
-    width: 0;
-    height: 9px;
+    .btn-jugar:after {
     position: absolute;
-    transition: all 0.2s linear ;
-    background: #EFE83A;
-}
-
-.card-container::before, .card-container::after{
-    z-index: -3;
-    content:"";
-    width:9px;
-    height:0;
-    position:absolute;
-    transition: all 0.2s linear;
-    background: #EFE83A;
-}
-.card:hover::before, .card:hover::after{
+    content: " ";
+    top: 0;
+    left: 0;
+    z-index: -1;
     width: 100%;
-}
-
-.card:hover .card-container::before, .card:hover .card-container::after{
     height: 100%;
-}
+    transition: all 0.3s ease;
+    -webkit-transform: scale(.1);
+    transform: scale(.1);
+    }
 
-.card::before, .card::after{
-    transition-delay: 0.2s;
-}
-
-.card .card-container::before, .card .card-container::after{
-    transition-delay: 0s;
-}
-
-.card::before{
-    right: 0;
-    top: 0;
-}
-
-.card::after{
-    left: 0;
-    bottom: 0;
-}
-
-.card .card-container::before{
-    left: 0;
-    top: 0;
-}
-
-.card .card-container::after{
-    right: 0;
-    bottom: 0;
-}
-
-.card:hover::before, .card:hover::after{
-    transition-delay: 0s;
-}
-
-.card:hover , .card:hover {
-    transition-delay: 0.2s;
-}
-
-.card .card-img-top{ 
-    position: absolute;
-    border-radius: 5px;
-    z-index: -1;
-    width: 9rem;
-    height: 5.5rem;
-}
-
-.card-img-buy{
-    width:1rem;
-    height: 1rem;
-    margin-block: auto;
-    margin-right: 8px;
-    z-index: 10;
-}
-
-.card-img-buy:hover{
+    .btn-jugar:hover {
+    color: #fff;
+    border: none;
     transform: scale(1.1);
-}
-
-.card-img-buy-cuadrado{
-    width:2rem;
-    height: 1rem;
-    align-self: center;
-    margin-right:0.3;
-}
-
-.card-body{
-    margin-top: 50%;
-    width: 9rem;
-    height: 30px;
-    background: #F2F2F2;
-    border-radius: 1rem 1rem 0rem 0rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: auto;
-}
-
-.card .card-img-top-cuadrado{ 
-    position: absolute;
-    z-index: -1;
-    width: 8rem;
-    height: 7rem;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
-.card-body-cuadrado{
-    margin-top: 70%;
-    width: 8rem;
-    height: 30px;
-    background: #F2F2F2;
-    border-radius: 1rem 1rem 0rem 0rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: auto;
-}
-
-.card-title, .card-body .card-img-buy{
-    line-height: 12px;
-    font-weight: 800;
-    font-size: 14px;
-    letter-spacing: -0.03em;
-    margin: 0.4rem 0.5rem 3rem 0.5rem;
-    color: #0D0D0D;
-    padding: auto;
-    overflow:hidden;
-    text-overflow:ellipsis;
-    overflow:hidden;
-    white-space:nowrap;
-}
-
-.card-body-cuadrado h5{
-    width:63%;
-    height:20px;
-}
-
-.card-body h5{
-    width:65%;
-    height:20px;
-}
-
-/*--------SCROLL BAR----------*/
-
-.carrousel-juegos::-webkit-scrollbar {
-    height: 0.3rem;
-}
-.carrousel-juegos::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 3px #8B8A8A;
-
-}
-.carrousel-juegos::-webkit-scrollbar-thumb {
-
-    background-color:  #EFE83A;
-    border-radius: 2em;
-
-}
-/*----------------*/
-
-.detalle-juegopirate img {
-    width: 39px;
-    height: 39px;
-     padding-right: 1em;
-    padding-left: 3em;
-}
-.comentarios {
-    padding-top: 8rem;
-
-}
-.comentarios img{
-    width: 39px;
-    height: 39px;
-    padding-right: 1em;
-    padding-left: 3em;
-}
-
-.comentarios h3{
-    padding-bottom: 1em;
- }
-    
-.detalle-juegopirate h2 {
-     padding-top: 14px;
-}
-
-.detalle-juegopirate,.comentarios {
-    padding-top: 5px;
-}
-/*-------instrucciones-----*/
-.parrafo {
-    text-align: justify;
-    padding: 0em 5em 0em 5em;
-    padding-top: 5px;
-    }
-    
-.parrafo-enlinea a {
-    text-decoration: underline;
-    cursor: pointer;
-}
-.contenedor-decripciones-juego{
-    background-color: #024852;
-    display: flex;
-    justify-content: center;
-    flex-direction:row;
-    padding: 5em;    
     }
 
-.explorador,.pirata{
-     padding: 1em;
-}
+    .btn-jugar:hover:after {
+    background:#DC036D;
+    background: linear-gradient(0deg, #DC036D 0%,  #DC036D 100%);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    border-radius: 50px;
+    }
 
-.comoGanar-controles{
-    display: flex;
-    flex-direction:column;
-}
+    /*---------------------------BOTON COMPARTIR------------------------*/
 
-.carrousel-juego{
-    padding-top: 2rem;
-    padding: 3rem 0 3rem 0;
-}
+    .bottom-compartir{
+        width: 96%;
+        margin: -0.3rem 0rem 0rem 0rem;
+        background-color: #D9D9D9;
+        height: 50px;
+        padding: 12px 12px 0px 12px;
+        border-radius: 0 0 30px 30px ;
+        display: flex;
+        flex-direction: row-reverse;
+    }
 
-.detalle-juegopirate,
-.instrucciones-juego,
-.controles, .comentarios, .intro,.descripcion-juego{
-    display: flex;
-    flex-flow: row;
-    align-items: flex-start;
-    padding-top: 20px;    
+    .bottom-compartir button{
+        background-color: transparent ;
+        border-radius: 30px;
+        padding: 12px;
+        width: 9.5rem;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 0rem 1rem 1rem 1rem ;
+    }
+
+
+    .bottom-compartir a, .bottom-compartir span{
+        font-weight: 700;
+        font-size:large;
+        position: relative;
+        color:#DF3086;
+        letter-spacing: 0.03em;
+        display: flex;
+        margin-right: 0.5rem;
+    }
+
+    .bottom-compartir button:hover{
+        color:#DC036D;
+        border: 1px solid #DC036D;
+
+    }
+    /*-----------------------GALERIA JUEGO----------------------------------*/
+
+
+    .container-juego{
+        margin: 0rem 1.5rem 0rem 1.5rem;
+    }
+
+    .carrousel-juegos{
+        margin-top: 2.5rem;
+        cursor: url(https://img.icons8.com/fluency/48/1A1A1A/hand-cursor.png), auto;
+    }
+
+    .carrousel > h1{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 0.03em;
+        color: #F2F2F2;
+        overflow-y: hidden;
+    }
+
+    .snap-inline{
+        scroll-snap-type: inline mandatory ;
+    }
+
+    .snap-inline > *{
+        scroll-snap-align: start;
+    }
+
+    .carrousel-juegos{
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 3fr;
+        overflow-x: auto;
+        overflow-y: hidden;
+        overscroll-behavior-inline: contain;
+        padding: 1rem 0rem 0.5rem 1rem;  
+    }
+
+    .card{
+        padding: 4px;
+        margin-right: 0.3rem;
+        display: inline-block;
+        position: relative;
+        background: none;
+        border: none;
+    }
+
+    .card:hover{
+        transform: translateY(-8px);
+        /* transform: scale(1.1); */
+    }
+
+    .card-container {
+        display: contents;  
+    }
+
+    .card::before, .card::after{
+        z-index: -3;
+        content:"";
+        width: 0;
+        height: 9px;
+        position: absolute;
+        transition: all 0.2s linear ;
+        background: #EFE83A;
+    }
+
+    .card-container::before, .card-container::after{
+        z-index: -3;
+        content:"";
+        width:9px;
+        height:0;
+        position:absolute;
+        transition: all 0.2s linear;
+        background: #EFE83A;
+    }
+    .card:hover::before, .card:hover::after{
+        width: 100%;
+    }
+
+    .card:hover .card-container::before, .card:hover .card-container::after{
+        height: 100%;
+    }
+
+    .card::before, .card::after{
+        transition-delay: 0.2s;
+    }
+
+    .card .card-container::before, .card .card-container::after{
+        transition-delay: 0s;
+    }
+
+    .card::before{
+        right: 0;
+        top: 0;
+    }
+
+    .card::after{
+        left: 0;
+        bottom: 0;
+    }
+
+    .card .card-container::before{
+        left: 0;
+        top: 0;
+    }
+
+    .card .card-container::after{
+        right: 0;
+        bottom: 0;
+    }
+
+    .card:hover::before, .card:hover::after{
+        transition-delay: 0s;
+    }
+
+    .card:hover , .card:hover {
+        transition-delay: 0.2s;
+    }
+
+    .card .card-img-top{ 
+        position: absolute;
+        border-radius: 5px;
+        z-index: -1;
+        width: 9rem;
+        height: 5.5rem;
+    }
+
+    .card-img-buy{
+        width:1rem;
+        height: 1rem;
+        margin-block: auto;
+        margin-right: 8px;
+        z-index: 10;
+    }
+
+    .card-img-buy:hover{
+        transform: scale(1.1);
+    }
+
+    .card-img-buy-cuadrado{
+        width:2rem;
+        height: 1rem;
+        align-self: center;
+        margin-right:0.3;
+    }
+
+    .card-body{
+        margin-top: 50%;
+        width: 9rem;
+        height: 30px;
+        background: #F2F2F2;
+        border-radius: 1rem 1rem 0rem 0rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: auto;
+    }
+
+    .card .card-img-top-cuadrado{ 
+        position: absolute;
+        z-index: -1;
+        width: 8rem;
+        height: 7rem;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .card-body-cuadrado{
+        margin-top: 70%;
+        width: 8rem;
+        height: 30px;
+        background: #F2F2F2;
+        border-radius: 1rem 1rem 0rem 0rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: auto;
+    }
+
+    .card-title, .card-body .card-img-buy{
+        line-height: 12px;
+        font-weight: 800;
+        font-size: 14px;
+        letter-spacing: -0.03em;
+        margin: 0.4rem 0.5rem 3rem 0.5rem;
+        color: #0D0D0D;
+        padding: auto;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        overflow:hidden;
+        white-space:nowrap;
+    }
+
+    .card-body-cuadrado h5{
+        width:63%;
+        height:20px;
+    }
+
+    .card-body h5{
+        width:65%;
+        height:20px;
+    }
+
+    /*--------SCROLL BAR----------*/
+
+    .carrousel-juegos::-webkit-scrollbar {
+        height: 0.3rem;
+    }
+    .carrousel-juegos::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 3px #8B8A8A;
+
+    }
+    .carrousel-juegos::-webkit-scrollbar-thumb {
+
+        background-color:  #EFE83A;
+        border-radius: 2em;
+
+    }
+    /*----------------*/
+
+    .detalle-juegopirate img {
+        width: 39px;
+        height: 39px;
+        padding-right: 1em;
+        padding-left: 3em;
+    }
+    .comentarios {
+        padding-top: 8rem;
+
+    }
+    .comentarios img{
+        width: 39px;
+        height: 39px;
+        padding-right: 1em;
+        padding-left: 3em;
+    }
+
+    .comentarios h3{
+        padding-bottom: 1em;
+    }
+        
+    .detalle-juegopirate h2 {
+        padding-top: 14px;
+    }
+
+    .detalle-juegopirate,.comentarios {
+        padding-top: 5px;
+    }
+    /*-------instrucciones-----*/
+    .parrafo {
+        text-align: justify;
+        padding: 0em 5em 0em 5em;
+        padding-top: 5px;
+        }
+        
+    .parrafo-enlinea a {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .contenedor-decripciones-juego{
+        background-color: #024852;
+        display: flex;
+        justify-content: center;
+        flex-direction:row;
+        padding: 5em;    
         }
 
-.instrucciones-juego p,.controles-parrafos{
-    padding: 0 0 2rem;
- }
-  
-.descripcion-juego img{
-    width: 39px;
-    height: 39px;
-     padding-right: 1em;
-    padding-left: 3em;
-    padding-bottom: 1em;
-}
+    .explorador,.pirata{
+        padding: 1em;
+    }
 
-.imagenes-detalle-juego {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-evenly;
-    padding-left: 1em;
-    transition: transform .2s;
-}
+    .comoGanar-controles{
+        display: flex;
+        flex-direction:column;
+    }
+
+    .carrousel-juego{
+        padding-top: 2rem;
+        padding: 3rem 0 3rem 0;
+    }
+
+    .detalle-juegopirate,
+    .instrucciones-juego,
+    .controles, .comentarios, .intro,.descripcion-juego{
+        display: flex;
+        flex-flow: row;
+        align-items: flex-start;
+        padding-top: 20px;    
+            }
+
+    .instrucciones-juego p,.controles-parrafos{
+        padding: 0 0 2rem;
+    }
     
-.imagenes-detalle-juego img .juego,
- iframe {
-    height: 210px;
-    padding-right: 1em;
- }
+    .descripcion-juego img{
+        width: 39px;
+        height: 39px;
+        padding-right: 1em;
+        padding-left: 3em;
+        padding-bottom: 1em;
+    }
+
+    .imagenes-detalle-juego {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-evenly;
+        padding-left: 1em;
+        transition: transform .2s;
+    }
+        
+    .imagenes-detalle-juego img .juego,
+    iframe {
+        height: 210px;
+        padding-right: 1em;
+    }
+        
+    .imagenes-detalle-juego img:hover,
+    .imagenes-detalle-juego iframe:hover {
+        margin: 2px;
+        transform: scale(1.3);
+    }
+        
+    .instrucciones-juego img {
+        width: 39px;
+        height: 39px;
+        padding-right: 1em;
+        padding-left: 5.5em;
+    }
+        
+    .instrucciones-juego h3 {
+        padding-top: 5px;
+    }
+        
+    .contenedor-juegoenlinea p {
+        text-align: justify;
+        padding: 1em 5em 1em 5em;     
+    }
+        
+        
+    .controles img {
+        width: 39px;
+        height: 39px;
+        padding-right: 1em;
+        padding-left: 5.6em;
+    }
+        
+    .controles h3 {
+        padding-top: 9px;
+        padding-bottom: 1em;
+    }
+        
+    .controles-parrafos ul {
+        padding-left: 5em;
+        font-size: 18px;
+        color: #FFFFFF;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);      
+    } 
+        
+    .intro h3{
+        padding-top: 9px;
+        padding-bottom: 1em;
+    }
+        
+    .intro img{
+        width: 39px;
+        height: 39px;
+        padding-right: 1em;
+        padding-left:0em;
+    }
+        
+    .batalla{
+        margin: 0 0 2rem 0;
+    }
+
+    .instrucciones{
+        width:60%;
     
-.imagenes-detalle-juego img:hover,
-.imagenes-detalle-juego iframe:hover {
-    margin: 2px;
-    transform: scale(1.3);
-}
-    
-.instrucciones-juego img {
-    width: 39px;
-    height: 39px;
-    padding-right: 1em;
-    padding-left: 5.5em;
-}
-    
-.instrucciones-juego h3 {
-    padding-top: 5px;
- }
-    
-.contenedor-juegoenlinea p {
-    text-align: justify;
-    padding: 1em 5em 1em 5em;     
-}
-       
-    
-.controles img {
-    width: 39px;
-    height: 39px;
-    padding-right: 1em;
-    padding-left: 5.6em;
-}
-    
-.controles h3 {
-    padding-top: 9px;
-    padding-bottom: 1em;
-}
-    
-.controles-parrafos ul {
-    padding-left: 5em;
-    font-size: 18px;
-    color: #FFFFFF;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);      
- } 
-    
-.intro h3{
-    padding-top: 9px;
-    padding-bottom: 1em;
- }
-    
-.intro img{
-    width: 39px;
-    height: 39px;
-    padding-right: 1em;
-    padding-left:0em;
-}
-       
-.batalla{
-    margin: 0 0 2rem 0;
-}
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin:2rem 0 2rem 0
+    }
 
-.instrucciones{
-    width:60%;
-   
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin:2rem 0 2rem 0
-}
+    .instrucciones h2{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
 
-.instrucciones h2{
-    width: 100%;
-    text-align: center;
-    margin-bottom: 2rem;
-}
+    .instrucciones .fichas{
+        width: 100%;
+    }
 
-.instrucciones .fichas{
-    width: 100%;
-}
+    .instruccion-ficha{
+        width: 45%;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
 
-.instruccion-ficha{
-    width: 45%;
-    justify-content: center;
-    margin-bottom: 2rem;
-}
+    .instruccion-ficha h3{
+        text-align: center;
+    }
+    .pirata, .explorador {
+        margin:0 0  0 3rem;
+    }
 
-.instruccion-ficha h3{
-    text-align: center;
-}
-.pirata, .explorador {
-    margin:0 0  0 3rem;
-}
-
-.flip-box {
-background-color: transparent;
-width: 300px;
-height: 150px;
-perspective: 1000px;
-position: relative;
-top: 45%;
-left: 50%;
-text-align: center;
-transform: translate(-50%, -50%);
-margin-left: 1rem;
-}
-
-.flip-box-inner {
-position: relative;
-width: 100%;
-height: 100%;
-text-align: center;
-transition: transform 1s;
-transform-style: preserve-3d;
-}
-
-.flip-box:hover .flip-box-inner {
-transform: rotateY(180deg);
-}
-
-.flip-box-front,
-.flip-box-back {
-position: absolute;
-width: 100%;
-height: 100%;
-backface-visibility: hidden;
-border-radius: 10px;
-}
-
-.flip-box-front img {
-border-radius: 10px;
-}
-
-.flip-box-back {
-transform: rotateY(180deg);
-}
-  
-.instrucciones ul{
-    margin-top: 1.5rem;
-}
-
-.card-4-en-linea img{
-    width: 18rem;
-    height: 13rem;
-    margin-right: 1rem;
-    cursor: pointer;
-    cursor: url(https://img.icons8.com/fluency/48/1A1A1A/hand-cursor.png), auto;
-}
-
-.card-4-en-linea img:hover, .card-4-en-linea iframe:hover{
-    transform: scale(1.1);
-}
-
-.card-4-en-linea iframe{
-    cursor: url(https://img.icons8.com/fluency/48/1A1A1A/hand-cursor.png), auto;
-    margin-right: 1rem;
-}
-
-
-/*----COMENTARIO INPUT-------*/
-
-.contenedorComentarioInput{
-    display: flex;
-    justify-content: center;
-    margin: 0 0 8rem 0;
-}
-
-.comentarioInput1{
-    width: 1000px; 
-    height: 280px;
-    position:relative;
-    margin: 0 0 4rem 0;
-}
-
-.comentarioInput{
-    width: 1000px; 
-    height: 260px;
-    position:relative;
-    margin: 0 0 4rem 0;
-}
-
-.rectangle102{
-    width: 1000px; 
-    height: 380px; 
-    left: 0px; 
-    top: 31px; 
-    position: absolute; 
-    background: #024852;
-}
-
-.line6{
-    width: 880px;
-    height: 0px; 
-    left: 42px;
-    top: 99px; 
-    position: absolute;
-    background: #D9D9D9; 
-    border: 2px #06ACC3 solid;
-}
-.escribeUnaReseASobrePirateJunter{
-    left: 42px; 
-    top: 51px;
-    position: absolute;
-}
- #parr {
-    color: #56CDDE;
-     font-size: 20px; 
-     font-family: Quicksand; 
-     font-weight: 700; 
-     letter-spacing: 1px; 
-     word-wrap: break-word;
-}
-.rectangle103{
-    width: 778px;
-    height: 150px; 
-    left: 147px; 
-    top: 122px; 
-    position: absolute; 
-    background: #F2F2F2;
-}
-
-.quPiensasDeEsteJuego{
-    left: 177px; 
-    top: 141px; 
-    position: absolute; 
-    color: #AFAFAF; 
-    font-size: 20px; 
-    font-family: Quicksand; 
-    font-weight: 500; 
-    letter-spacing: 1px; 
-    word-wrap: break-word;
-}
-
-.recomiendasEsteJuego{
-    width: 383px; 
-    height: 37px; 
-    left: 147px; 
-    top:290px; 
-    position: absolute; 
-    color: #06ACC3; 
-    font-size: 16px; 
-    font-family: Quicksand; 
-    font-weight: 700; 
-    word-wrap: break-word;
-}
-
-.btnMeGusta{
-    width: 92px; 
-    height: 63px; 
-    left: 147px; 
-    top: 320px; 
-    position: absolute; 
-    border-radius: 20px
-}
-
-.rectangle104{
-    width: 92px; 
-    height: 63px; 
-    left: 0px; 
-    top: 0px; 
-    position: absolute; 
-    background: #027888; 
-    border-radius: 20px;
-}
-
-.btnMeGusta2{
-    width: 49.68px; 
-    height: 39.71px; 
-    left: 21px; 
-    top: 9px; 
-    position: absolute;
-}
-
-.botonMeGusta{
-    width:92px; 
-    height:63px; 
-    left: 0px; 
-    top: 0px; 
-    position: absolute;  
-}
-
-.btnNoMeGusta{
-    width: 92px; 
-    height: 63px; 
-    left:270px; 
-    top: 328px; 
-    position: absolute; 
-}
-
-.btnMeGusta2 .btn img:hover{
-    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.30));
-    transform: scale(1.1);
-}
-
-.btnNoGusta2 .btn img:hover{
-    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.30));
-    transform: scale(1.1);
-}
-
-.btnPublicar .btn img:hover{
-    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.30));
-    transform: scale(1.1);
-}
-
-.avatarLogueado{
-    width:70px; 
-    height: 70px; 
-    left: 42px; 
-    top: 124px; 
-    position: absolute;
-}
-
-.perfil{
-    width: 70px; 
-    height: 70px; 
-    left: 0px; 
-    top: 0px; 
-    position: absolute; 
-    background: #F2F2F2; 
-    border-radius: 9999px;
-}
-
-.perfil2{
-    width: 63px; 
-    height: 63px; 
-    left: 3px; 
-    top: 3px; 
-    position: absolute; 
-    border-radius: 9999px;
-}
-
-.btnPublicar{
-    width: 186px; 
-    height: 63px; 
-    left:750px; 
-    top: 328px; 
-    position: absolute;  
-}
-
-.botonPublicar{
-    width: 186px; 
-    height: 63px; 
-    left: 0px; 
-    top: 0px; 
-    position: absolute;
-}
-
-
-/*-----CONTENEDOR COMENTARIO-------*/
-
-.contenedorComentario{
-    display: flex;
-    justify-content: center;
-}
-.rectangle111{
-    width: 778px;
-    height: 130px; 
-    left: 147px; 
-    top: 122px; 
-    position: absolute; 
-    background: #024852;
-}
-
-.line7{
-    width: 880px;
-    height: 0px; 
-    left: 42px;
-    top: 105px; 
-    position: absolute;
-    background: #D9D9D9; 
-    border: 2px #06ACC3 solid;
-}
-
-#parr2{
-    color: #027888;
-     font-size: 12px; 
-     font-family: Quicksand; 
-     font-weight: 700; 
-     letter-spacing: 1px; 
-     padding-top: 5px;
-     
-     word-wrap: break-word;
-   
-}
-.quPiensasDeEsteJuego2{
-    width:700px;
+    .flip-box {
+    background-color: transparent;
+    width: 300px;
     height: 150px;
-    left: 177px; 
-    top: 141px; 
-    position: absolute; 
-    color: #AFAFAF; 
-    font-size: 17px; 
-    font-family: Quicksand; 
-    font-weight: 500; 
-    letter-spacing: 1px; 
-    word-wrap: break-word;
+    perspective: 1000px;
+    position: relative;
+    top: 45%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    margin-left: 1rem;
+    }
+
+    .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    }
+
+    .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+    }
+
+    .flip-box-front,
+    .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    }
+
+    .flip-box-front img {
+    border-radius: 10px;
+    }
+
+    .flip-box-back {
+    transform: rotateY(180deg);
+    }
+    
+    .instrucciones ul{
+        margin-top: 1.5rem;
+    }
+
+    .card-4-en-linea img{
+        width: 18rem;
+        height: 13rem;
+        margin-right: 1rem;
+        cursor: pointer;
+        cursor: url(https://img.icons8.com/fluency/48/1A1A1A/hand-cursor.png), auto;
+    }
+
+    .card-4-en-linea img:hover, .card-4-en-linea iframe:hover{
+        transform: scale(1.1);
+    }
+
+    .card-4-en-linea iframe{
+        cursor: url(https://img.icons8.com/fluency/48/1A1A1A/hand-cursor.png), auto;
+        margin-right: 1rem;
+    }
+
+
+    /*----COMENTARIO INPUT-------*/
+
+    .contenedorComentarioInput{
+        display: flex;
+        justify-content: center;
+        margin: 0 0 8rem 0;
+    }
+
+    .comentarioInput1{
+        width: 1000px; 
+        height: 280px;
+        position:relative;
+        margin: 0 0 4rem 0;
+    }
+
+    .comentarioInput{
+        width: 1000px; 
+        height: 260px;
+        position:relative;
+        margin: 0 0 4rem 0;
+    }
+
+    .rectangle102{
+        width: 1000px; 
+        height: 380px; 
+        left: 0px; 
+        top: 31px; 
+        position: absolute; 
+        background: #024852;
+    }
+
+    .line6{
+        width: 880px;
+        height: 0px; 
+        left: 42px;
+        top: 99px; 
+        position: absolute;
+        background: #D9D9D9; 
+        border: 2px #06ACC3 solid;
+    }
+    .escribeUnaReseASobrePirateJunter{
+        left: 42px; 
+        top: 51px;
+        position: absolute;
+    }
+    #parr {
+        color: #56CDDE;
+        font-size: 20px; 
+        font-family: Quicksand; 
+        font-weight: 700; 
+        letter-spacing: 1px; 
+        word-wrap: break-word;
+    }
+    .rectangle103{
+        width: 778px;
+        height: 150px; 
+        left: 147px; 
+        top: 122px; 
+        position: absolute; 
+        background: #F2F2F2;
+    }
+
+    .quPiensasDeEsteJuego{
+        left: 177px; 
+        top: 141px; 
+        position: absolute; 
+        color: #AFAFAF; 
+        font-size: 20px; 
+        font-family: Quicksand; 
+        font-weight: 500; 
+        letter-spacing: 1px; 
+        word-wrap: break-word;
+    }
+
+    .recomiendasEsteJuego{
+        width: 383px; 
+        height: 37px; 
+        left: 147px; 
+        top:290px; 
+        position: absolute; 
+        color: #06ACC3; 
+        font-size: 16px; 
+        font-family: Quicksand; 
+        font-weight: 700; 
+        word-wrap: break-word;
+    }
+
+    .btnMeGusta{
+        width: 92px; 
+        height: 63px; 
+        left: 147px; 
+        top: 320px; 
+        position: absolute; 
+        border-radius: 20px
+    }
+
+    .rectangle104{
+        width: 92px; 
+        height: 63px; 
+        left: 0px; 
+        top: 0px; 
+        position: absolute; 
+        background: #027888; 
+        border-radius: 20px;
+    }
+
+    .btnMeGusta2{
+        width: 49.68px; 
+        height: 39.71px; 
+        left: 21px; 
+        top: 9px; 
+        position: absolute;
+    }
+
+    .botonMeGusta{
+        width:92px; 
+        height:63px; 
+        left: 0px; 
+        top: 0px; 
+        position: absolute;  
+    }
+
+    .btnNoMeGusta{
+        width: 92px; 
+        height: 63px; 
+        left:270px; 
+        top: 328px; 
+        position: absolute; 
+    }
+
+    .btnMeGusta2 .btn img:hover{
+        filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.30));
+        transform: scale(1.1);
+    }
+
+    .btnNoGusta2 .btn img:hover{
+        filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.30));
+        transform: scale(1.1);
+    }
+
+    .btnPublicar .btn img:hover{
+        filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.30));
+        transform: scale(1.1);
+    }
+
+    .avatarLogueado{
+        width:70px; 
+        height: 70px; 
+        left: 42px; 
+        top: 124px; 
+        position: absolute;
+    }
+
+    .perfil{
+        width: 70px; 
+        height: 70px; 
+        left: 0px; 
+        top: 0px; 
+        position: absolute; 
+        background: #F2F2F2; 
+        border-radius: 9999px;
+    }
+
+    .perfil2{
+        width: 63px; 
+        height: 63px; 
+        left: 3px; 
+        top: 3px; 
+        position: absolute; 
+        border-radius: 9999px;
+    }
+
+    .btnPublicar{
+        width: 186px; 
+        height: 63px; 
+        left:750px; 
+        top: 328px; 
+        position: absolute;  
+    }
+
+    .botonPublicar{
+        width: 186px; 
+        height: 63px; 
+        left: 0px; 
+        top: 0px; 
+        position: absolute;
+    }
+
+
+    /*-----CONTENEDOR COMENTARIO-------*/
+
+    .contenedorComentario{
+        display: flex;
+        justify-content: center;
+    }
+    .rectangle111{
+        width: 778px;
+        height: 130px; 
+        left: 147px; 
+        top: 122px; 
+        position: absolute; 
+        background: #024852;
+    }
+
+    .line7{
+        width: 880px;
+        height: 0px; 
+        left: 42px;
+        top: 105px; 
+        position: absolute;
+        background: #D9D9D9; 
+        border: 2px #06ACC3 solid;
+    }
+
+    #parr2{
+        color: #027888;
+        font-size: 12px; 
+        font-family: Quicksand; 
+        font-weight: 700; 
+        letter-spacing: 1px; 
+        padding-top: 5px;
+        
+        word-wrap: break-word;
+    
+    }
+    .quPiensasDeEsteJuego2{
+        width:700px;
+        height: 150px;
+        left: 177px; 
+        top: 141px; 
+        position: absolute; 
+        color: #AFAFAF; 
+        font-size: 17px; 
+        font-family: Quicksand; 
+        font-weight: 500; 
+        letter-spacing: 1px; 
+        word-wrap: break-word;
+    }
+
+    .rectangle112{
+        width: 1000px; 
+        height: 260px; 
+        left: 0px; 
+        top: 31px; 
+        position: absolute; 
+        background: #024852;
+    }
+
+    /*--------------------*/  
+
 }
-
-.rectangle112{
-    width: 1000px; 
-    height: 260px; 
-    left: 0px; 
-    top: 31px; 
-    position: absolute; 
-    background: #024852;
-}
-
-/*--------------------*/  
-
- }
  
