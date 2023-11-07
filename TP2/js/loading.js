@@ -2,17 +2,17 @@
 
 document.addEventListener("DOMContentLoaded",()=>{
 
-    function preloader() {
+    function calcularPorcentajeCarga() {
         let porcentaje = 0;
         const textPorcentaje = document.querySelector("#porcentaje-carga");
         if (textPorcentaje) {
             const contenedorCarga = document.querySelector("#contenedor-carga");
             const intervalo = setInterval(() => {
                 if (porcentaje < 100) {
-                    porcentaje = porcentaje + 1;
+                    porcentaje = porcentaje + 10;
                     textPorcentaje.innerHTML = `${porcentaje}%`;
                 }
-            }, 50);
+            }, 400);
             setTimeout(() => {
                 clearInterval(intervalo);
                 contenedorCarga.classList.toggle("contenedor-carga-hidden");
@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded",()=>{
     }
 
 
-    preloader();
-
+    calcularPorcentajeCarga();
 
 })

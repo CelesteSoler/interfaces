@@ -15,64 +15,127 @@
     <div id="contenedor-carga" class="contenedor-carga">
         <div id="carga" class="carga">
         </div>
-        
         <div class="porcentaje">
-        <p id="porcentaje-carga">0%</p>
+            <p id="porcentaje-carga">0%</p>
         </div>
     </div>
 
     <header>
         <nav role="navigation">
-            <div  id="menuToggle">
-                <input type="checkbox" />
-
-                <span></span>
-                <span></span>
-                <span></span>
-
-
-               <!-- <div id="menu">
-                    <div class="header-menu">
-                        <h2>Categorias</h2>
-                       
-                    </div>
-
-                    <ul> 
-
-                        <a href="#"><li><img src="./img/novedades.png" alt="logo">Novedades</li></a>
-                        <a href="#"><li><img src="./img/User.png" alt="logo">Tendencias</li></a>
-
-                        <a href="#"><li><img src="img/clasicos.png" alt="logo">Acción</li></a>
-
-                        <a href="#"><li><img src="img/aventura.png" alt="logo">Aventuras</li></a>
-                        <a href="#"><li><img src="img/habilidad.png" alt="logo">Casuales</li></a>
-
-                        <a href="#"><li><img src="img/habilidad.png" alt="logo">Estrategia</li></a>
-
-                        <a href="#"><li><img src="img/simulacion.png" alt="logo">Lucha</li></a>
-                        <a href="#"><li><img src="img/simulacion.png" alt="logo">Mundo Abierto</li></a>
-                        <a href="#"><li><img src="img/simulacion.png" alt="logo">Puzles</li></a>
-
+            <div id="menuToggle">
+                <div class="menu">
+                    <button class="btn"><img class="btnHamb" src="./img/iconoHambur.svg" alt="menu"></button>
+                </div>
+                <div class="menu-navbar">
+                    <ul>
+                        <li class="categorias">Categorias</li>
+                        <li><a href="#"><img src="./img/novedades.png" alt="logo">Novedades</a></li>
+                        <li><a href="#"><img src="./img/iconoTendencias.svg" alt="logo">Tendencias</a></li>
+                        <li><a href="#"><img src="img/clasicos.png" alt="logo">Acción</a></li>
+                        <li><a href="#"><img src="img/aventura.png" alt="logo">Aventuras</a></li>
+                        <li><a href="#"><img src="img/habilidad.png" alt="logo">Casuales</a></li>
+                        <li><a href="#"><img src="img/itemLucha.svg" alt="logo">Lucha</a></li>
+                        <li><a href="#"><img src="img/itemMundoAbierto.svg" alt="logo">Mundo Abierto</a></li>
+                        <li><a href="#"><img src="img/simulacion.png" alt="logo">Puzles</li></a></li>                        
                     </ul>
-
-                   
-                </div>-->
+                </div>
             </div>
-           
         </nav>
         <div class="logo">
-            <a href="./index.html"> <img src="img/Logo.png" alt="logo"></a>
+            <a href="./userLog.html"> <img src="img/Logo.svg" alt="logo"></a>
         </div>
-
-        <div class="carrito-perfil">
-            <button class="btn" id="carrito"><img class="carr"   src="img/Carrito.svg" alt="carrito"></a></button>
-            <button class="btn" id="perfil"><img class="perfilLog"  src="img/avatarLogueado.svg" alt="carrito"></a></button>
+        <div class="perfilCarrito">
+            <nav role="navigation">
+                <div id="menuToggleCarrito">
+                    <div>
+                        <button class="btn"><img class="btnCarrito" src="img/Carrito.svg" alt="carrito"></button>
+                    </div>
+                    <div class="menu-navbar-carrito">
+                        <div class="menuCarrito">
+                            <div class="rectangulo">
+    
+                            </div>
+                            <div class="encabezado">
+                                <div class="rectanguloEncabezado">
+                                </div>
+                                <div class="miCarrito">
+                                    <h1>Mi carrito </h1>
+                                </div>
+                                <div class="contCarrito">
+                                    <img class="imgCarrito" src="./img/menuCarrito/Carrito.svg" alt=""/>
+                                </div>
+                            </div>
+                            <div class="infoJuegoCarrito">
+                                <div>
+                                    <img class="imgJuegoCarrito" src="./img/menuCarrito/juego.svg"/>
+                                </div>
+                                <div class="juego">
+                                    Starfield    
+                                </div>
+                                <div class="precio">
+                                    ARS$11.999,00
+                                </div>
+                                <div>
+                                    <img class="papelera" src="./img/menuCarrito/papelera.svg" alt=""/>
+                                </div>
+                            </div>
+                            <div class="infoPagoCarrito">
+                                <div class="subtotal">
+                                    Subtotal
+                                </div>
+                                <div class="total">
+                                    Total
+                                </div>
+                                <div class="precioSubtotal">
+                                    ARS$11.999,00
+                                </div>
+                                <div class="precioTotal">
+                                    ARS$11.999,00
+                                </div>
+                                <div class="linea">
+                                </div>               
+                                <div class="btnComprarCarrito">
+                                    <div class="rectangle116">
+                                    </div>
+                                    <div class="comprar">
+                                        <h3>Comprar</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
+        
+        </nav>
+        <nav role="navigation">
+            <div id="menuTogglePerfil">
+                <div class="menu">
+                    <button class="btn" id="perfil"><img class="btnPerfil" src="img/avatarLogueado.svg" alt="carrito"></button>
+                </div>
+                <div class="menu-navbar-perfil">
+                    <div class="header-menu">
+                        <h2>¡Hola!</h2>
+                    </div>
+                    <ul>
+                        <li><a href="#"><img src="./img/novedades.png" alt="logo">Mi perfil</a></li>
+                        <li><a href="#"><img src="./img/iconoTendencias.svg" alt="logo">Editar perfil</a></li>
+                        <li><a href="#"><img src="img/clasicos.png" alt="logo">Mis carrito</a></li>
+                        <li><a href="#"><img src="img/aventura.png" alt="logo">Mis juegos</a></li>
+                        <li><a href="#"><img src="img/habilidad.png" alt="logo">Configuración</a></li>
+                        <li><a href="#"><img src="img/simulacion.png" alt="logo">Ayuda</a></li>                        
+                    </ul>
+                    <div class="btnCerrarSesion">
+                        <button><a href="login.html"><img src="./img/logoout.png" alt="logo">Cerrar sesión</a></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <div class="container-juego ">
         <div class="breadcrum">
-            <p><a href="./index.html"> HOME </a></p>
+            <p><a href="./userLog.html"> HOME </a></p>
             <img src="./img/arrow.png" alt="arrow">
             <p><a href="#">CONTINUA JUGANDO</a></p>
             <img src="./img/arrow.png" alt="arrow"> 
@@ -84,26 +147,26 @@
         <div class="juego-content">
             <section class="juego">
                 <div class="img-juego"> 
-                    <img src="./img/4-en-linea.png" alt="Card image cap">
+                    <img src="./img/4inLine/4-en-linea.png" alt="Card image cap">
                 </div>
                 <div class="frame" >
                     <button class="btn-jugar gratis">
                         <a href="">Jugar</a>
-                        <img src="./img/play.png" alt="btn-play">
+                        <img src="./img/4inLine/play.png" alt="btn-play">
                     </button>
                 </div>
             </section>
         </div>
 
 <div class="descripcion-juego">
-    <img class="descripcion-jue"  src="./img/fluent_joystick-20-filled.svg" alt="descripcion">
+    <img class="descripcion-jue"  src="./img/4inLine/fluent_joystick-20-filled.svg" alt="descripcion">
         <h3>ACERCA DE ESTE JUEGO</h3>
 </div>        
 <section class="contenedor-decripciones-juego">
     <div class="participa-batalla">
         <div class="introduccion">
              <div class="intro">
-                <img class="juego"  src="./img/pirateicon.png" alt="iconopirata">
+                <img class="juego"  src="./img/4inLine/pirateicon.png" alt="iconopirata">
                 <h3>PARTICIPA DE LA BATALLA:</h3>
             </div>
             <div>
@@ -120,13 +183,13 @@
                         <div class="flip-box-inner">
                             <div class="flip-box-front">
                                 <figure class="flip-box">
-                                    <img src="./img/Ficha-calabera.png" alt="logo">
+                                    <img src="./img/4inLine/Ficha-calabera.png" alt="logo">
                                 </figure>
                             </div>
 
                             <div class="flip-box-back">
                                 <figure class="flip-box">
-                                    <img src="./img/Ficha-back.png" alt="logo">
+                                    <img src="./img/4inLine/Ficha-back.png" alt="logo">
                                 </figure>
                             </div>
                         </div>
@@ -145,13 +208,13 @@
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
                             <figure class="flip-box">
-                                <img src="./img/Ficha-brujula.png" alt="logo">
+                                <img src="./img/4inLine/Ficha-brujula.png" alt="logo">
                             </figure>
                         </div>
 
                         <div class="flip-box-back">
                                 <figure class="flip-box">
-                                    <img src="./img/Ficha-back(2).png" alt="logo">
+                                    <img src="./img/4inLine/Ficha-back(2).png" alt="logo">
                                 </figure>
                             </div>
                     </div>
@@ -170,7 +233,7 @@
         <div class="comoGanar">
          <section class="contenedor-juegoenlinea">
             <div class="instrucciones-juego">
-                <img class="juego"  src="./img/icons8-ayuda-50.png" alt="instrucciones">
+                <img class="juego"  src="./img/4inLine/icons8-ayuda-50.png" alt="instrucciones">
                 <h3>¿CÓMO GANAR? </h3>
             </div>
             <div>
@@ -179,7 +242,7 @@
         </div>
         <div class="conteneControles">
             <div class="controles">
-                <img  class="juego" src="./img/icons8-control-50.png" alt="controles">
+                <img  class="juego" src="./img/4inLine/icons8-control-50.png" alt="controles">
                 <h3>CONTROLES:</h3>
             </div>
             <div class="controles-parrafos">
@@ -193,12 +256,12 @@
 
 <section class="carrousel-juego">
     <div class="detalle-juegopirate">
-        <img  class="juego" src="./img/ion_images-sharp.svg" alt="galeria">
+        <img  class="juego" src="./img/4inLine/ion_images-sharp.svg" alt="galeria">
         <h3>GALERIA DE IMAGENES DEL JUEGO</h3>
     </div>
     <div class="carrousel-juegos snap-inline cuatro-en-linea">
         <div class="card-4-en-linea">
-            <img class="card-img-top-cuadrado" src="./img/descarga.jpeg" alt="Card image cap">
+            <img class="card-img-top-cuadrado" src="./img/4inLine/descarga.jpeg" alt="Card image cap">
         </div>
         <div class="card-4-en-linea">
             <img class="card-img-top-cuadrado" src="./img/Juego (1).png" alt="Card image cap">
@@ -208,18 +271,18 @@
         </div>
         
         <div class="card-4-en-linea">
-            <img class="card-img-top-cuadrado" src="./img/Juego.png" alt="Card image cap">
+            <img class="card-img-top-cuadrado" src="./img/4inLine/Juego.png" alt="Card image cap">
         </div>
 
         <div class="card-4-en-linea">
-            <img class="card-img-top-cuadrado" src="./img/imagesJuego-Carru.jpeg" alt="Card image cap">
+            <img class="card-img-top-cuadrado" src="./img/4inLine/imagesJuego-Carru.jpeg" alt="Card image cap">
         </div>
     </div>
 </section>
 
 
 <div class="comentarios">
-    <img  class="juego" src="./img/icon comentario (2).svg" alt="comentarios">
+    <img  class="juego" src="./img/4inLine/icon comentario (2).svg" alt="comentarios">
     <h3>ESCRIBE TU RESEÑA:</h3>
 </div>
 <div class="contenedorComentarioInput">
@@ -234,20 +297,20 @@
         <div class="recomiendasEsteJuego">¿Recomiendas este juego?</div>
         <div class="btnMeGusta">
             <div class="btnMeGusta2">
-                <button class="botonMeGusta2 btn"><img class="botonMeGusta"  src="./img/Btn me gusta.svg" alt="me gusta"></button>
+                <button class="botonMeGusta2 btn"><img class="botonMeGusta"  src="./img/4inLine/Btn me gusta.svg" alt="me gusta"></button>
             </div>
         </div>
         <div class="avatarLogueado">
             <div class="perfil"></div>
-            <img class="perfil2" src="./img/Perfil.svg" alt="avatar">
+            <img class="perfil2" src="./img/avatarLogueado.svg" alt="avatar">
         </div>
         <div class="btnNoMeGusta">
             <div class="btnNoGusta2">
-                <button class="btn"><img class="botonNoMeGusta"  src="./img/Btn no me gusta.svg" alt="no me gusta"></button>
+                <button class="btn"><img class="botonNoMeGusta"  src="./img/4inLine/Btn no me gusta.svg" alt="no me gusta"></button>
             </div>
         </div>
         <div class="btnPublicar">
-            <button class="btn"><img class="botonPublicar"  src="./img/btn publicar.svg" alt="publicar"></button>
+            <button class="btn"><img class="botonPublicar"  src="./img/4inLine/btn publicar.svg" alt="publicar"></button>
         </div>
     </div>
 </div>
@@ -267,7 +330,7 @@
          </div>
        <div class="avatarLogueado">
            <div class="perfil"></div>
-           <img class="perfil2" src="./img/perfil2.svg" alt="avatar">
+           <img class="perfil2" src="./img/4inLine/perfil2.svg" alt="avatar">
        </div>
    </div>
 </div>
@@ -287,7 +350,7 @@
      </div>
    <div class="avatarLogueado">
        <div class="perfil"></div>
-       <img class="perfil2" src="./img/Perfil3.svg" alt="avatar">
+       <img class="perfil2" src="./img/4inLine/Perfil3.svg" alt="avatar">
    </div> 
    </div>
 </div>
@@ -307,7 +370,7 @@
         </div>
     <div class="avatarLogueado">
         <div class="perfil"></div>
-        <img class="perfil2" src="./img/Perfil.svg." alt="avatar">
+        <img class="perfil2" src="./img/4inLine/perfil2.svg" alt="avatar">
     </div>
     </div>
 </div>   
@@ -392,5 +455,8 @@
    
     <script src="./js/loading.js"></script>
     <script src="./js/scroll.js"></script>
+    <script src="./js/menuDesplegable.js"></script>
+    <script src="./js/menuPerfil.js"></script>
+    <script src="./js/menuCarrito.js"></script>
 </body>
 </html>

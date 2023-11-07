@@ -15,61 +15,122 @@
     <div id="contenedor-carga" class="contenedor-carga">
         <div id="carga" class="carga">
         </div>
-        
         <div class="porcentaje">
-        <p id="porcentaje-carga">0%</p>
+            <p id="porcentaje-carga">0%</p>
         </div>
     </div>
-
     <header>
         <nav role="navigation">
-            <div  id="menuToggle">
-                <input type="checkbox" />
-
-                <span></span>
-                <span></span>
-                <span></span>
-
-
-               <!-- <div id="menu">
-                    <div class="header-menu">
-                        <h2>Categorias</h2>
-                       
-                    </div>
-
-                    <ul> 
-
-                        <a href="#"><li><img src="./img/novedades.png" alt="logo">Novedades</li></a>
-                        <a href="#"><li><img src="./img/User.png" alt="logo">Tendencias</li></a>
-
-                        <a href="#"><li><img src="img/clasicos.png" alt="logo">Acción</li></a>
-
-                        <a href="#"><li><img src="img/aventura.png" alt="logo">Aventuras</li></a>
-                        <a href="#"><li><img src="img/habilidad.png" alt="logo">Casuales</li></a>
-
-                        <a href="#"><li><img src="img/habilidad.png" alt="logo">Estrategia</li></a>
-
-                        <a href="#"><li><img src="img/simulacion.png" alt="logo">Lucha</li></a>
-                        <a href="#"><li><img src="img/simulacion.png" alt="logo">Mundo Abierto</li></a>
-                        <a href="#"><li><img src="img/simulacion.png" alt="logo">Puzles</li></a>
-
+            <div id="menuToggle">
+                <div class="menu">
+                    <button class="btn"><img class="btnHamb" src="./img/iconoHambur.svg" alt="menu"></button>
+                </div>
+                <div class="menu-navbar">
+                    <ul>
+                        <li class="categorias">Categorias</li>
+                        <li><a href="#"><img src="./img/novedades.png" alt="logo">Novedades</a></li>
+                        <li><a href="#"><img src="./img/iconoTendencias.svg" alt="logo">Tendencias</a></li>
+                        <li><a href="#"><img src="img/clasicos.png" alt="logo">Acción</a></li>
+                        <li><a href="#"><img src="img/aventura.png" alt="logo">Aventuras</a></li>
+                        <li><a href="#"><img src="img/habilidad.png" alt="logo">Casuales</a></li>
+                        <li><a href="#"><img src="img/simulacion.png" alt="logo">Lucha</a></li>
+                        <li><a href="#"><img src="img/simulacion.png" alt="logo">Mundo Abierto</a></li>
+                        <li><a href="#"><img src="img/simulacion.png" alt="logo">Puzles</li></a></li>                        
                     </ul>
-
-                   
-                </div>-->
+                </div>
             </div>
-           
         </nav>
         <div class="logo">
-            <a href="./index.html"> <img src="img/Logo.png" alt="logo"></a>
+            <a href="./index.html"> <img src="img/Logo.svg" alt="logo"></a>
         </div>
-
-        <div>
-            <button class="btn" id="carrito"><img src="img/Carrito.svg" alt="carrito"></a></button>
-            <button class="btn" id="perfil"><img src="img/Avatar logueado (1).svg" alt="carrito"></a></button>
+        <div class="perfilCarrito">
+            <nav role="navigation">
+                <div id="menuToggleCarrito">
+                    <div>
+                        <button class="btn"><img class="btnCarrito" src="img/Carrito.svg" alt="carrito"></button>
+                    </div>
+                    <div class="menu-navbar-carrito">
+                        <div class="menuCarrito">
+                            <div class="rectangulo">
+    
+                            </div>
+                            <div class="encabezado">
+                                <div class="rectanguloEncabezado">
+                                </div>
+                                <div class="miCarrito">
+                                    <h1>Mi carrito </h1>
+                                </div>
+                                <div class="contCarrito">
+                                    <img class="imgCarrito" src="./img/menuCarrito/Carrito.svg" alt=""/>
+                                </div>
+                            </div>
+                            <div class="infoJuegoCarrito">
+                                <div>
+                                    <img class="imgJuegoCarrito" src="./img/menuCarrito/juego.svg"/>
+                                </div>
+                                <div class="juego">
+                                    Starfield    
+                                </div>
+                                <div class="precio">
+                                    ARS$11.999,00
+                                </div>
+                                <div>
+                                    <img class="papelera" src="./img/menuCarrito/papelera.svg" alt=""/>
+                                </div>
+                            </div>
+                            <div class="infoPagoCarrito">
+                                <div class="subtotal">
+                                    Subtotal
+                                </div>
+                                <div class="total">
+                                    Total
+                                </div>
+                                <div class="precioSubtotal">
+                                    ARS$11.999,00
+                                </div>
+                                <div class="precioTotal">
+                                    ARS$11.999,00
+                                </div>
+                                <div class="linea">
+                                </div>               
+                                <div class="btnComprarCarrito">
+                                    <div class="rectangle116">
+                                    </div>
+                                    <div class="comprar">
+                                        <h3>Comprar</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
+        
+        </nav>
+        <nav role="navigation">
+            <div id="menuTogglePerfil">
+                <div class="menu">
+                    <button class="btn" id="perfil"><img class="btnPerfil" src="img/avatarNoLog.png" alt="carrito"></button>
+                </div>
+                <div class="menu-navbar-perfil">
+                    <div class="header-menu">
+                        <h2>¡Hola!</h2>
+                    </div>
+                    <ul>
+                        <li><a href="#"><img src="./img/novedades.png" alt="logo">Mi perfil</a></li>
+                        <li><a href="#"><img src="./img/iconoTendencias.svg" alt="logo">Editar perfil</a></li>
+                        <li><a href="#"><img src="img/clasicos.png" alt="logo">Mis carrito</a></li>
+                        <li><a href="#"><img src="img/aventura.png" alt="logo">Mis juegos</a></li>
+                        <li><a href="#"><img src="img/habilidad.png" alt="logo">Configuración</a></li>
+                        <li><a href="#"><img src="img/simulacion.png" alt="logo">Ayuda</a></li>                        
+                    </ul>
+                    <div class="btnCerrarSesion">
+                        <button><a href="login.html"><img src="./img/logoout.png" alt="logo">Cerrar sesión</a></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
-
     <!-- ACA EMPIEZA LA PÁGINA DE LOGIN, HASTA ARRIBA EL HEADER-->
 
     <a class="boton-volver" href="index.html">VOLVER AL HOME</a>
@@ -92,11 +153,11 @@
 
         <div class="linea-decorativa" id="linea">---------------------- o ----------------------</div>
 
-        <a href="home-loged.html" class="boton-google" id="google">
+        <a href="userLog.html" class="boton-google" id="google">
             <p>Inicia sesión con Google</p>
         </a>
 
-        <a href="home-loged.html" class="boton-google" id="facebook">
+        <a href="userLog.html" class="boton-google" id="facebook">
             <p>Inicia sesión con Facebook</p>
         </a>
 
@@ -163,13 +224,13 @@
             </section>
              
             <div class="copyright">
-            <h5 >Copyright 2022  Todos los derechos reservados</h5>
+            <h5 >Copyright 2023  Todos los derechos reservados</h5>
             </div>
         </div>   
     </footer>
    
 
     <script src="./js/loading.js"></script>
-    <script src="js/login.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 </html>
