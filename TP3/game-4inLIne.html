@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/f4f63da807.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Game-4inLine</title>
+</head>
+
+<body class="index-juego">
+    <!--<div id="contenedor-carga" class="contenedor-carga">
+        <div id="carga" class="carga">
+        </div>
+        <div class="porcentaje">
+            <p id="porcentaje-carga">0%</p>
+        </div>
+    </div>-->
+
+    <header>
+        <nav role="navigation">
+            <div id="menuToggle">
+                <div class="menu">
+                    <button class="btn"><img class="btnHamb" src="./img/iconoHambur.svg" alt="menu"></button>
+                </div>
+                <div class="menu-navbar">
+                    <ul>
+                        <li class="categorias">Categorias</li>
+                        <li><a href="#"><img src="./img/novedades.png" alt="logo">Novedades</a></li>
+                        <li><a href="#"><img src="./img/iconoTendencias.svg" alt="logo">Tendencias</a></li>
+                        <li><a href="#"><img src="img/clasicos.png" alt="logo">Acción</a></li>
+                        <li><a href="#"><img src="img/aventura.png" alt="logo">Aventuras</a></li>
+                        <li><a href="#"><img src="img/habilidad.png" alt="logo">Casuales</a></li>
+                        <li><a href="#"><img src="img/itemLucha.svg" alt="logo">Lucha</a></li>
+                        <li><a href="#"><img src="img/itemMundoAbierto.svg" alt="logo">Mundo Abierto</a></li>
+                        <li><a href="#"><img src="img/simulacion.png" alt="logo">Puzles</li></a></li>                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="logo">
+            <a href="./userLog.html"> <img src="img/Logo.svg" alt="logo"></a>
+        </div>
+        <div class="perfilCarrito">
+            <nav role="navigation">
+                <div id="menuToggleCarrito">
+                    <div>
+                        <button class="btn"><img class="btnCarrito" src="img/Carrito.svg" alt="carrito"></button>
+                    </div>
+                    <div class="menu-navbar-carrito">
+                        <div class="menuCarrito">
+                            <div class="rectangulo">
+    
+                            </div>
+                            <div class="encabezado">
+                                <div class="rectanguloEncabezado">
+                                </div>
+                                <div class="miCarrito">
+                                    <h1>Mi carrito </h1>
+                                </div>
+                                <div class="contCarrito">
+                                    <img class="imgCarrito" src="./img/menuCarrito/Carrito.svg" alt=""/>
+                                </div>
+                            </div>
+                            <div class="infoJuegoCarrito">
+                                <div>
+                                    <img class="imgJuegoCarrito" src="./img/menuCarrito/juego.svg"/>
+                                </div>
+                                <div class="juego">
+                                    Starfield    
+                                </div>
+                                <div class="precio">
+                                    ARS$11.999,00
+                                </div>
+                                <div>
+                                    <img class="papelera" src="./img/menuCarrito/papelera.svg" alt=""/>
+                                </div>
+                            </div>
+                            <div class="infoPagoCarrito">
+                                <div class="subtotal">
+                                    Subtotal
+                                </div>
+                                <div class="total">
+                                    Total
+                                </div>
+                                <div class="precioSubtotal">
+                                    ARS$11.999,00
+                                </div>
+                                <div class="precioTotal">
+                                    ARS$11.999,00
+                                </div>
+                                <div class="linea">
+                                </div>               
+                                <div class="btnComprarCarrito">
+                                    <div class="rectangle116">
+                                    </div>
+                                    <div class="comprar">
+                                        <h3>Comprar</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        
+        </nav>
+        <nav role="navigation">
+            <div id="menuTogglePerfil">
+                <div class="menu">
+                    <button class="btn" id="perfil"><img class="btnPerfil" src="img/avatarLogueado.svg" alt="carrito"></button>
+                </div>
+                <div class="menu-navbar-perfil">
+                    <div class="header-menu">
+                        <h2>¡Hola!</h2>
+                    </div>
+                    <ul>
+                        <li><a href="#"><img src="./img/novedades.png" alt="logo">Mi perfil</a></li>
+                        <li><a href="#"><img src="./img/iconoTendencias.svg" alt="logo">Editar perfil</a></li>
+                        <li><a href="#"><img src="img/clasicos.png" alt="logo">Mis carrito</a></li>
+                        <li><a href="#"><img src="img/aventura.png" alt="logo">Mis juegos</a></li>
+                        <li><a href="#"><img src="img/habilidad.png" alt="logo">Configuración</a></li>
+                        <li><a href="#"><img src="img/simulacion.png" alt="logo">Ayuda</a></li>                        
+                    </ul>
+                    <div class="btnCerrarSesion">
+                        <button><a href="login.html"><img src="./img/logoout.png" alt="logo">Cerrar sesión</a></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-juego ">
+        <div class="breadcrum">
+            <p><a href="./userLog.html"> HOME </a></p>
+            <img src="./img/arrow.png" alt="arrow">
+            <p><a href="#">CONTINUA JUGANDO</a></p>
+            <img src="./img/arrow.png" alt="arrow"> 
+            <p><a href="#">4 INLINE - Pirate Hunter</a><p>
+        </div>
+        
+        <h2>4 INLINE - Pirate Hunter</h2>
+        <section class="contenedor-juego">
+            <div class="contenedor-inicio" id="contenedor-inicio">
+                <video class="videoInicio" autoplay muted loop style=" overflow: hidden;" width="1000px" height="500px">
+                    <source src="./video/PiratasDelCaribe.mp4" type="video/mp4">
+                </video>
+                <img id="btn-comenzar" class="btn-comenzar" src="./img/4inLine/juego/btn-comenzar.svg" alt="">
+            </div>
+            <div class="contenedor-reiniciar" id="contenedor-reiniciar">
+                <img id="btn-reiniciar" class="btn-reiniciar" src="img/4inLine/juego/btn-reiniciar.svg" alt="">
+                <button id="btn-reiniciar" class="btn-reiniciar"><a><img src="img/4inLine/juego/icons8-reiniciar-26.png"alt="reiniciar">Reiniciar</a></button>
+            </div>
+            <div id="contenedor-board" class="board">
+                <canvas id="board" width="1000px" height="500px">
+                </canvas>
+            </div>
+            <div class="modal-4enlinea-back" id="modal-cuatroenlinea">
+                <div class="game-selectionpage">
+                    <div class="player-one">
+                        <h1>Jugador 1</h1>
+                        <div class="contenedor-nombre">
+                            <label>Nombre</label>
+                            <input class="playerName" id="POneName" type="text" placeholder="Jugador 1" maxlength="15">
+                        </div>
+                        <h2>Elija su Ficha</h2>
+                        <div class="coin-selector">
+                            <form action="" name="fichaJuno">
+                                <label class="contenedor-ficha" for="1">
+                                    <input class="selector-ficha" type="radio" name="pyone-coin" value="1" checked>
+                                    <img class="ficha" src="img/4inLine/juego/Ficha-brujula.png" alt="fichaBrujula">
+                                </label>
+                                <label class="contenedor-ficha" for="2">
+                                    <input class="selector-ficha" type="radio" name="pyone-coin" value="2">
+                                    <img class="ficha" src="img/4inLine/juego/Ficha-calavera.png" alt="Ficha-calavera">
+                                </label>
+                                <label class="contenedor-ficha" for="3">
+                                    <input class="selector-ficha" type="radio" name="pyone-coin" value="3">
+                                    <img class="ficha" src="img/4inLine/juego/Ficha-catalejos.png" alt="Ficha-calavera">
+                                </label>
+                                <label class="contenedor-ficha" for="4">
+                                    <input class="selector-ficha" type="radio" name="pyone-coin" value="4">
+                                    <img class="ficha" src="img/4inLine/juego/Ficha-espadas.png" alt="Ficha-calavera">
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="game-setings">
+                        <h1>Configuraciones del Juego</h1>
+                        <h2>Tipos de Tableros:</h2>
+                        <form class="tipoDejuego" name="tipoDeJuegoform">
+                            <div>
+                                <div class="contendor-tipoDeJuego">
+                                    <label class="contenedor-tablero" for="4">
+                                        <input class="selector-tablero" type="radio" name="pyone-coin" value="4" checked>
+                                        <img class="tablero-img" src="img/4inLine/juego/btnSeleccionTabl4.svg" alt="4enlinea">
+                                    </label>
+                                </div>
+                                <div class="contendor-tipoDeJuego">
+                                    <label class="contenedor-tablero" for="5">
+                                        <input class="selector-tablero" type="radio" name="pyone-coin" value="5">
+                                        <img class="tablero-img" src="img/4inLine/juego/btnSeleccionTabl5.svg" alt="5enlinea">
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="contendor-tipoDeJuego">
+                                    <label class="contenedor-tablero" for="6">
+                                        <input class="selector-tablero" type="radio" name="pyone-coin" value="6">
+                                        <img class="tablero-img" src="img/4inLine/juego/btnSeleccionTabl6.svg" alt="4enlinea">
+                                    </label>
+                                </div>
+                                <div class="contendor-tipoDeJuego">
+                                    <label class="contenedor-tablero" for="7">
+                                        <input class="selector-tablero" type="radio" name="pyone-coin" value="7">
+                                        <img class="tablero-img" src="img/4inLine/juego/btnSeleccionTabl7.svg" alt="4enlinea">
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                        <img class="btn-jugar" id="Start-button" src="img/4inLine/juego/btn-Jugar.svg" alt="btnJugar">
+                        <div class="ModalfichasIguales" id="ModalfichasIguales">
+                            <p>* Los jugadores deben elegir fichas diferentes!!</p>
+                        </div>
+                    </div>
+                    <div class="player-two">
+                        <h1>Jugador 2</h1>
+                        <div class="contenedor-nombre">
+                            <label>Nombre</label>
+                            <input class="playerName" id="PTwoName" type="text" placeholder="Jugador 2" maxlength="15">
+                        </div>
+                        <h2>Seleccione su Ficha</h2>
+                        <div class="coin-selector">
+                            <form action="" name="fichaJdos">
+                                <label class="contenedor-ficha" for="op1">
+                                    <input class="selector-ficha" type="radio" name="pyone-coin" value="1">
+                                    <img class="ficha" src="img/4inLine/juego/Ficha-brujula.png" alt="fichaBrujula">
+                                </label>
+                                <label class="contenedor-ficha" for="op2">
+                                    <input class="selector-ficha" type="radio" name="pyone-coin" value="2">
+                                    <img class="ficha" src="img/4inLine/juego/Ficha-calavera.png" alt="Ficha-calavera">
+                                </label>
+                                <label class="contenedor-ficha" for="op3">
+                                    <input class="selector-ficha" type="radio" name="pyone-coin" value="3">
+                                    <img class="ficha" src="img/4inLine/juego/Ficha-catalejos.png" alt="Ficha-calavera">
+                                </label>
+                                <label class="contenedor-ficha" for="op4">
+                                    <input class="selector-ficha" type="radio" name="pyone-coin" value="4" checked>
+                                    <img class="ficha" src="img/4inLine/juego/Ficha-espadas.png" alt="Ficha-calavera">
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--<section>
+            <div id = "contenedor-board">
+                <canvas id = "board" width = "1000px" height="500px"></canvas>
+            </div>
+
+
+        </section>
+        <div class="juego-content">
+            <section class="juego">
+                <div class="img-juego"> 
+                    <img src="./img/4inLine/4-en-linea.png" alt="Card image cap">
+                </div>
+                <div class="frame" >
+                    <button class="btn-jugar gratis">
+                        <a href="">Jugar</a>
+                        <img src="./img/4inLine/play.png" alt="btn-play">
+                    </button>
+                </div>
+            </section>
+        </div>-->
+
+
+
+<div class="descripcion-juego">
+    <img class="descripcion-jue"  src="./img/4inLine/fluent_joystick-20-filled.svg" alt="descripcion">
+        <h3>ACERCA DE ESTE JUEGO</h3>
+</div>        
+<section class="contenedor-decripciones-juego">
+    <div class="participa-batalla">
+        <div class="introduccion">
+             <div class="intro">
+                <img class="juego"  src="./img/4inLine/pirateicon.png" alt="iconopirata">
+                <h3>PARTICIPA DE LA BATALLA:</h3>
+            </div>
+            <div>
+                <p >En este tradicional juego, sumergete en en el lecho de un mar sitiado por bandos de grupos piratas y de
+                exploradores, donde se enfrentarán a disputar las riquezas que se se hallan pérdidas en el fondo del óceano
+                </p>
+            </div>
+        </div>
+         <section class="instrucciones">
+            <div class="instrucciones fichas">
+                <div class="instruccion-ficha">
+
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <figure class="flip-box">
+                                    <img src="./img/4inLine/Ficha-calabera.png" alt="logo">
+                                </figure>
+                            </div>
+
+                            <div class="flip-box-back">
+                                <figure class="flip-box">
+                                    <img src="./img/4inLine/Ficha-back.png" alt="logo">
+                                </figure>
+                            </div>
+                        </div>
+
+                        <div class="pirata" >    
+                            <h4>PIRATA</h4>
+                            <p id="explorador">Elije ser pirata y tendrás la valentía y destreza para vencer.</p>
+                        </div>
+                    </div>
+                 </div>
+
+                <h3 id="vs">VS.</h3>
+
+            <div class="instruccion-ficha">
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <figure class="flip-box">
+                                <img src="./img/4inLine/Ficha-brujula.png" alt="logo">
+                            </figure>
+                        </div>
+
+                        <div class="flip-box-back">
+                                <figure class="flip-box">
+                                    <img src="./img/4inLine/Ficha-back(2).png" alt="logo">
+                                </figure>
+                            </div>
+                    </div>
+
+                        <div class="explorador">
+                            <h4>EXPLORADOR</h4>
+                            <p id="explorador">Sé un explorador y consigue la astucia y poder para ganar.</p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+         </section>
+        </div>
+
+    <div class="comoGanar-controles">
+        <div class="comoGanar">
+         <section class="contenedor-juegoenlinea">
+            <div class="instrucciones-juego">
+                <img class="juego"  src="./img/4inLine/icons8-ayuda-50.png" alt="instrucciones">
+                <h3>¿CÓMO GANAR? </h3>
+            </div>
+            <div>
+                <p>Consiste en colocar, según la opción elegida: "4 en Linea", "5 en Linea", "6 en Linea" o "7 en Linea", fichas consecutivas, logrando sumar el número elegido. Puede ser en columna, fila o diagonal.</p>
+            </div>
+        </div>
+        <div class="conteneControles">
+            <div class="controles">
+                <img  class="juego" src="./img/4inLine/icons8-control-50.png" alt="controles">
+                <h3>CONTROLES:</h3>
+            </div>
+            <div class="controles-parrafos">
+                <ul> Click izquierdo - Seleccionar ficha.</ul>
+                <ul>Arrastrar mouse - Mover ficha.</ul>
+                <ul>Soltar click izquierdo - Colocar ficha.</ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="carrousel-juego">
+    <div class="detalle-juegopirate">
+        <img  class="juego" src="./img/4inLine/ion_images-sharp.svg" alt="galeria">
+        <h3>GALERIA DE IMAGENES DEL JUEGO</h3>
+    </div>
+    <div class="carrousel-juegos snap-inline cuatro-en-linea">
+        <div class="card-4-en-linea">
+            <img class="card-img-top-cuadrado" src="./img/4inLine/juego/Captura de pantalla9.png" alt="Card image cap">
+        </div>
+        <div id="open-img" class="card-4-en-linea">
+            <iframe width="430" height="480" src="https://www.youtube.com/embed/nxPjnWDnntU" title="20231106 111001" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="card-4-en-linea">
+            <img class="card-img-top-cuadrado" src="./img/4inLine/juego/Captura de pantalla7.png"  alt="Card image cap">
+        </div>
+        <div class="card-4-en-linea">
+            <img class="card-img-top-cuadrado" src="./img/4inLine/juego/Captura de pantalla5.png" alt="Card image cap">
+        </div>
+        <div class="card-4-en-linea">
+            <img class="card-img-top-cuadrado" src="./img/4inLine/juego/Captura de pantalla10.png" alt="Card image cap">
+        </div>
+    </div>
+</section>
+
+
+<div class="comentarios">
+    <img  class="juego" src="./img/4inLine/icon comentario (2).svg" alt="comentarios">
+    <h3>ESCRIBE TU RESEÑA:</h3>
+</div>
+<div class="contenedorComentarioInput">
+    <div  class="comentarioInput1">
+         <div class="rectangle102"></div>
+        <div class="line6"></div>
+        <div class="escribeUnaReseASobrePirateJunter">
+            <p id="parr"> Tú escribe una reseña sobre Pirate Junter</p>
+        </div>
+        <div class="rectangle103" ></div>
+        <div class="quPiensasDeEsteJuego">¿Qué piensas de este juego?</div>
+        <div class="recomiendasEsteJuego">¿Recomiendas este juego?</div>
+        <div class="btnMeGusta">
+            <div class="btnMeGusta2">
+                <button class="botonMeGusta2 btn"><img class="botonMeGusta"  src="./img/4inLine/Btn me gusta.svg" alt="me gusta"></button>
+            </div>
+        </div>
+        <div class="avatarLogueado">
+            <div class="perfil"></div>
+            <img class="perfil2" src="./img/avatarLogueado.svg" alt="avatar">
+        </div>
+        <div class="btnNoMeGusta">
+            <div class="btnNoGusta2">
+                <button class="btn"><img class="botonNoMeGusta"  src="./img/4inLine/Btn no me gusta.svg" alt="no me gusta"></button>
+            </div>
+        </div>
+        <div class="btnPublicar">
+            <button class="btn"><img class="botonPublicar"  src="./img/4inLine/btn publicar.svg" alt="publicar"></button>
+        </div>
+    </div>
+</div>
+
+<div class="contenedorComentario">
+    <div  class="comentarioInput">
+        <div class="rectangle112"></div>
+       <div class="line7"></div>
+       <div class="escribeUnaReseASobrePirateJunter">
+            <div><p id="parr"> Midnightlust</p></div>
+            <div><p id="parr2"> PUBLICADA EL 6 DE JULIO</p></div>
+       </div>
+       <div class="rectangle111" ></div>
+       <div class="quPiensasDeEsteJuego2">
+            <p >Creo que la caracteristica principal de este juego, es la manera de interactuar a la hora de mover las fichas, 
+            resulta muy útil la manera de colocar en el tablero y así podes completar la jugada para ganar a mi oponente</p>
+         </div>
+       <div class="avatarLogueado">
+           <div class="perfil"></div>
+           <img class="perfil2" src="./img/4inLine/perfil2.svg" alt="avatar">
+       </div>
+   </div>
+</div>
+
+<div class="contenedorComentario">
+<div  class="comentarioInput">
+    <div class="rectangle112"></div>
+   <div class="line7"></div>
+   <div class="escribeUnaReseASobrePirateJunter">
+        <div><p id="parr"> Hansonher</p></div>
+        <div><p id="parr2"> PUBLICADA EL 13 DE JUNIO</p></div>
+   </div>
+   <div class="rectangle111" ></div>
+   <div class="quPiensasDeEsteJuego2">
+        <p >Este juego tiene la principal ventaja de desarrollar
+        la capacidad de interactuar con tus fichas de manera que puedas lograr visualizar la estrategia adecuada para lograr ganar</p>
+     </div>
+   <div class="avatarLogueado">
+       <div class="perfil"></div>
+       <img class="perfil2" src="./img/4inLine/Perfil3.svg" alt="avatar">
+   </div> 
+   </div>
+</div>
+
+<div class="contenedorComentario">
+    <div  class="comentarioInput">
+        <div class="rectangle112"></div>
+    <div class="line7"></div>
+    <div class="escribeUnaReseASobrePirateJunter">
+            <div><p id="parr"> JackyouOk</p></div>
+            <div><p id="parr2"> PUBLICADA EL 2 DE OCTUBRE</p></div>
+    </div>
+    <div class="rectangle111" ></div>
+    <div class="quPiensasDeEsteJuego2">
+            <p >Dentro de todas las funcionalidades del juego, lo pirncipal a remarcar,
+            es que se distingue bien cual es la ficha de cada jugador que está participando</p>
+        </div>
+    <div class="avatarLogueado">
+        <div class="perfil"></div>
+        <img class="perfil2" src="./img/4inLine/perfil2.svg" alt="avatar">
+    </div>
+    </div>
+</div>   
+
+       
+    </div>
+    </div>
+</div>
+      
+
+    <footer>
+        <div class="container-footer">
+
+            <section class="info-web">
+                    <h4>¿Quienes somos?</h4>
+                    <p class="textoFooter">Play Fun! es una plataforma de juegos en línea. Fue fundada en 2013 por Raf Mertens y, desde entonces, la plataforma ha crecido hasta llegar a más de 15 millones de usuarios mensuales.
+                    Tenemos un objetivo muy sencillo: crear una plataforma de juegos .
+                    </p>
+            </section>
+
+            <section class="info-app">
+                <h4>¿Quienes somos?</h4>
+                <p class="textoFooter">Play Fun! es una plataforma de juegos en línea. Fue fundada en 2013 por Raf Mertens  y, desde entonces, la plataforma ha crecido hasta llegar a más de 15 millones de usuarios mensuales.
+                </p>
+            </section>
+
+
+            <section class="ayuda">
+                <h4>Ayuda</h4>
+                <ul>
+                    <li class="textoFooter">Términos de uso</li>
+                    <li class="textoFooter">Politicas de privacidad</li>
+                    <li  class="textoFooter" >Información para padres</li>
+                    <li  class="textoFooter">Cookies</li>
+                    <li  class="textoFooter">Concentimiento de cookies</li>
+                </ul>
+            </section>
+
+
+            <section class="idiomas">
+                <h4>Idiomas</h4>
+                <ul>
+                    <li>English</li>
+                    <li>British Englis</li>
+                    <li>Deutsch</li>
+                    <li>Français</li>
+                    <li>Italiano</li>
+                    <li>Português</li>
+                </ul>
+            </section>
+
+         
+               
+             <section class="redes">
+                <div class="logo-footer">
+                    <img src="img/Logo.png" alt="logo">
+                </div>
+                <div class="containRedes">
+                    <div class="redess">
+                        <p>Seguinos en nuestras</p>
+                    </div>
+                    <div class="redesSociales">
+                        <p> redes sociales</p>
+                    </div>
+                </div>                
+                    <ul>
+                        <li><img src="img/Share.png" alt="logo"></li>
+                        <li><img src="img/Instagram.png" alt="logo"></li>
+                        <li><img src="img/TikTok.png" alt="logo"></li>
+                        <li><img src="img/Twitter.png" alt="logo"></li>
+                        
+                    </ul>
+            </section>
+     
+             
+            <div class="copyright">
+            <h5 >Copyright 2023  Todos los derechos reservados</h5>
+            </div>
+        </div>   
+    </footer>
+
+   
+    <script src="./js/loading.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/menuDesplegable.js"></script>
+    <script src="./js/menuPerfil.js"></script>
+    <script src="./js/menuCarrito.js"></script>
+    <script src="./js/4enlinea/main.js"></script>
+    <script src="./js/4enlinea/ficha.js"></script>
+    <script src="./js/4enlinea/tablero.js"></script>
+    <script src="./js/4enlinea/juego.js"></script>
+</body>
+</html>
