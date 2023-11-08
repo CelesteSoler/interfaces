@@ -2738,7 +2738,7 @@ footer {
 
    
     .game-selectionpage {
-        background-image: url(../../Entregable3/images/4enlinea/fondo-playa.png);
+        background-image: url("../img/4inLine/juego/fondo-playa.png");
         box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
         height: 600px;
         width: 1400px;
