@@ -7,35 +7,47 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/f4f63da807.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="./css/styles.css">
         <title>Home</title>
     </head>
     
     <body>
-        
-        <header>
-            <div style="width: 100%; height: 100%; position: relative">
-                <div style="width: 1280px; height: 103px; left: 0px; top: 0px; position: absolute; background: linear-gradient(180deg, #5499F8 0%, #5499F8 88%, rgba(84, 153, 248, 0) 100%)"></div>
-                <div style="width: 34px; height: 26px; left: 98px; top: 31px; position: absolute">
-                    <div style="width: 34px; height: 4px; left: 0px; top: 0px; position: absolute; background: #FFE901; border-radius: 111px; border: 4px #2981FF solid"></div>
-                    <div style="width: 34px; height: 4px; left: 0px; top: 11px; position: absolute; background: #FFE901; border-radius: 111px; border: 4px #2981FF solid"></div>
-                    <div style="width: 34px; height: 4px; left: 0px; top: 22px; position: absolute; background: #FFE901; border-radius: 111px; border: 4px #2981FF solid"></div>
-                </div>
-                <div style="width: 200px; height: 50px; left: 1018px; top: 19px; position: absolute">
-                    <div style="width: 200px; height: 50px; left: 0px; top: 0px; position: absolute; background: #FFE901; box-shadow: 4px 5px 0px #02187E; border-radius: 111px; border: 8px #2982FF solid"></div>
-                    <div style="left: 43px; top: 16px; position: absolute; color: #02187E; font-size: 20px; font-family: Lato; font-weight: 900; line-height: 18.90px; letter-spacing: 2.20px; word-wrap: break-word; -webkit-text-stroke:2px;">COMPRAR</div>
-                </div>
-                <!-- <img style="width: 133px; height: 68px; left: 522px; top: 17px; position: absolute" src="images/Logo.png" /> -->
+        <div class="container">
+            <div class="tapaMenu"></div>
+            <div class="pagina">
+                <header id="header">
+                    <nav>
+                        <div id="menuToggle" >
+                            <input id="input-check" type="checkbox" />
+                            <span class="span-toggle"></span>
+                            <span class="span-toggle"></span>
+                            <span class="span-toggle"></span>
+                            <div id="menu">
+                                <div class="header-menu"></div>
+                                <ul>
+                                    <li class="item">Home</li>
+                                    <li class="item">Redes</li>
+                                    <li class="item">Novedades</li>
+                                    <li class="item">Categorías</li>
+                                    <li class="item">Mi Perfil</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="box"><div class="fondo-btn"><p>COMPRAR</p></div></div>
+                        <img class="logo" src="./images/header/logo.svg" />
+                    </nav>
+                </header>
             </div>
-        </header>
+            <div class="tapaMenu"></div>
+        </div>
 
-        <img style="width: 100%; height: 100%" src="images/Fondo-nubes.png" />
+        <img style="width: 100%; height: 100%" src="./images/parallaxComienzo/Fondo-nubes.png" />
         <div style="width: 100%; height: 100%; background: #8F6AA6"></div>
         
         <footer>
 
         </footer>
-
+        <script src="./js/main.js"></script>
     </body>
 
 </html>
