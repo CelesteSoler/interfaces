@@ -222,14 +222,14 @@ header {
     position: absolute;
     width: 216px;
     height: 66px;
-    top: 12px;
+    top: 20px;
     left: 972px;
     background-color: #ffe901;
     border-radius: 111px;
     border: 8px solid;
     border-color: var(--x-298-2ff);
     box-shadow: var(--drop-shadow);
-    -webkit-text-stroke: 1px #02187e;
+    -webkit-text-stroke: 2px #02187e;
     font-family: "Lato", Helvetica;
     font-weight: 900;
     color: #02187e;
