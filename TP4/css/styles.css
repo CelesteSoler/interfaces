@@ -6,26 +6,26 @@
 :root {
     --x-298-2ff: rgba(41, 130, 255, 1);
     --drop-shadow: 4px 5px 0px 0px rgba(2, 24, 126, 1);
+    --font: url("https://fonts.googleapis.com/css?family=Lato:400,900,600");
   }
 
 
 * {
-    -webkit-font-smoothing: antialiased;
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    list-style: none;
+    box-sizing: border-box;
+    font-family: var(--font);
     text-decoration: none;
+    -webkit-font-smoothing: antialiased;
     border: none;
     outline: none;
-    font-family: 'Roboto', sans-serif;
     vertical-align: baseline;
 }
 
-html,
 body {
-    margin: 0px;
-    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: black;
 }
 
 *,
@@ -41,29 +41,11 @@ body {
 
 /*----------------estilos de la página---------*/
 
-.container{
-    background-color: #000000;
-    display: flex; 
-    justify-content: center;
-    width: 100%;
-}
-
-.pagina{
-    background-color: #000000;
-    width: 1280px;
-    height: 8968px;
-    position: relative;
-    z-index: 2;
-}
 
 header {
     background: linear-gradient(180deg, rgb(84, 153, 248) 0%, rgb(84, 153, 248) 87.91%, rgba(84, 153, 248, 0) 100%);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     position: sticky;
-    width: 1280px;
+    width: 100%;
     height: 227px;
     top: 0;
     z-index: 1;
@@ -288,7 +270,7 @@ header {
 /*header sticky*/
 header.fixed {
     position: fixed;
-    width: 1280px;
+    width: 100%;
     height: 103px;
     transition: 0.3s;
     background-color: #2981ff;
