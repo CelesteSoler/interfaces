@@ -285,7 +285,48 @@ header.fixed .logo {
     left: 45%;
     object-fit: cover;
 }
+/*-------Sección Cards y texto-------------*/
+#container-cards{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 1280px;
+   
+    height:700px;
+}
 
+.cards{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-top: 100px;
+}
+
+.text-cards{
+    width: 333px;
+    font-family: "Lato", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+#card-1{
+    margin-left: 100px;
+}
+#card-2{
+    margin-left:50px;
+    margin-right: 50px ;
+}
+
+#img-card{
+    margin: 0 0 20px 0;
+}
+
+
+
+/*----------Fin seccion Cards y texto------------*/
 /*------------parte Sprite Sheet Personajes---------*/
 
 .parte-final{
@@ -437,11 +478,12 @@ header.fixed .logo {
      font-family: Lato; 
     }
   
-    .image-teen{
+    #image-teen{
      width: 231px; 
      height: 145px; 
      left: 302px;
      top: 620px; 
     position: absolute;
     }
+   
     /*-----------fin spritesheet----------*/
