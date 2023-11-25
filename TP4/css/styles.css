@@ -285,8 +285,8 @@ header.fixed .logo {
 /*-----AMAZING SPIDEY Héroes con ciudad de fondo y nubes------*/
 
 @keyframes scroll-x{
-    0% {background-position-x: 0px;}
-    100% {background-position-x: -3360px;}
+    0% {background-position-x: 2560px;}
+    100% {background-position-x: -2560px;}
 }
 
 @keyframes zoom{
@@ -295,7 +295,7 @@ header.fixed .logo {
 }
 
 @keyframes scroll-y{
-    0%{background-position-y: 0px;}
+    0%{background-position-y: 720px;}
     100% {background-position-y: -720px;}
 }
 
@@ -323,12 +323,12 @@ header.fixed .logo {
 
 .layer-3{
     background-image: url("../images/starterHome/Layer-Gwen-Miles.png");
-    animation: scroll-y 30s linear;
+    animation: scroll-y 30s infinite linear;
 }
 
 .layer-4{
     background-image: url("../images/starterHome/Layer-Spidey.png");
-    animation: scroll-y 10s linear;
+    animation: scroll-y 10s infinite linear;
 }
 
 /*-------Sección Cards y texto-------------*/
