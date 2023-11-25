@@ -318,7 +318,7 @@ header.fixed .logo {
 
 .layer-2{
     background-image: url("../images/starterHome/Buildings-complete.png"); 
-    animation: zoom 60s;  
+    /* animation: zoom 60s;   */
 }
 
 .layer-3{
