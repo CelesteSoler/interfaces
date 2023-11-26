@@ -435,9 +435,9 @@ header.fixed .logo {
    
 .container-suscribirse{
    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 152px; 
+   justify-content: center;
+   align-items: center;
+   margin-top: 152px; 
    
 }
  
@@ -447,7 +447,7 @@ header.fixed .logo {
     height: 100px;
 }
 .container-suscribirse input::placeholder{
-    font: 'Lato';
+    font-family: "Lato", Helvetica;
     letter-spacing: 11%;
     font-size: 18.9px;;
 }
@@ -465,6 +465,7 @@ header.fixed .logo {
 }
 
 .texto-suscrib{
+    font-family: "Lato", Helvetica;
     color: #02187e;
     font-size: 20px;
     font-weight: 900;
@@ -481,9 +482,13 @@ header.fixed .logo {
 }
 
 .container-suscribirse input::placeholder{
-    color: rgb(197, 195, 195);
-    letter-spacing: 2.2px;
     padding-left: 50px;
+    color: rgba(134, 134, 134, 0.39); 
+    font-size: 20px; 
+    font-family: "Lato"; 
+    font-weight: 400; 
+    line-height: 18.90px; 
+    letter-spacing: 2.20px; word-wrap: break-word;
 }
 
 .container-suscribirse button{
