@@ -417,13 +417,13 @@ header.fixed .logo {
       }
   
       #personaje-3{
-        background: url('https://github.com/CelesteSoler/images/blob/main/$Spider-Gwen1.png?raw=true');
-        height:48px; 
-        width:46.9px;
-        margin-top: 1.9em;
+        background: url('/images/spritesheet/Miles-Morales.png');
+        height:50px; 
+        width:46px;
+        margin-top: 1.3em;
         margin-left: 35em;
         z-index: 10;
-        animation: sprite-animation 3s steps(3) infinite;
+        animation: sprite-animation 3s steps(5) infinite;
         }
   
   @keyframes sprite-animation { 
