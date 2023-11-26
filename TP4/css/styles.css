@@ -328,7 +328,7 @@ header.fixed .logo {
 
 .layer-4{
     background-image: url("../images/starterHome/Layer-Spidey.png");
-    animation: scroll-y 10s infinite linear;
+    animation: scroll-y 15s infinite linear;
 }
 
 /*-------Sección Cards y texto-------------*/
