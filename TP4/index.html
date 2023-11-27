@@ -13,7 +13,7 @@
     
     <body>
         <header id="header">
-            <nav>
+            <nav class="width-1080">
                 <div id="menuToggle" >
                     <input id="input-check" type="checkbox" />
                     <span class="span-toggle"></span>
@@ -30,99 +30,217 @@
                         </ul>
                     </div>
                 </div>
-                <div class="box"><div class="fondo-btn"><p>COMPRAR</p></div></div>
-                <img class="logo" src="./images/header/logo.svg" />
+                <div><button class="fondo-btn textoBtnComprar">COMPRAR</button></div>
             </nav>
         </header>
 
-        <div> 
-            <img id="img-provisoria" src="images/Captura de pantalla 2023-11-24 152547.png" style="width: 1280px;"> 
-        </div>
+        <section id="parallax"><!--parallax-->
 
-        <div>
-            <div class="layer layer-1"></div>
-            <div class="layer layer-2"></div>
-            <div class="layer layer-3"></div>
-            <div class="layer layer-4"></div>
-        </div>
-            
-      <section id="container-cards">
-        <div class="cards" id="card-1">
-            <div>
-                <img id="img-card" src="images/image 13.svg">
-            </div>
-            <div>
-                <p class="text-cards" id="text-1">
-                    Peter Parker, un joven huérfano neoyorquino que adquiere superpoderes después de ser mordido por una araña
-                    radiactiva,​ y cuya ideología como héroe se ve reflejada primordialmente en la expresión "un gran poder
-                    conlleva una gran responsabilidad".
+        </section>
+
+
+
+
+        <section id="seccionDuendeVerde" class="fndDuendeVerde"><!--duende verde-->
+            <div class="width-1080">
+                <h1 class="h1">Conoce a Spidey y sus sorprendentes amigos</h1>
+                <p class="p">Spidey, nuestro lanzador de telarañas favorito se une a Ghost-Spider (Gwen Stacey) y 
+                    Miles Morales para formar el equipo de Spidey, 
+                    con la ayuda del cómico pero leal robot de Spidey, TRACE-E. 
+                    Si Spidey se encuentra en una situación difícil donde necesita aún más poder de superhéroe, 
+                    tengan la seguridad de que un amigo de los Vengadores correrá para ayudar.
                 </p>
+                <div class="containerImgTarjDV">
+                    <img class="imgTarjDV" src="./images/duendeVerde/imgTarjDV.png" alt="">
+                </div>
+                <div class="containerDuendeVerde">
+                    <img id="duendeVerde" class="imgDuendeVerde" src="./images/duendeVerde/duendeVerde.png" alt="">
+                </div>
             </div>
-        </div>
-        <div class="cards" id="card-2">
-            <div>
-                <img id="img-card" src="images/image 8.svg">
+
+        </section>
+    
+        <section class="seccionCards width-1080">
+            <div class="contenedorCards">
+                <div class="card card1 efecto-card1">
+                    <img src="./images/cards/card1.svg" class="img-card"  alt="">
+                    <p class="textoCards"><br>Peter Parker, un joven huérfano neoyorquino que adquiere superpoderes después de ser mordido por una araña
+                        radiactiva, y cuya ideología como héroe se ve reflejada primordialmente en la expresión "un gran poder
+                        conlleva una gran responsabilidad".</p>
+                </div>
+                <div class="card card2 efecto-card2">
+                    <img src="./images/cards/card2.svg" class="img-card" alt="">
+                    <p class="textoCards"><br>Tras la muerte de Peter Parker, es quien toma la identidad de <br />Spider-Man. <br />La elección del
+                        presidente Barack Obama en enero de 2009, fue una fuente de inspiración para el cambio de etnicidad de
+                        Spider-Man.</p>
+                </div>
+                <div class="card card3 efecto-card3">
+                    <img src="./images/cards/card3.svg" class="img-card" alt="">
+                    <p class="textoCards"><br>El personaje es una variante de El Hombre Araña, una versión de universo alternativo de Gwen Stacy. Ella
+                        reside en la "Tierra-65", donde, en lugar de Peter Benjamin Parker, Gwen Stacy fue mordida por la
+                        Araña Radiactiva.</p>
+                </div>
             </div>
-            <div>
-                <p class="text-cards" id="text-2">
-                    Tras la muerte de Peter Parker, es quien toma la identidad de <br />Spider-Man. <br />La elección del
-                    presidente Barack Obama en enero de 2009, fue una fuente de inspiración para el cambio de etnicidad de
-                    Spider-Man.
-                </p>
+        </section>
+
+        <section id="parte-ghost" class="parteGhost">
+            <div class="width-1080">
+                <div id="test1" class="test1">
+                    <img src="./images/ghost-spider/test.svg">
+                </div>
+                <div id="test2" class="test2">
+                    <img src="./images/ghost-spider/test (1).svg">
+                </div>
+                <div id="test3" class="test3">
+                    <img src="./images/ghost-spider/test (2).svg">
+                </div>
             </div>
-        </div>
-        <div class="cards" id="card-3">
-            <div>
-                <img id="img-card" src="images/image 24.svg">
+        </section>
+
+        <section class="seccionVengadores"><!--los vengadores-->
+            <div class="width-1080">
+                <h1 class="tituloVengadores">Los vengadores acompañando tu aventura</h1>
+                <div class="contenedorImagenes">
+                    <img class="layer1" src="./images/vengadores/fndNubesVengadores.png" alt="">
+                    <img class="layer2" src="./images/vengadores/fndVengadores2.png" alt="">
+                    <img class="elastigirl" src="./images/vengadores/elastigirl.png" alt="">
+                    <img class="hulk" src="./images/vengadores/hulk.png" alt="">
+                    <img class="layer3" src="./images/vengadores/fndVengadores.png" alt="">
+                    <img class="pantera" src="./images/vengadores/pantera.png" alt="">
+                </div>
             </div>
-            <div>
-                <p class="text-cards" id="text-3">
-                    El personaje es una variante de El Hombre Araña, una versión de universo alternativo de Gwen Stacy. Ella
-                    reside en la "Tierra-65", donde, en lugar de Peter Benjamin Parker, Gwen Stacy fue mordida por la
-                    Araña Radiactiva
-                </p>
+        </section>
+
+        <section class="seccionMasAmigos">
+            <div class="width-1080 scroll-container ">
+                <h1>Mas amigos, mas diversión!</h1>
+                <div class="rowCont">
+                    <div class="contenedorImg">
+                        <div class="contenedor-imagenes">
+                            <div class="imgMasAmigos" id="imgMasAmigos1">
+                                <img src="./images/masAmigos/img1.png" id="img1" alt="">
+                            </div>
+                            <div class="imgMasAmigos" id="imgMasAmigos2">
+                                <img src="./images/masAmigos/img2.png" id="img2" alt="">
+                            </div>
+                            <div class="imgMasAmigos" id="imgMasAmigos3">
+                                <img src="./images/masAmigos/img3.png" id="img3" alt="">
+                            </div>
+                            <div class="imgMasAmigos" id="imgMasAmigos4">
+                                <img src="./images/masAmigos/img4.png" id="img4" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contenedor-parrafos">
+                        <div class="parrafoScroll" id="parrafo1">
+                            <h2 id="titulo1"   class="titulo-h2">Mas de 100 misiones para que juegues sin parar!</h2>
+                            <p id="texto1">Tus padres, contentos. Explora el emocionante mundo de Spider-Man con mas de 100 misiones que te mantendran en 
+                                constante accion y adrenalina. Enfrentate a desafios unicos, desentrania misterios, y ayuda a Spider-Man a mantener 
+                                la paz en la ciudad mientras te sumerges en la piel del heroe aracnido. Tienes lo que se necesita para superar
+                                todas las misiones y convertirte en el autentico Spider-Man?</p>
+                        </div>
+                        <div class="parrafoScroll" id="parrafo2">
+                            <h2>Escenas deslumbrantes que te sorprenderan</h2>
+                            <p>Sumergete en un universo de maravillas visuales con 'Spider-Man: [nombre del juego]'.
+                                Nuestro juego te llevara a traves de escenas deslumbrantes que te dejaran sin aliento. Desde los rascacielos
+                                de Nueva York hasta los intrincados detalles de la vida de Peter Parker, cada rincon de este mundo te 
+                                sorprendera. Preparate para una experiencia unica que desafiara tus expectativas y te transportara a un
+                                asombroso viaje con el Hombre Arania</p>
+                        </div>
+                        <div class="parrafoScroll" id="parrafo3">
+                            <h2>Cada mision te dara puntos que no sirven para nada!</h2>
+                            <p>Cada mision es una oportunidad para vivir 
+                                la emocionante vida del Hombre Arania, y aunque los puntos que ganaras no tengan un proposito especifico, 
+                                la verdadera recompensa esta en la diversion y la inmersion que experimentaras en cada desafio. No necesitas 
+                                acumular puntos para sentirte como un autentico superheroe, ya que la adrenalina de salvar la ciudad y la emocion de las 
+                                acrobacias en el aire son mas que suficientes. Asi que preparate para sumergirte en la accion y la aventura, sin preocuparte por los puntos, y vive 
+                                la experiencia definitiva de Spider-Man!</p>
+                        </div>
+                        <div class="parrafoScroll" id="parrafo4">
+                            <h2 id="titulo4" class="titulo-h2">Derrota a los villanos y diviertete</h2>
+                            <p id="texto4">Dominguez se lleva la Daga, diciendole que el se encargara de revertir el proceso de destruccion para reconstruir el mundo y eliminar los defectos de la humanidad. Poco despues de que
+                                Dominguez se va con sus hombres, un tsunami destruye la isla, pero Lara y Jonah sobreviven al desastre. Sin
+                                embargo, Lara se siente culpable por el resultado de sus acciones y comienzan a surgir tensiones entre ella y
+                                Jonah.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-      </section>
-     
-      <section class="spritesheet"  id="marco">
-        <div id="cielo">
-          <div class="titulo-spidey">Lo último de SPIDEY Y SUS AMIGOS en tu buzón de <br>correo electrónico</br></div>
-          <div class="container-suscribirse">
-            <input class="suscribirse" type="text" placeholder="Ingresa aquí tu correo">
-            <button class="suscribirse texto-suscrib">SUSCRIBIRSE</button>
-          </div>
-          <div class="texto-politicas-privacidad"><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 18.90px; word-wrap: break-word">Al inscribirse en nuestra lista de correo, nos autoriza a ponernos en contacto con usted para enviarle ofertas y actualizaciones de marketing por correo electrónico, y también acepta nuestra </span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; text-decoration: underline; line-height: 18.90px; word-wrap: break-word">Política de privacidad</span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 18.90px; word-wrap: break-word"> y las </span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; text-decoration: underline; line-height: 18.90px; word-wrap: break-word">Condiciones del servicio.</span></div>
-          <img class="image-teen" src="./images/spritesheet/image 224.png">
-          <div id="edificios">
-            <div id="personaje-1"></div>
-            <div id="personaje-2"></div>
-            <div id="personaje-3"></div>
-          </div>
-        </div>
-      </section>
-    <footer>
-        <div class="footer">
-            <div class="rectangle-black"></div>
-            <img class="image-logos" src="./images/footer/image 240.svg"/>
-            <div class="rectangle-gray"></div>
-            <div class="texto-footer"><span style="color: white; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 18.90px; letter-spacing: 2.20px; word-wrap: break-word">©SEGA. All rights reserved. SEGA is
-                 registered in the U.S. Patent and Trademark Office. SEGA, the SEGA logo and SONIC SUPERSTARS are either registered trademarks or trademarks 
-                 of SEGA CORPORATION or its affiliates. All other trademarks, logos and copyrights are property of their respective owners.©2023 The LEGO 
-                 Group. LEGO, the LEGO logo, the Minifigure, and the Brick and Knob configurations are trademarks and/or copyrights of the LEGO Group. 
-                 All other marks and trademarks are the property of their respective owners. All rights reserved."PS", "PS5" and "PS4" are registered 
-                 trademarks or trademarks of Sony Interactive Entertainment Inc.Microsoft, the Xbox Sphere mark, the Series X logo, Xbox One, and Xbox Series X 
-                 are trademarks of the Microsoft group of companies.Nintendo Switch is a trademark of NintendoEPIC GAMES and the EPIC STORE LOGO are trademarks
-                  or registered trademarks of EPIC GAMES INC.©2023 Valve Corporation. Steam and the Steam logo are trademarks and/or registered trademarks 
-                  of Valve Corporation in the U.S. and/or other countries.The ESRB rating icons are registered trademarks of the Entertainment Software 
-                  Association.<br/><br/></span><span style="color: white; font-size: 20px; font-family: Lato; font-weight: 400; text-decoration: underline;
-                  line-height: 18.90px; letter-spacing: 2.20px; word-wrap: break-word">COOKIE POLICY</span><span style="color: white; font-size: 20px; font-family: Lato; 
-                  font-weight: 400; line-height: 18.90px; letter-spacing: 2.20px; word-wrap: break-word"> </span><span style="color: white; font-size: 20px;
-                   font-family: Lato; font-weight: 400; text-decoration: underline; line-height: 18.90px; letter-spacing: 2.20px; word-wrap: break-word">PRIVACY POLICY</span></div>
-            <img class="image-redes" src="./images/footer/image 241.svg" />
-          </div>
-    </footer>
+        </section>
+
+        <section class="seccionBtnComprar"><!--un gran poder conlleva una gran responsabilidad-->
+           <div class="width-1080">
+                <h1 class="tituloSeccionBtnComprar">”Un gran poder conlleva una gran responsabilidad”</h1>
+                <div><button class="fondo-btn-poder textoBtnComprar">COMPRAR AHORA</button></div>
+           </div>
+
+        </section> 
+
+        <section class="seccionSuperheroes fndBlanco" id="seccionSuperheroes"><!--3 superheroes-->
+            <div class="width-1080">
+                <img class="super1" src="./images/seccion3Superheroes/super1.svg" alt="" id="super1">
+                <img class="super2" src="./images/seccion3Superheroes/super2.svg" alt="" id="super2">
+                <img class="super3" src="./images/seccion3Superheroes/super3.svg" alt="" id="super3">
+            </div>
+                
+        </section> 
+    
+        <section class="spritesheet"  id="marco">
+            <div id="cielo">
+                <div class="width-1080">
+                    <h1 class="titulo-spidey">Lo último de SPIDEY Y SUS AMIGOS en tu buzón de correo electrónico</h1>
+                    <div class="container-suscribirse">
+                      <input class="suscribirse" type="text" placeholder="Ingresa aquí tu correo">
+                      <button class="suscribirse texto-suscrib">SUSCRIBIRSE</button>
+                    </div>
+                    <div class="texto-politicas-privacidad"><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 18.90px; word-wrap: break-word">Al inscribirse en nuestra lista de correo, nos autoriza a ponernos en contacto con usted para enviarle ofertas y actualizaciones de marketing por correo electrónico, y también acepta nuestra </span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; text-decoration: underline; line-height: 18.90px; word-wrap: break-word">Política de privacidad</span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 18.90px; word-wrap: break-word"> y las </span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; text-decoration: underline; line-height: 18.90px; word-wrap: break-word">Condiciones del servicio.</span></div>
+                    <img class="image-teen" src="./images/spritesheet/image 224.png">
+                </div>
+
+                <div id="edificios">
+                    <div id="personaje-1"></div>
+                    <div id="personaje-2"></div>
+                    <div id="personaje-3"></div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="width-1080">
+                <div class="rectanguloNegro">
+                    <img class="image-logos" src="./images/footer/logosFooter.svg" alt="">
+                <div class="rectanguloGris">
+                    <div class="width-1080">
+                        <p class="textoFooter">
+                                ©SEGA. All rights reserved. SEGA is registered in the U.S. Patent and Trademark Office. SEGA, the SEGA logo and 
+                                SONIC SUPERSTARS are either registered trademarks or trademarks of SEGA CORPORATION or its affiliates. All other 
+                                trademarks, logos and copyrights are property of their respective owners.©2023 The LEGO Group. LEGO, the LEGO logo, 
+                                the Minifigure, and the Brick and Knob configurations are trademarks and/or copyrights of the LEGO Group. All other 
+                                marks and trademarks are the property of their respective owners. All rights reserved."PS", "PS5" and "PS4" are 
+                                registered trademarks or trademarks of Sony Interactive Entertainment Inc.Microsoft, the Xbox Sphere mark, the Series 
+                                X logo, Xbox One, and Xbox Series X are trademarks of the Microsoft group of companies.Nintendo Switch is a trademark 
+                                of NintendoEPIC GAMES and the EPIC STORE LOGO are trademarks or registered trademarks of EPIC GAMES INC.©2023 Valve 
+                                Corporation. Steam and the Steam logo are trademarks and/or registered trademarks of Valve Corporation in the U.S. 
+                                and/or other countries.The ESRB rating icons are registered trademarks of the Entertainment Software Association.
+                                <br>
+                                <br>
+                                <span> COOKIE POLICY    PRIVACY POLICY</span>
+                        </p>
+                        <div>
+                            <img class="image-redes" src="./images/footer/footerRedes.svg" alt="">
+                        </div>
+                        
+                    </div>
+                </div>
+        </footer>
+
+        
         <script src="./js/main.js"></script>
+        <script src="./js/seccionCards.js"></script>
+        <script src="./js/seccionDuendeVerde.js"></script>
+        <script src="./js/seccionMasAmigos.js"></script>
+        <script src="./js/seccion3Superheroes.js"></script>
     </body>
 
 </html>
