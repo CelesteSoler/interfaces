@@ -150,7 +150,7 @@ header {
     width: 100%;
     height: 227px;
     top: 0;
-    z-index: 3;
+    z-index: 1;
     transition: 0.4s;
 }
 
@@ -327,7 +327,7 @@ header .width-1080{
     box-shadow: var(--drop-shadow);
     -webkit-text-stroke: 2px;
     line-height: 20px;
-    margin-left: 972px;;
+    margin-left: 930px;;
 }
 
 
@@ -355,6 +355,7 @@ header.fixed {
     transition: 0.3s;
     background-color: #2981ff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 3;
 }
 
 header.fixed .logo {
@@ -433,7 +434,7 @@ header.fixed .logo {
     width: 553px;
     height: 921px;
     top: 134px;
-    left: 632px;
+    left: 627px;
 }
     
 /*-----AMAZING SPIDEY Héroes con ciudad de fondo y nubes------*/
@@ -477,17 +478,19 @@ header.fixed .logo {
 .layer-2{
     background-image: url("../images/starterHome/Buildings-complete.png"); 
     /* animation: zoom 60s;   */
+    z-index: 1;
 }
 
 .layer-3{
     background-image: url("../images/starterHome/Layer-Gwen-Miles.png");
     animation: scroll-y 30s infinite linear;
+    z-index: 2;
 }
 
 .layer-4{
     background-image: url("../images/starterHome/Layer-Spidey.png");
     animation: scroll-y 15s infinite linear;
-    z-index: 2;
+    z-index: 3;
     height: 750px;
 }
 
@@ -1038,9 +1041,8 @@ header.fixed .logo {
 }
 
 .image-logos{
-    width: 1080px; 
+    width: 100%; 
     height: 75px; 
-    left: 240px; 
     margin-top: 1px; 
     position: absolute;
 }
