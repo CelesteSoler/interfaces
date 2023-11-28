@@ -909,7 +909,7 @@ header.fixed .logo {
 }
 
 #personaje-3{
-    background: url('/images/spritesheet/Miles-Morales.png');
+    background: url('../images/spritesheet/Miles-Morales.png');
     height:48px; 
     width:46.9px;
     margin-top: 1.9em;
