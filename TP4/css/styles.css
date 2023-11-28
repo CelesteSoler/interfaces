@@ -911,7 +911,7 @@ header.fixed .logo {
 }
 
 #personaje-3{
-    background: url('/images/spritesheet/black-3.png');
+    background: url('../images/spritesheet/black-3.png');
     height: 60px; 
     width: 52px;
     margin-top: 1.4em;
