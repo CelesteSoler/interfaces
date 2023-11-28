@@ -1,6 +1,13 @@
 "use strict"
 
+const preventScroll = (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+  return false;
+}
+
 document.addEventListener("DOMContentLoaded", function () {
+  document.querySelector('#loader-container').addEventListener('wheel', preventScroll, { passive: false });
     // Simulate content loading
     simulateContentLoading();
   });
@@ -19,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         clearInterval(interval);
         // Hide loader and display content
         document.getElementById("loader-container").style.display = "none";
+        document.getElementById("loader-container2").style.display = "none";
         // Your code to display the actual content
       }
     }, 50);

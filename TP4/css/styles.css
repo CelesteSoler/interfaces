@@ -41,18 +41,26 @@ body {
 }
 
 /*------------------------------LOADER-------------------*/
-/* 
+ 
 .loader-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    min-height: 1000px;
+    z-index: 999999999;
+    background-color: #2981ff;
+    position: fixed;
 }
   
 .loader-container .spiderman {
     width: 300px;
     vertical-align: top;
-    margin-top: -60px;
+    margin-top: -200px;
     animation-name: animar;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -90,16 +98,15 @@ body {
     }
 }
 
+
 #loader-wrapper {
     position: fixed;
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    /* Choose your background color */
-    /* display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     z-index: 9999;
+    left: 300px;
+    top: 350px;
 }
   
 #loader {
@@ -115,9 +122,9 @@ body {
 #loader-inner {
     width: 50px;
     height: 50px;
-    /* border: 8px solid red;
-      border-top: 8px solid #df0000; */
-    /* border-radius: 50%;
+    border: 8px solid red;
+    border-top: 8px solid #df0000;
+    border-radius: 50%;
     position: absolute;
     top: -2px;
     left: -2px;
@@ -129,9 +136,8 @@ body {
     left: 50.2%;
     transform: translate(-50%, -50%);
     font-size: 16px;
-    color: #333; */
-    /* Choose your text color */
-/* }
+    color: #333;
+}
   
 @keyframes spin {
     0% {
@@ -141,7 +147,7 @@ body {
     100% {
       transform: rotate(360deg);
     }
-} */
+}
 
 /*-------------------------------HEADER--------------------------------*/
 header {
@@ -355,7 +361,7 @@ header.fixed {
     transition: 0.3s;
     background-color: #2981ff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 3;
+    z-index: 4;
 }
 
 header.fixed .logo {
@@ -562,14 +568,48 @@ header.fixed .logo {
     position: relative;
 }
 
-.parteGhost .test1{
+.parteGhost div div {
+    position: absolute;
+    transition: 0.5s ease;
+    cursor: pointer;
+    width: 450px;
+    height: 220px;
+    overflow: visible;
+}
+
+.parteGhost div div.active{
+    transition: 0.5s ease;
+}
+
+/* .parteGhost .test1{
     position: absolute;
     top: -155px;
     left: -45px;
     width: 546.108px;
     height: 326.509px;
     flex-shrink: 0;
+} */
+
+.parteGhost div div img{
+    pointer-events: none;
 }
+
+#test1{
+    top: -155px;
+    left: -45px;
+    z-index: 3;
+    flex-shrink: 0;
+    /* transform: rotateZ(-36deg);  */
+}
+
+/* #test1:hover{
+    transform: perspective(800px) rotateY(15deg) rotateZ(-36deg);
+} */
+
+#test1.active {
+    transition-delay: 0.2s;
+    left: 50px;
+  }
 
 .parteGhost .test2{
     position: absolute;
@@ -578,6 +618,7 @@ header.fixed .logo {
     width: 543.218px;
     height: 325.787px;
     flex-shrink: 0;
+    z-index: 2;
 }
 
 .parteGhost .test3{
@@ -588,6 +629,7 @@ header.fixed .logo {
     width: 546.108px;
     height: 326.509px;
     flex-shrink: 0;
+    z-index: 1;
 }
 
 .parteGhost .test1:hover, 
