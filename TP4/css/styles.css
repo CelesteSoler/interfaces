@@ -361,7 +361,7 @@ header.fixed {
     transition: 0.3s;
     background-color: #2981ff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 4;
+    z-index: 7;
 }
 
 header.fixed .logo {
@@ -641,7 +641,7 @@ header.fixed .logo {
 
 
 /*-------------sección vengadores------------------*/
-.contenedorImagenes {
+.contenedorImagenesVengadores {
     position: relative;
     
 }
@@ -659,7 +659,7 @@ header.fixed .logo {
     line-height: 56.7px;
 }
 
-.layer1 {
+.avengers-layer1 {
     position: absolute;
     width: 1080px;
     height: 528px;
@@ -667,15 +667,17 @@ header.fixed .logo {
     margin-left: 0px;
     object-fit: cover;
     box-shadow: 40px 40px 40px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
-.layer2{
+.avengers-layer2{
     position: absolute;
     width: 1080px;
     height: 528px;
     margin-top: 260px;
     margin-left: 0px;
     object-fit: cover;
+    z-index: 2;
 }
 
 .elastigirl{
@@ -685,6 +687,7 @@ header.fixed .logo {
     margin-top: 165px;
     margin-left: 27px;
     object-fit: cover;
+    z-index: 3;
 }
 
 .pantera {
@@ -694,6 +697,7 @@ header.fixed .logo {
     margin-top: 6px;
     margin-left: 457px;
     object-fit: cover;
+    z-index: 5;
 }
 
 .hulk {
@@ -703,15 +707,17 @@ header.fixed .logo {
     margin-top: 367px;
     margin-left: 675px;
     object-fit: cover;
+    z-index: 4;
 }
 
-.layer3 {
+.avengers-layer3 {
     position: absolute;
     width: 1080px;
     height: 528px;
     margin-top: 260px;
     margin-left: 0px;
     object-fit: cover;
+    z-index: 6;
 }
 
 
