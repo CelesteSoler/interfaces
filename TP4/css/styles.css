@@ -3,10 +3,10 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,900,600");
 
-:root {
+*:root {
     --x-298-2ff: rgba(41, 130, 255, 1);
     --drop-shadow: 4px 5px 0px 0px rgba(2, 24, 126, 1);
-    --font: url("https://fonts.googleapis.com/css?family=Lato:400,900,600");
+    --font: 'Lato';
   }
 
 
@@ -25,7 +25,7 @@
 body {
     width: 100%;
     overflow-x: hidden;
-    background-color: black;
+    background-color: #000000;
 }
 
 *,
@@ -34,14 +34,13 @@ body {
     transition: 0.5s ease-in-out;
 }
 
-
-body {
-    overflow-x: hidden;
+.width-1080{
+    width: 1080px;
+    margin: auto;
 }
 
-/*----------------estilos de la página---------*/
 
-
+/*-------------------------------HEADER--------------------------------*/
 header {
     background: linear-gradient(180deg, rgb(84, 153, 248) 0%, rgb(84, 153, 248) 87.91%, rgba(84, 153, 248, 0) 100%);
     position: sticky;
@@ -51,6 +50,16 @@ header {
     z-index: 1;
     transition: 0.4s;
 }
+
+header .width-1080{
+    padding-top: 17px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+
+
 
 /*------Menú hamburguesa-------*/
 
@@ -102,7 +111,7 @@ header {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
     box-shadow: none;
-    border: none;
+    
     height: 10px;
 }
 
@@ -151,6 +160,7 @@ header {
     color: #FFFFFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transform: translateX(-150%);
+    font-family: 'Lato';
 }
 
 #menu ul {
@@ -164,7 +174,6 @@ header {
 }
 
 #menu ul li {
-    font-family: "Lato", Helvetica;;
     margin-top:27px;
     text-decoration: none;
 }
@@ -200,50 +209,33 @@ header {
     transition-delay: 1.5s;
 }
 
-.tapaMenu{
-    display:flex;
-    width:152px;
-    height:8968px;
-    background-color: #000000;
-    z-index: 20;
-}
 
-/*boton comprar*/
-.box{
-    width: 200px;
-    height: 50px;
-}
+/*----boton comprar-----*/
 
-.box .fondo-btn {
-    position: absolute;
+.fondo-btn {
     width: 216px;
     height: 66px;
-    top: 20px;
+    top: 16px;
     left: 972px;
     background-color: #ffe901;
     border-radius: 111px;
     border: 8px solid;
     border-color: var(--x-298-2ff);
     box-shadow: var(--drop-shadow);
-    -webkit-text-stroke: 2px #02187e;
-    font-family: "Lato", Helvetica;
+    -webkit-text-stroke: 2px;
+    line-height: 20px;
+    margin-left: 972px;;
+}
+
+
+.textoBtnComprar{
     font-weight: 900;
     color: #02187e;
-    font-size: 20px;
+    font-size: 18.90px;
     letter-spacing: 2.2px;
-    line-height: 20px;
-    white-space: nowrap;
-    justify-content: center;
-    align-items: center;
 }
 
-.box .fondo-btn p{
-    margin-top: 12px;
-    margin-left:45px;
-    font-weight: bold;
-}
-
-.box .fondo-btn:hover {
+.fondo-btn:hover {
     filter: drop-shadow(0px 5px 5px #0d0d0d);
     background-color: #02187e;
     transform: scale(1.1);
@@ -251,17 +243,6 @@ header {
     -webkit-text-stroke: 1px #ffe901;
 
 }
-
-/*logo*/
-.logo{
-    position: absolute;
-    width: 590px;
-    height: 301px;
-    top: 91px;
-    left: 330px;
-    object-fit: cover;
-}
-
 
 /*header sticky*/
 header.fixed {
@@ -282,6 +263,74 @@ header.fixed .logo {
     object-fit: cover;
 }
 
+/*logo*/
+.logo{
+    position: absolute;
+    width: 590px;
+    height: 301px;
+    top: 91px;
+    object-fit: cover;
+    z-index: 200;
+    align-items: center;
+}
+
+/*------------Sección duende verde--------------------*/
+.fndDuendeVerde {
+    width: 100%;
+    height: 845px;
+    background-image: url('../images/duendeVerde/fndDuendeVerde.png');
+    background-size: 100% 100%;
+    position: relative;
+    margin-top:  -80px;
+}
+
+.fndDuendeVerde .width-1080 h1 {
+    position: absolute;
+    width: 646px;
+    top:200px;
+    font-family: "Lato", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 60px;
+    letter-spacing: 0;
+    line-height: 56.7px;
+}
+.fndDuendeVerde .width-1080 .p {
+    position: absolute;
+    height: 154px;
+    width: 580px;
+    margin-top: 350px;
+    margin-left: 0px;
+    font-family: "Lato", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.imgTarjDV{
+    position: absolute;
+    left: 0;
+    top: 520px;
+}
+
+.containerImgTarjDV {
+    position: relative;
+}
+
+.containerDuendeVerde{
+    position: relative;
+}
+
+.imgDuendeVerde{
+    position: absolute;
+    width: 553px;
+    height: 921px;
+    top: 134px;
+    left: 632px;
+
+    
 /*-----AMAZING SPIDEY Héroes con ciudad de fondo y nubes------*/
 
 @keyframes scroll-x{
@@ -332,204 +381,593 @@ header.fixed .logo {
 }
 
 /*-------Sección Cards y texto-------------*/
-#container-cards{
-    display: flex;
-    flex-direction: row;
+
+.seccionCards {
     background-color: white;
-    width: 1280px;
-   
-    height:700px;
+    width: 100%;
+    height: 1085px;
+    margin-top: -210px;
 }
 
-.cards{
+.contenedorCards {
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 440px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    opacity: 0;
+    position: relative;
+    bottom: -250px;
+    width: 333px;
+}
+
+.img-card {
+    width: 333px;
+}
+
+.textoCards {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Lato";
+}
+
+.efecto-card1{
+    opacity: 1;
+    bottom: 0;
+    transition: ease .4s;
+}
+
+.efecto-card2 {
+    opacity: 1;
+    bottom: 0;
+    transition: ease .8s;
+}
+
+
+.efecto-card3 {
+    opacity: 1;
+    bottom: 0;
+    transition: ease 1.2s;
+}
+
+
+/*-------Parte Ghost Spider---------*/
+.parteGhost{
+    width: 100%;
+    height: 700px;
+    margin-top: -60px;
+    background-image: url(../images/ghost-spider/fondo-ghost.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+.parteGhost .width-1080{
+    position: relative;
+}
+
+.parteGhost .test1{
+    position: absolute;
+    top: -155px;
+    left: -45px;
+    width: 546.108px;
+    height: 326.509px;
+    flex-shrink: 0;
+}
+
+.parteGhost .test2{
+    position: absolute;
+    left: -55px;
+    top: -20px;
+    width: 543.218px;
+    height: 325.787px;
+    flex-shrink: 0;
+}
+
+.parteGhost .test3{
+    position: absolute;
+    left:0;
+    left: -25px;
+    top: 175px;
+    width: 546.108px;
+    height: 326.509px;
+    flex-shrink: 0;
+}
+
+.parteGhost .test1:hover, 
+.parteGhost .test2:hover,
+.parteGhost .test3:hover{
+    transform: skewY(7deg);
+    transition: all .5s ease-in-out;
+}
+
+
+/*-------------sección vengadores------------------*/
+.contenedorImagenes {
+    position: relative;
+    
+}
+
+.tituloVengadores {
+    position: absolute;
+    width: 667px;
+    margin-top: 30px;
+    margin-left: 0px;
+    font-family: "Lato";
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 65px;
+    letter-spacing: 0;
+    line-height: 56.7px;
+}
+
+.layer1 {
+    position: absolute;
+    width: 1080px;
+    height: 528px;
+    margin-top: 260px;
+    margin-left: 0px;
+    object-fit: cover;
+    box-shadow: 40px 40px 40px rgba(0, 0, 0, 0.2);
+}
+
+.layer2{
+    position: absolute;
+    width: 1080px;
+    height: 528px;
+    margin-top: 260px;
+    margin-left: 0px;
+    object-fit: cover;
+}
+
+.elastigirl{
+    position: absolute;
+    width: 568px;
+    height: 675px;
+    margin-top: 165px;
+    margin-left: 27px;
+    object-fit: cover;
+}
+
+.pantera {
+    position: absolute;
+    width: 488px;
+    height: 624px;
+    margin-top: 6px;
+    margin-left: 457px;
+    object-fit: cover;
+}
+
+.hulk {
+    position: absolute;
+    width: 464px;
+    height: 488px;
+    margin-top: 367px;
+    margin-left: 675px;
+    object-fit: cover;
+}
+
+.layer3 {
+    position: absolute;
+    width: 1080px;
+    height: 528px;
+    margin-top: 260px;
+    margin-left: 0px;
+    object-fit: cover;
+}
+
+
+/*-------------seccion mas amigos---------*/
+.seccionMasAmigos{
+    background-image: url(../images/masAmigos/fndMasAmigos.png);
+    height: 2194.5px;
+    margin-top: 570px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 70px;   
+}
+
+.scroll-container {
+    height: 100%;
     display: flex;
     flex-direction: column;
-    width: 25%;
-    margin-top: 100px;
+    align-items: start;
+    
 }
 
-.text-cards{
-    width: 333px;
+.scroll-container h1{
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 94.5%; 
+    padding-top: 340px;
     font-family: "Lato", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
 }
 
-#card-1{
-    margin-left: 100px;
-}
-#card-2{
-    margin-left:50px;
-    margin-right: 50px ;
-}
-
-#img-card{
-    margin: 0 0 20px 0;
-}
-
-
-
-/*----------Fin seccion Cards y texto------------*/
-/*------------parte Sprite Sheet Personajes---------*/
-
-.parte-final{
+.rowCont {
+    width: 100%;
+    height: 1650px;
     display: flex;
-    flex-direction: row;
-  
-  }
-  #cielo{
-  
-    width: 1280px;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.contenedorImg {
+    width: 552px;
+    height: 1650px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.contenedor-imagenes {
+    width: 100%;
+    height: 350px;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 35%;
+}
+
+.imgMasAmigos {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.2s ease-in;
+}
+
+.show-img {
+    z-index: 1;
+    opacity: 1;
+}
+
+.contenedor-parrafos {
+    position: relative;
+    left: 601px;
+    width: 467px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    box-sizing: border-box;
+}
+
+.parrafoScroll{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px; 
+    opacity: 0;
+    transition: all 0.2s ease-in;
+}
+
+.show-txt{
+    opacity: 1;
+}
+
+.parrafoScroll h2{
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 94.5%; 
+    padding-bottom: 20px;
+    font-family: "Lato", Helvetica;
+}
+.parrafoScroll p{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 94.5%; 
+    font-family: "Lato", Helvetica;
+}
+
+/*------------ seccion btn comprar------------------*/
+
+.tituloSeccionBtnComprar { 
+    font-family: "Lato", Helvetica;
+    font-size: 60px;
+    color: white;
+    padding-bottom: 5%;
+}
+
+
+.fondo-btn-poder {
+    width: 292PX;
+    height: 66px;
+    top: 16px;
+    background-color: #ffe901;
+    border-radius: 111px;
+    border: 8px solid;
+    border-color: var(--x-298-2ff);
+    box-shadow: var(--drop-shadow);
+    -webkit-text-stroke: 2px;
+    line-height: 20px;
+}
+
+.fondo-btn-poder:hover{
+    filter: drop-shadow(0px 5px 5px #0d0d0d);
+    background-color: #02187e;
+    transform: scale(1.1);
+    color: #ffe901;
+    -webkit-text-stroke: 1px #ffe901;
+}
+
+/*-------------seccion 3 superheroes----------------*/
+
+.seccionSuperheroes{
+    width: 100%;
+    height: 720px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+
+.fndBlanco {
+    background-image: url(../images/seccion3Superheroes/fnd3Superheroes.png);
+}
+
+.fndRosa{
+    background-image: url(../images/seccion3Superheroes/fndRosa.png);
+}
+
+.fndAzulOscuro{
+    background-image: url(../images/seccion3Superheroes/fndAzulOscuro.png);
+}
+
+.fndAzul{
+    background-image: url(../images/seccion3Superheroes/fndAzul.png);
+}
+
+.seccionSuperheroes .width-1080{
+    position: relative;
+}
+
+.seccionSuperheroes .width-1080 img{
+    height: auto;
+    margin-top: 150px;  
+    position: absolute;  
+}
+
+.seccionSuperheroes .super1{
+    margin-left: 10%;
+    cursor: pointer;
+}
+
+.seccionSuperheroes .super2{
+    margin-left: 30%;
+    cursor: pointer;
+}
+
+.seccionSuperheroes .super3 {
+ margin-left: 65%;
+ cursor: pointer;
+}
+
+/*------------parte Sprite Sheet Personajes---------*/
+.spritesheet {
+    margin-top: -153px;
+}
+
+#cielo{
+    width:100%;
     height: 1296px;
     background:url('https://github.com/CelesteSoler/images/blob/main/cielo.png?raw=true');
-    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position:relative;
     z-index: -30;
-    top: 0;
-    }
+    margin-top: 0;
+}
   
-  #edificios{
+#edificios{
     background: url('https://github.com/CelesteSoler/images/blob/main/edificios.png?raw=true');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     height: 720px; 
-    width: 1280px;
+    width:100%;
     z-index: -10;
-    top:37em;
+    margin-top:100px;
     position: absolute;
-    }
+}
   
   
-  #personaje-1{
+#personaje-1{
     background: url('https://github.com/CelesteSoler/images/blob/main/Spider-Man%20SV%20Battler%20(4).png?raw=true');
     height:65px; 
     width:60px;
     margin-top: 20em;
-    margin-left: 15em;
+    margin-left: 19em;
     z-index: 10;
     animation: sprite-animation 3s steps(2) infinite;
-    }
+}
   
-    #personaje-2{
-      background: url('https://github.com/CelesteSoler/images/blob/main/Miles%20Morales%2002.png?raw=true');
-      height:48px; 
-      width:48px;
-      margin-top: 2.7em;
-      margin-left: 64em;
-      z-index: 10;
-      animation: sprite-animation 3s steps(3) infinite;
-      }
+#personaje-2{
+    background: url('https://github.com/CelesteSoler/images/blob/main/Miles%20Morales%2002.png?raw=true');
+    height:48px; 
+    width:48px;
+    margin-top: 2.7em;
+    margin-left: 75em;
+    z-index: 10;
+    animation: sprite-animation 3s steps(3) infinite;
+}
+
+#personaje-3{
+    background: url('/images/spritesheet/Miles-Morales.png');
+    height:48px; 
+    width:46.9px;
+    margin-top: 1.9em;
+    margin-left: 44em;
+    z-index: 10;
+    animation: sprite-animation 3s steps(5) infinite;
+}
   
-      #personaje-3{
-        background: url('https://github.com/CelesteSoler/images/blob/main/$Spider-Gwen1.png?raw=true');
-        height:48px; 
-        width:46.9px;
-        margin-top: 1.9em;
-        margin-left: 35em;
-        z-index: 10;
-        animation: sprite-animation 3s steps(3) infinite;
-        }
+@keyframes sprite-animation { 
+    from { background-position: 0 0; }
+    to { background-position: -8120px 0; }
+}
   
-  @keyframes sprite-animation { 
-        from { background-position: 0 0; }
-        to { background-position: -8120px 0; }
-    }
-  
-    /*----------*/
-  
-    .titulo-spidey{
-      width: 816px; 
-      left: 232px; 
-      top: 152px; 
-      position: absolute; 
-      text-align: center; 
-      color: black; 
-      font-size: 55px; 
-      font-family: Lato; 
-      font-weight: 600; 
-      line-height: 56.70px; 
-      word-wrap: break-word;
-    }
-  
-    .Group3{
-      width: 780px; 
-      height: 100px; 
-      left: 250px; 
-      top: 369px; 
-      position: absolute;
-    }
-  
-    .contenedor-input{
-      width: 562px; 
-      height: 100px;
-      left: 0px; 
-      top: 0px; 
-      position: absolute; 
-      background: white; 
-      box-shadow: 4px 5px 0px #02187E; 
-      border-top-left-radius: 50px; 
-      border-top-right-radius: 50px; 
-      border-left: 9px #2982FF solid; 
-      border-top: 9px #2982FF solid; 
-      border-bottom: 9px #2982FF solid;
-    }
-  
-    .placeholder-ingresa{
-      left: 52px; 
-      top: 41px; 
-      position: absolute; 
-      color: rgba(0, 0, 0, 0.39); 
-      font-size: 20px; 
-      font-family: Lato; 
-      font-weight: 400; 
-      line-height: 18.90px; 
-      letter-spacing: 2.20px; 
-      word-wrap: break-word;
-    }
-  
-    .contenedor-suscribirse{
-      width: 218px; 
-      height: 100px; 
-      left: 570px; 
-      top: 0px; 
-      position: absolute; 
-      transform: rotate(360deg); 
-      transform-origin: 0 0; 
-      background: #FFE901;
-      box-shadow: 4px 5px 0px #02187E; 
-      border-top-left-radius: 50px; 
-      border-top-right-radius: 50px; 
-      border: 9px #2982FF solid;
-    }
-  
-    .texto-suscribirse{
-      left: 595px; 
-      top: 41px; 
-      position: absolute; 
-      color: #02187E; 
-      font-size: 20px; 
-      font-family: Lato; 
-      font-weight: 900; 
-      line-height: 18.90px; 
-      letter-spacing: 2.20px; 
-      word-wrap: break-word;
-    }
-  
-    .texto-politicas-privacidad{
-     width: 578px; 
-     height: 95px; 
-     left: 302px; 
-     top: 508px;
-     position: absolute;
-     font-family: Lato; 
-    }
-  
-    #image-teen{
-     width: 231px; 
-     height: 145px; 
-     left: 302px;
-     top: 620px; 
+/*----------*/
+
+.container-suscribirse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 152px; 
+}
+ 
+.container-suscribirse input, .container-suscribirse button{
+    margin-top: 380px;
+    width: 562px;
+    height: 100px;
+}
+
+.container-suscribirse input::placeholder{
+    font: 'Lato';
+    letter-spacing: 11%;
+    font-size: 18.9px;;
+}
+
+.suscribirse {
+    width: 292px;
+    height: 50px;
+    border-radius: 111px;
+    border: 8px solid var(--2982-ff, #2982FF);
+    background-color: #ffe901;
+    -webkit-text-stroke:2px;
+    /* Drop Shadow */
+    box-shadow: 4px 5px 0px 0px #02187E;
+    transition: .3s;
+}
+
+.texto-suscrib{
+    color: #02187e;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 2.2px;
+}
+
+.container-suscribirse input{
+    border-radius: 50px 0px 0px 50px;
+    border-top: 9px solid #2982FF;
+    border-bottom: 9px solid #2982FF;
+    border-left: 9px solid #2982FF;
+    background: #FFF;
+    box-shadow: 4px 5px 0px 0px #02187E;
+}
+
+.container-suscribirse input::placeholder{
+    color: rgb(197, 195, 195);
+    letter-spacing: 2.2px;
+    padding-left: 50px;
+}
+
+.container-suscribirse button{
+    width: 218px;
+    margin-left: -10px;
+    border-radius: 0px 50px 50px 0px;
+}
+
+.titulo-spidey{
+    font-family: Lato; 
+    font-weight: 600; 
+    line-height: 56.70px; 
+    word-wrap: break-word;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 680px;  
+    margin-top: 134px; 
+    position: absolute; 
+    text-align: center; 
+    color: black; 
+    font-size: 55px; 
+    margin-left: 203px;
+}
+
+.texto-politicas-privacidad{
+    width: 578px; 
+    height: 95px; 
+    margin-left: 218px; 
+    top: 508px;
     position: absolute;
+    font-family: Lato; 
+}
+
+.image-teen{
+    width: 231px; 
+    height: 145px; 
+    margin-left: 218px;
+    margin-top: 135px; 
+    position: absolute;
+}
+
+/*-----------Comienzo footer----------*/
+.footer{
+    width: 100%; 
+    height: 678px; 
+    position: relative;
+}
+
+.rectanguloNegro{
+    width: 100%; 
+    height: 80px; 
+    left: 0px; 
+    margin-top: 0px;
+    position: absolute; 
+    background: #242424;
+}
+
+.image-logos{
+    width: 1080px; 
+    height: 75px; 
+    left: 240px; 
+    margin-top: 1px; 
+    position: absolute;
+}
+
+.rectanguloGris{
+    width: 100%; 
+    height: 598px; 
+    left: 0px; 
+    margin-top: 80px; 
+    position: absolute; 
+    background: #5E5E5D;
+}
+
+.textoFooter{
+    width: 820px;
+    height: 361px;
+    margin-top: 38px;
+    color: white;
+    letter-spacing: 2.2px;
+    font-family: "Lato", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2.2px;
+}
+
+.width-1080 .image-redes{
+    width: 212px; 
+    height: 41px; 
+    margin-top: 50px; 
+    position: absolute;
+}
+
+
+/*-----------fin footer----------*/
+
+    
+    
+
+/*===== solo para marcar tamaño ======*/
+    #parallax{
+        width: 100%;
+        height: 720px;
+        background-color: #000000;
     }
-   
-    /*-----------fin spritesheet----------*/
