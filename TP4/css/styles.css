@@ -26,7 +26,7 @@ body {
     width: 100%;
     overflow-x: hidden;
     background-color: #000000;
-    z-index: 0;
+    z-index: -5;
 }
 
 *,
@@ -872,6 +872,7 @@ header.fixed .logo {
     font-size: 60px;
     color: white;
     padding-bottom: 5%;
+    z-index: 0;
 }
 
 
@@ -903,24 +904,31 @@ header.fixed .logo {
     height: 720px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    /* background-color: whitesmoke; */
+    background-image: url(../images/seccion3Superheroes/fnd3Superheroes.png);
     position: relative;
+    z-index: 0;
 }
 
 
 .fndBlanco {
     background-image: url(../images/seccion3Superheroes/fnd3Superheroes.png);
+    z-index: 1;
 }
 
 .fndRosa{
     background-image: url(../images/seccion3Superheroes/fndRosa.png);
+    z-index: 2;
 }
 
 .fndAzulOscuro{
     background-image: url(../images/seccion3Superheroes/fndAzulOscuro.png);
+    z-index: 2;
 }
 
 .fndAzul{
     background-image: url(../images/seccion3Superheroes/fndAzul.png);
+    z-index: 2;
 }
 
 .seccionSuperheroes .width-1080{
