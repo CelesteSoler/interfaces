@@ -555,20 +555,27 @@ header.fixed .logo {
 
 
 /*-------Parte Ghost Spider---------*/
-.parteGhost{
+.ghost-section{
     width: 100%;
-    height: 700px;
-    margin-top: -60px;
+    height: 566px;
+    top: 90px;
     background-image: url(../images/ghost-spider/fondo-ghost.svg);
     background-size: 100%;
     background-repeat: no-repeat;
-
-}
-.parteGhost .width-1080{
     position: relative;
+    z-index: 1;
+    margin-bottom: 200px;
 }
 
-.parteGhost div div {
+.ghost-container{
+
+}
+
+/* .ghost-section .width-1080{
+    position: relative;
+} */
+
+.ghost-section div div {
     position: absolute;
     transition: 0.5s ease;
     cursor: pointer;
@@ -577,11 +584,11 @@ header.fixed .logo {
     overflow: visible;
 }
 
-.parteGhost div div.active{
+.ghost-section div div.active{
     transition: 0.5s ease;
 }
 
-/* .parteGhost .test1{
+/* .ghost-section .test1{
     position: absolute;
     top: -155px;
     left: -45px;
@@ -590,28 +597,28 @@ header.fixed .logo {
     flex-shrink: 0;
 } */
 
-.parteGhost div div img{
+.ghost-section div div img{
     pointer-events: none;
 }
 
-#test1{
-    top: -155px;
-    left: -45px;
+#ghost-card-1{
+    top: 295px;
+    left: -550px;
     z-index: 3;
     flex-shrink: 0;
     /* transform: rotateZ(-36deg);  */
 }
 
-/* #test1:hover{
+#ghost-card-1:hover{
     transform: perspective(800px) rotateY(15deg) rotateZ(-36deg);
-} */
+}
 
-#test1.active {
+#ghost-card-1.active {
     transition-delay: 0.2s;
     left: 50px;
   }
 
-.parteGhost .test2{
+/* .ghost-section .test2{
     position: absolute;
     left: -55px;
     top: -20px;
@@ -619,9 +626,25 @@ header.fixed .logo {
     height: 325.787px;
     flex-shrink: 0;
     z-index: 2;
+} */
+
+#ghost-card-2{
+    top: 75px;
+    left: -570px;
+    z-index: 2;
+    /* transform: rotateZ(-26deg); */
 }
 
-.parteGhost .test3{
+#ghost-card-2:hover {
+    transform: perspective(800px) rotateY(15deg) rotateZ(-26deg);
+}
+
+#ghost-card-2.active {
+    transition-delay: 0.1s;
+    left: 30px;
+}
+
+/* .ghost-section .test3{
     position: absolute;
     left:0;
     left: -25px;
@@ -630,11 +653,25 @@ header.fixed .logo {
     height: 326.509px;
     flex-shrink: 0;
     z-index: 1;
-}
+} */
 
-.parteGhost .test1:hover, 
-.parteGhost .test2:hover,
-.parteGhost .test3:hover{
+#ghost-card-3 {
+    top: -105px;
+    left: -570px;
+    /* transform: rotateZ(-13deg); */
+  }
+  
+  #ghost-card-3:hover {
+    transform: perspective(800px) rotateY(15deg) rotateZ(-13deg);
+  }
+  
+  #ghost-card-3.active {
+    left: 30px;
+  }
+
+.ghost-section .test1:hover, 
+.ghost-section .test2:hover,
+.ghost-section .test3:hover{
     transform: skewY(7deg);
     transition: all .5s ease-in-out;
 }

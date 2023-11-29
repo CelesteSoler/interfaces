@@ -1,6 +1,6 @@
 "use strict"
 
-/**Detecta si un elemento esta dentro del viewport */
+/**Esta función lo que hace es detectar cuando un elemento esté dentro del viewport */
 function isElementInViewport(el) {
     var rect = el.getBoundingClientRect();
     return (
@@ -9,27 +9,27 @@ function isElementInViewport(el) {
     );
 }
 
-//SPIDER-WHITE SECTION
-const spiderWhiteSection = this.document.querySelector('.parteGhost');
-const spiderWhiteDivs = [];
-document.querySelectorAll('.parteGhost .width-1080').forEach(div => {
+//Ghost Spider Section
+const ghostSpiderSection = this.document.querySelector('.ghost-section');
+const ghostSpiderDivs = [];
+document.querySelectorAll('.ghost-section .ghost-container div').forEach(div => {
   let object = {
     div: div,
     originalTop: parseInt(getComputedStyle(div, null).getPropertyValue("top").slice(0, -2)),
   }
-  spiderWhiteDivs.push(object);
+  ghostSpiderDivs.push(object);
 })
 
 window.addEventListener('scroll', function (e) {
-  if (isElementInViewport(spiderWhiteSection)) {
-    for (let divObject of spiderWhiteDivs) {
+  if (isElementInViewport(ghostSpiderSection)) {
+    for (let divObject of ghostSpiderDivs) {
       const top = divObject.originalTop;
       const y = window.scrollY;
       divObject.div.classList.add('active');
       divObject.div.style.top = `${((y)-2000) * 0.15 + top}px`;
     }
   } else {
-    for (let divObject of spiderWhiteDivs) {
+    for (let divObject of ghostSpiderDivs) {
       divObject.div.classList.remove('active');
     }
   }
